@@ -111,6 +111,7 @@ A content delivery network (CDN) is a system of distributed servers (network) th
 
 CloudFront can be used to deliver your entire website, including dynamic, static, streaming, and interactive content using a global network of edge locations. Requests for your content are automatically routed to the nearest edge location, so content is delivered with the best possible performance.
 
+- CloudFront is a Networking & Content Delivery solution in AWS
 - Edge Locations are not just READ only - you can write to them too (ie put an object on to them as seen in S3 Transfer Acceleration.)
 - Objects are cached for the TTL (Time To Live) which is configurable
 - You can clear ached objects, but you will be charged. This is called invalidating the cache.
