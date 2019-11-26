@@ -115,6 +115,7 @@ CloudFront can be used to deliver your entire website, including dynamic, static
 - Edge Locations are not just READ only - you can write to them too (ie put an object on to them as seen in S3 Transfer Acceleration.)
 - Objects are cached for the TTL (Time To Live) which is configurable
 - You can clear ached objects, but you will be charged. This is called invalidating the cache.
+- You can restrict access to content served on CloudFront with signed URL's and or signed cookies
 
 #### CloudFront Terminology
 - **Edge Location** - A location where content will be cached. This is separate to an AWS Region/ Availability Zone.
