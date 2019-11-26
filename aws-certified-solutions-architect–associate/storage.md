@@ -122,6 +122,6 @@ CloudFront can be used to deliver your entire website, including dynamic, static
 - **Origin** - This is the origin of all files that the CDN will distribute. This can be an S3 Bucket, an EC2 Instance, an Elastic Load Balancer, or Route 53
 - **Distribution** - This is the name given to the CDN which consists of a collection of Edge Locations
 - **Web Distribution** - Typically used for websites
-- **RTMP** - Used for Media Streaming
+- **RTMP** - Used for Media Streaming, common with Adobe Flash media streaming
 
 #### [S3 FAQ](https://aws.amazon.com/s3/faqs/)
