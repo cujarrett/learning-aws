@@ -21,3 +21,43 @@ IAM Features
 
 #### CloudWatch
 Can be used to create a billing alarm that can send emails or SNS topic when your account goes past the specified amount.
+
+### Review
+1. What is an additional way to secure the AWS accounts of both the root account and new users alike?
+- a. Implement Mulit-Factor Authentication for all accounts
+- b. Store the access key id and secret access key of all users in a publicly accessible plain text document on S3 of which only you and members of your organization know the address. 
+- c. Configure the AWS Console so that you can only log into it from a specific IP Address range
+- d. Configure the AWS Console so that you can only log into it from your internal network IP address range.
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. Implement Mulit-Factor Authentication for all accounts
+</p>
+</details>
+
+2. Which of the following is not a component of IAM?
+- a. Roles
+- b. Users
+- c. Groups
+- d. Organizational Units
+
+<details>
+<summary>Show answer</summary>
+<p>
+- d. Organizational Units
+</p>
+</details>
+
+3. When you create a new user, that user __________?
+- a. Will be able to log in to the console anywhere in the world, using their access key ID and secret access key
+- b. Will be able to interact with AWS using their access key ID and secret access key using the API, CLI, or the AWS SDKs
+- c. Will only be able to log into the console in the region in which that user was created
+- d. Will be able to log into the console only after multi-factor authentication is enabled on their account.
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. Will be able to interact with AWS using their access key ID and secret access key using the API, CLI, or the AWS SDKs
+</p>
+</details>
