@@ -103,7 +103,8 @@ Encryption at Rest (Server Side) is achieved by
 Uses CloudFront Edge network to accelerate your uploads to S3. Instead of uploading directly to your S3 bucket, you can use a distinct URL to upload directly to an Edge Location which will then transfer that file to S3. You will get a distinct URL to upload to. For example: `foo.s3-accelerate.amazonaws.com`.
 
 ![aws-s3-transfer-acceleration](https://user-images.githubusercontent.com/16245634/69655407-1125e600-103c-11ea-9091-733833f8a8ad.png)
-_image from www.javatpoint.com_
+
+_image credit www.javatpoint.com_
 
 #### CloudFront
 A content delivery network (CDN) is a system of distributed servers (network) that deliver webpages and other content to a user based on the geographic locations of the user, the origin of the webpage, and a content delivery server.
