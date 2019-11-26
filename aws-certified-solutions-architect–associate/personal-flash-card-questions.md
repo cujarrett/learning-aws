@@ -3,7 +3,7 @@ A collection of stuff I ran accross that I want to self study with so I remember
 
 ---
 
-What are the two types of Distribution in CloudFront?
+What are the two types of distributions in CloudFront?
 
 <details>
 <summary>Show answer</summary>
