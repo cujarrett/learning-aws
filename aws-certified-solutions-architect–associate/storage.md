@@ -157,4 +157,12 @@ Storage Gateway Types
   - Cached Volumes -  Enables you to use Amazon S3 as your primary data storage while retaining frequently accessed data locally in your Storage Gateway. Cached volumes minimize the need to scale your on-premises storage infrastructure, while still providing your applications with low-latency access to their frequently accessed data. You can create storage volumes up to 32TiB in size and attach them as iSCSI devices from your on-premises Storage Gateway's cache and upload buffer storage.
 - Tape Gateway (VTL) - Offers a durable, cost effective solution to archive your data in the AWS cloud. The VTL interface it provides lets you leverage your existing tape-based backup application infrastructure  to store on virtual tape cartridges that you create on your tape gateway. Each tape gateway is preconfigured with a media changer and tape drivesm which are available to your existing client backup applications as iSCSI devices. You add tape cartridges as you need to archive your data. Supported by NetBackup, Backup Exec, Veeam, etc.
 
+Storage Gateway TL;DR
+AWS offers virtual solutions for the following:
+- File Gateway - For flat files, stored directly on S3
+- Volume Gateway
+  - Stored Volumes - Entire dataset is stored on site and is asyncchronously backed up to S3
+  - Cached Volumes - Entire dataset is stored on S3 and the most frequently accessed data is cached on site
+- Gateway Virtual Tape Library
+
 #### [S3 FAQ](https://aws.amazon.com/s3/faqs/)
