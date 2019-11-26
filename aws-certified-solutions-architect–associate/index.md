@@ -16,7 +16,7 @@ Bold topics are core services and very important to know well
 - [x] - [**AWS Global Infrastructure**](./aws-global-infrastructure.md)
 - [ ] - [**Security, Identity & Compliance**](security-identity-compliance.md)
 - [ ] - **Compute**
-- [ ] - [**Storage**](https://github.com/cujarrett/personal-goals/issues/37#issuecomment-558447460)
+- [ ] - [**Storage**](./storage.md)
 - [ ] - **Databases**
 - [ ] - **Network & Content Delivery**
 - [ ] - Migration & Transfer
