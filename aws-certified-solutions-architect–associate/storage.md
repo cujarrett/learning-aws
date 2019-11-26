@@ -124,4 +124,23 @@ CloudFront can be used to deliver your entire website, including dynamic, static
 - **Web Distribution** - Typically used for websites
 - **RTMP** - Used for Media Streaming, common with Adobe Flash media streaming
 
+#### Snowball
+Snowball is a petabyte-scale data transport solution that uses secure appliances to transfer large ammounts of data into and out of AWS. Using Snowball addresses common challenges with large-scale data transfers including high network costs, long transfer times, and security concerns. Transferring data with Snowball is simple, fast, secure, and can be as little as one-fifth the cost of high speed Internet. Once the data transfer job has been processed and verified, AWS performs a software erasure of the Snowball appliance.
+
+- Snowball comes in a 50TB or 80TB size
+- Snowball uses multiple layers of security designed to protect your data including
+  - Tamper-resistant enclosures
+  - 256-bit encryption
+  - Industry standard Trusted Platform Module (TPM) designed to ensure both security and full chain of custody of your data.
+- Snowball can import to S3
+- Snowball can export from S3
+  
+#### Snowball Edge
+Snowball Edge is a 100TB data transfer device with on-board storage and compute capabilities. You can use Snowball Edge to move large ammounts of data into and out of AWS, as a temporary storage tier for large local datasets, or to support local workloads in remote or offline locations. In short it provides temporary storage of large data sets and local workloads in remote or offline locations. You could run AWS Lambda's off of it for example.
+
+Snowball Edge connects to your existing applications and infrastructure using standard storage interfaces, streamlining the data transfer process and minimizing setup and integration. Snowball Edge can cluster together to form a local storage tier and process your data on-premises, helping ensure your applicatons continue to run even when they are not able to access the cloud.
+
+#### Snowmobile
+AWS Snowmobile is an Exabyte-scale data transfer service used to move extreamly large amounts of data to AWS. You can transfer up to 100PB per Snowmobile, a 45-foot long ruggedized shipping container, pulled by a semi-trailer truck. Snowmobile makes it easy to move massive volumes of data to the cloud, including video libraries, image repositories, or even complete data center migration. Transfering data with Snowmobile is secure, fast, and cost effective.
+
 #### [S3 FAQ](https://aws.amazon.com/s3/faqs/)
