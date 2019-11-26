@@ -1,0 +1,26 @@
+## What?
+I'd like to pass the [AWS Certified Solutions Arch](Associatehttps://aws.amazon.com/certification/certified-solutions-architect-associate/)
+
+### Tasks
+- [ ] - [Ryan Kroonenburg's AWS Certified Solutions Arch Associate course](https://www.udemy.com/course/aws-certified-solutions-architect-associate/)
+- [ ] - [Jon Bonso's AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams/)
+- [ ] - [Skillcertpro's AWS Certified Solutions Architect 2019 Practice Questions](https://www.udemy.com/course/aws-certified-solutions-architect-2018-practice-questions/)
+- [ ] - Take AWS Certified Solutions Arch Associate exam
+- [ ] - [Celebratory Dance](https://media.giphy.com/media/6fScAIQR0P0xW/giphy.gif)
+
+#### Notes Preface
+I am going to focus on probable elements in the exam to streamline note taking. For example I will detail difference between a Regions and an Availability Zone but I won't take notes on current number of each as it's not as important and in constant change.
+
+### AWS Topics Studied
+Bold topics are core services and very important to know well
+- [x] - [**AWS Global Infrastructure**](./aws-global-infrastructure.md)
+- [ ] - [**Security, Identity & Compliance**](security-identity-compliance.md)
+- [ ] - **Compute**
+- [ ] - [**Storage**](https://github.com/cujarrett/personal-goals/issues/37#issuecomment-558447460)
+- [ ] - **Databases**
+- [ ] - **Network & Content Delivery**
+- [ ] - Migration & Transfer
+- [ ] - Machine Learning
+- [ ] - Management & Governance
+- [ ] - Analytics
+- [ ] - Desktop & App Streaming
