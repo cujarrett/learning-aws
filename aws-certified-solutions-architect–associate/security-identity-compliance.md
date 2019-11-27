@@ -214,3 +214,81 @@ Can be used to create a billing alarm that can send emails or SNS topic when you
 - c. No Permissions
 </p>
 </details>
+
+16. A ___________ is a document that provides a formal statement of one or more permissions.
+- a. Policy
+- b. User
+- c. Group
+- d. Role
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. Policy
+</p>
+</details>
+
+17. You have created a new AWS account for your company, and you have also configured multi-factor authentication on the root account. You are about to create your new users. What strategy should you consider in order to ensure that there is good security on this account.
+- a. Enact a strong password policy: user passwords must be changed every 45 days, with each password containing a combination of capital letters, lower case letters, numbers, and special symbols. 
+- b. Require users only to be able to log in using biometric authentication
+- c. Restrict login to the corporate network only
+- d. Give all users the same password so that if they forget their password they can just ask their co-workers.
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. Enact a strong password policy: user passwords must be changed every 45 days, with each password containing a combination of capital letters, lower case letters, numbers, and special symbols. 
+</p>
+</details>
+
+18. You have been asked to advise on a scaling concern. The client has an elegant solution that works well. As the information base grows they use CloudFormation to spin up another stack made up of an S3 bucket and supporting compute instances. The trigger for creating a new stack is when the PUT rate approaches 100 PUTs per second. The problem is that as the business grows that number of buckets is growing into the hundreds and will soon be in the thousands. You have been asked what can be done to reduce the number of buckets without changing the basic architecture.
+- a. Refine the key hashing to randomise the name Key to achieve the potential of 300 PUTs per second
+- b. Change the trigger level to around 3000 as S3 can now accomodate much higher PUT and GET levels
+- c. Upgrade all buckets to S3 provisioned IOPS to achieve better performance
+- d. Set up multiple accounts so that the per account hard limit on S3 buckets is avoided
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. Change the trigger level to around 3000 as S3 can now accomodate much higher PUT and GET levels
+</p>
+</details>
+
+19. You run a meme creation website where users can create memes and then download them for use on their own sites. The original images are stored in S3 and each meme's metadata in DynamoDB. You need to decide upon a low-cost storage option for the memes, themselves. If a meme object is unavailable or lost, a Lambda function will automatically recreate it using the original file from S3 and the metadata from DynamoDB. Which storage solution should you use to store the non-critical, easily reproducible memes in the most cost-effective way?
+- a. S3
+- b. S3 - IA
+- c. S3 - 1Zone-IA
+- d. S3 - RRS
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. S3 - 1Zone-IA
+</p>
+</details>
+
+20. You have uploaded a file to S3. Which HTTP code would indicate that the upload was successful?
+- a. HTTP 404
+- b. HTTP 501
+- c. HTTP 200
+- d. HTTP 307
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. HTTP 200
+</p>
+</details>
+
+21. S3 has an eventual consistency for which HTTP Methods?
+- a. PUTS of new Objects and DELETES
+- b. Overwrite PUTS and DELETES
+- c. PUTS of new objects and UPDATES
+- d. UPDATES and DELETES
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. Overwrite PUTS and DELETES
+</p>
+</details>
