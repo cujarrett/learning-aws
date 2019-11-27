@@ -14,9 +14,9 @@ I am going to focus on probable elements in the exam to streamline note taking. 
 ### AWS Topics Studied
 Bold topics are core services and very important to know well
 - [x] - [**AWS Global Infrastructure**](./aws-global-infrastructure.md)
-- [ ] - [**Security, Identity & Compliance**](security-identity-compliance.md)
+- [x] - [**Security, Identity & Compliance**](security-identity-compliance.md)
 - [ ] - **Compute**
-- [ ] - [**Storage**](./storage.md)
+- [x] - [**Storage**](./storage.md)
 - [ ] - **Databases**
 - [ ] - **Network & Content Delivery**
 - [ ] - Migration & Transfer
