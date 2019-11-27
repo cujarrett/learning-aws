@@ -19,6 +19,7 @@
     - Applications that have flexible start and end times
     - Applications that are only feasible at very low compute prices
     - Users with urgent computing needs for large amounts of additional capacity
+    - If the Spot instance is terminated by Amazon EC2, you will not be charged for a partial hour of usage. However, if you terminate the instance yourself, you will be charged for any hour in which the instance ran.
 4. **Dedicated Hosts** - Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce costs by allowing you to use your existing server-bound software licenses.
     - Useful for regulatory requirements that may not support multi-tenant virtualization
     - Great for licensing which does not support multi-tenancy or cloud deployments
