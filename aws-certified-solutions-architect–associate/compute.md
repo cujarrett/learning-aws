@@ -2,6 +2,11 @@
 
 #### EC2 (Elastic Compute Cloud) is a web service that provides resizeable compute capacity in the cloud. Amazon EC2 reduces the time required to obtain and boot new server instances to minuets, allowing you to quickly scale capacity both up and down, as your computing requirements change.
 
+- Termination Protection is **turned off** by default, you must turn it on
+- On an EBS-backed instance, the **default action is for the root EBS volume to be deleted** when the instance is terminated. Any additionaly added volumes won't be deleted.
+- EBS Root Volumes of your DEFAULT AMI's **CAN** be encrypted. You can also use a third party tool (such as bit locker etc) to encrypt the root volume, or this can be done when creating AMI's in the AWS console or using the API.
+- Additional volumes can be encrypted
+
 #### EC2 Pricing Models
 1. **On Demand** - Allows you to pay a fixed rate by the hour (or by the second) with no commitment
     - Users that want the low cost and flexibility of Amazon EC2 without any up front payment or long term commitment.
