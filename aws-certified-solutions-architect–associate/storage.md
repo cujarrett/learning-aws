@@ -362,3 +362,68 @@ AWS offers virtual solutions for the following:
 - c. 99.99%
 </p>
 </details>
+
+16. S3 has what consistency model for PUTS of new objects?
+- a. Read After Write Consistency
+- b. Write After Read Consistency
+- c. Eventual Consistency
+- d. Usual Consistency
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. Read After Write Consistency
+</p>
+</details>
+
+17. What does S3 stand for?
+- a. Simple SQL Service
+- b. Simple Storage Service
+- c. Simplified Serial Sequence
+- d. Straight Storage Service
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. Simple Storage Service
+</p>
+</details>
+
+18. You are a solutions architect who works with a large digital media company. The company has decided that they want to operate within the Japanese region and they need a bucket called "testbucket" set up immediately to test their web application on. You log in to the AWS console and try to create this bucket in the Japanese region however you are told that the bucket name is already taken. What should you do to resolve this?
+- a. Change your region to Korea and then create the bucket "testbucket"
+- b. Raise a ticket with AWS and ask them to release the name "testbucket" to you
+- c. Bucket names are global, not regional. This is a popular bucket name and is already taken. You should choose another bucket name.
+- d. Run a WHOIS request on the bucket name and get the registered owners email address. Contact the owner and ask if you can purchase the rights to the bucket.
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. Bucket names are global, not regional. This is a popular bucket name and is already taken. You should choose another bucket name.
+</p>
+</details>
+
+19. What is the minimum file size that I can store on S3?
+- a. 1KB
+- b. 1MB
+- c. 0 bytes
+- d. 1 byte
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. 0 bytes
+</p>
+</details>
+
+20. What is AWS Storage Gateway?
+- a. It is a physical or virtual appliance that can be used to cache S3 locally at a customer's site.
+- b. It allows large scale import/exports into the AWS cloud withou the use of an internet connection
+- c. It allows direct MPLS connection to AWS
+- d. None of the above
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. It is a physical or virtual appliance that can be used to cache S3 locally at a customer's site.
+</p>
+</details>
