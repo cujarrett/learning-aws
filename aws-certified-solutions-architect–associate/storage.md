@@ -166,3 +166,31 @@ AWS offers virtual solutions for the following:
 - Gateway Virtual Tape Library
 
 #### [S3 FAQ](https://aws.amazon.com/s3/faqs/)
+
+### Review
+1. What is Amazon Glacier?
+- a. A tool that allows you to "freeze" an EBS volume
+- b. An AWS service designed for long term data archival
+- c. A highly secure firewall designed to keeo everything out
+- d. It is a tool used to resurrect deleted EC2 snapshots
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. An AWS service designed for long term data archival
+</p>
+</details>
+
+2. You work for a health insurance company that amasses a large number of patients' health records. Each record will be used once when assessing a customer, and will then need to be securely stored for a period of 7 years. In some rare cases, you may need to retrieve this data within 24 hours of a claim being lodged. Given these requirements, which type of AWS storage would deliver the least expensive solution?
+- a. S3
+- b. S3 - IA
+- c. S3 - One Zone - IA
+- d. S3 - RRS
+- e. Glacier
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+</p>
+</details>
