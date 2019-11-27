@@ -243,6 +243,69 @@ AWS offers virtual solutions for the following:
 <details>
 <summary>Show answer</summary>
 <p>
+- e. Glacier
+</p>
+</details>
 
+7. The difference between S3 and EBS is that EBS is object-based whereas S3 is block-based.
+- a. True
+- b. False
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. False
+</p>
+</details>
+
+8. What is the availability of S3 – OneZone-IA?
+- a. 99.90%
+- b. 99.50%
+- c. 99.99%
+- d. 100%
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. 99.50%
+</p>
+</details>
+
+9. One of your users is trying to upload a 7.5GB file to S3. However, they keep getting the following error message: "Your proposed upload exceeds the maximum allowed object size.". What solution to this problem does AWS recommend?
+- a. Design your application to use the Multipart Upload API for all objects
+- b. Design your application to use large object upload API for this object
+- c. Raise a ticket with AWS to increase your maxium object size
+- d. Log into the S3 console, click on the bucket and then click properties. You can thne increase your maxium object size to 1TB.
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. Design your application to use the Multipart Upload API for all objects
+</p>
+</details>
+
+10. You run a popular photo-sharing website that depends on S3 to store content. Paid advertising is your primary source of revenue. However, you have discovered that other websites are linking directly to the images in your buckets, not to the HTML pages that serve the content. This means that people are not seeing the paid advertising, and you are paying AWS unnecessarily to serve content directly from S3. How might you resolve this issue?
+- a. Use CloudFront to serve the static content
+- b. Remove the ability for images to be served publicly to the site and then use signed URLs with expiry dates
+- c. Use security groups to blacklist the IP addresses of the sites that link directly to your S3 bucket
+- d. Use EBS rather than S3 to store the content
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. Remove the ability for images to be served publicly to the site and then use signed URLs with expiry dates
+</p>
+</details>
+
+11. You have been asked by your company to create an S3 bucket with the name "acloudguru1234" in the EU West region. What would the URL for this bucket be?
+- a. `https://s3-eu-west-1.amazonaws.com/acloudguru1234`
+- b. `https://s3-us-east-1.amazonaws.com/acloudguru1234`
+- c. `https://s3.acloudguru1234.amazonaws.com/eu-west-1`
+- d. `https://s3-acloudguru1234.amazonaws.com/`
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. `https://s3-eu-west-1.amazonaws.com/acloudguru1234`
 </p>
 </details>
