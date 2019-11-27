@@ -163,3 +163,54 @@ Can be used to create a billing alarm that can send emails or SNS topic when you
 - c. Administrator Access
 </p>
 </details>
+
+12. Power User allows ____________.
+- a. Full Access to all AWS services and resources
+- b. Read-only access to all AWS services and resources
+- c. Access to all AWS services except the management of groups and users within IAM
+- d. Users to inspect the source code of the AWS platform
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. Access to all AWS services except the management of groups and users within IAM
+</p>
+</details>
+
+13. You are a solutions architect working for a large engineering company that are moving from a legacy infrastructure to AWS. You have configured the company's first AWS account and you have set up IAM. Your company is based in Andorra, but there will be a small subsidiary operating out of South Korea, so that office will need its own AWS environment. Which of the following statements is true?
+- a. You will then need to configure Users and Policy Documents for each region, respectively
+- b. You will need to configure Users and Policy Documents only once as these are applied globbaly
+- c. You will need to configure your users regionally, however your policy documents are global
+- d. You will need to configure your policy documents regionally, however your users are global
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. You will need to configure Users and Policy Documents only once as these are applied globbaly
+</p>
+</details>
+
+14. You are a security administrator working for a hotel chain. You have a new member of staff who has started as a systems administrator, and she will need full access to the AWS console. You have created the user account and generated the access key id and the secret access key. You have moved this user into the group where the other administrators are, and you have provided the new user with their secret access key and their access key id. However, when she tries to log in to the AWS console, she cannot. Why might that be?
+- a. You have not applied the "log in from console" policy document to the user. You must apply this first so that they can log in.
+- b. Your user is trying to log in from the AWS Console from outside the corporate network. This is not possible.
+- c. You have not yet activated multi-factor authentication for the user, so by default they will not be able to log in
+- d. You cannot log in to the AWS Console using the Access Key ID / Secret Access Key pair. Instead, you must generate a password for the user, and supply the user with this password and your organization's unique AWS console login URL.
+
+<details>
+<summary>Show answer</summary>
+<p>
+- d. You cannot log in to the AWS Console using the Access Key ID / Secret Access Key pair. Instead, you must generate a password for the user, and supply the user with this password and your organization's unique AWS console login URL.
+</p>
+</details>
+
+15. Every user you create in the IAM systems starts with __________.
+- a. Full permissions
+- b. Partial Permissions
+- c. No Permissions
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. No Permissions
+</p>
+</details>
