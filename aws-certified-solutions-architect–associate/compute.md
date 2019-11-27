@@ -4,23 +4,23 @@
 
 #### EC2 Pricing Models
 1. **On Demand** - Allows you to pay a fixed rate by the hour (or by the second) with no commitment
-  - Users that want the low cost and flexibility of Amazon EC2 without any up front payment or long term commitment.
-  - Applications with short term, spikey, or upredictable workloads that cannot be interrupted.
-  - Applications being developed or tested or Amazon EC2 for the first time
+    - Users that want the low cost and flexibility of Amazon EC2 without any up front payment or long term commitment.
+    - Applications with short term, spikey, or upredictable workloads that cannot be interrupted.
+    - Applications being developed or tested or Amazon EC2 for the first time
 2. **Reserved** - Provides you with a capacity reservation, and offer a significant discount on the hourly charge for an instance. Contract Terms are 1 year and 3 year terms.
-  - Applications with steady state or predictable usage
-  - Applications that require reserved capacity
-  - Users able to make upfront payments to reduce their total computing costs even further
-  - Reserved Pricing Types
-    - **Standard Reserved Instances** - These offer up to 75% off on demand instances. The more you pay up front and the longer the contract, the greater the discount.
-    - **Convertible Reserved Instances** - These offer up to 54% off on demand capability to change the attributes of the RI as long as the exchange results in the creation of Reserved Instances of equal or greater value. It allows you to change the instance types.
-    - **Scheduled Reserved Instances** - These are available to launch within the time windows you reserve. This option allows you to match your capacity reservation to a predictable reoccuring schedule that only requires a fraction of a day, a week, or a month.
+    - Applications with steady state or predictable usage
+    - Applications that require reserved capacity
+    - Users able to make upfront payments to reduce their total computing costs even further
+    - Reserved Pricing Types
+      - **Standard Reserved Instances** - These offer up to 75% off on demand instances. The more you pay up front and the longer the contract, the greater the discount.
+      - **Convertible Reserved Instances** - These offer up to 54% off on demand capability to change the attributes of the RI as long as the exchange results in the creation of Reserved Instances of equal or greater value. It allows you to change the instance types.
+      - **Scheduled Reserved Instances** - These are available to launch within the time windows you reserve. This option allows you to match your capacity reservation to a predictable reoccuring schedule that only requires a fraction of a day, a week, or a month.
 3. **Spot** - Enables you to bid whatever price you want for instance capacity, providing for even greater savings if your applications have flexible start and end times. Behaves like the stock market.
-  - Applications that have flexible start and end times
-  - Applications that are only feasible at very low compute prices
-  - Users with urgent computing needs for large amounts of additional capacity
+    - Applications that have flexible start and end times
+    - Applications that are only feasible at very low compute prices
+    - Users with urgent computing needs for large amounts of additional capacity
 4. **Dedicated Hosts** - Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce costs by allowing you to use your existing server-bound software licenses.
-  - Useful for regulatory requirements that may not support multi-tenant virtualization
-  - Great for licensing which does not support multi-tenancy or cloud deployments
-  - Can be purchased On-Demand (hourly)
-  - Can be purchased as a Reservation for up to 70% off the On-Demand price
+    - Useful for regulatory requirements that may not support multi-tenant virtualization
+    - Great for licensing which does not support multi-tenancy or cloud deployments
+    - Can be purchased On-Demand (hourly)
+    - Can be purchased as a Reservation for up to 70% off the On-Demand price
