@@ -168,7 +168,59 @@ AWS offers virtual solutions for the following:
 #### [S3 FAQ](https://aws.amazon.com/s3/faqs/)
 
 ### Review
-1. What is Amazon Glacier?
+1. You have been asked to advise on a scaling concern. The client has an elegant solution that works well. As the information base grows they use CloudFormation to spin up another stack made up of an S3 bucket and supporting compute instances. The trigger for creating a new stack is when the PUT rate approaches 100 PUTs per second. The problem is that as the business grows that number of buckets is growing into the hundreds and will soon be in the thousands. You have been asked what can be done to reduce the number of buckets without changing the basic architecture.
+- a. Refine the key hashing to randomise the name Key to achieve the potential of 300 PUTs per second
+- b. Change the trigger level to around 3000 as S3 can now accomodate much higher PUT and GET levels
+- c. Upgrade all buckets to S3 provisioned IOPS to achieve better performance
+- d. Set up multiple accounts so that the per account hard limit on S3 buckets is avoided
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. Change the trigger level to around 3000 as S3 can now accomodate much higher PUT and GET levels
+</p>
+</details>
+
+2. You run a meme creation website where users can create memes and then download them for use on their own sites. The original images are stored in S3 and each meme's metadata in DynamoDB. You need to decide upon a low-cost storage option for the memes, themselves. If a meme object is unavailable or lost, a Lambda function will automatically recreate it using the original file from S3 and the metadata from DynamoDB. Which storage solution should you use to store the non-critical, easily reproducible memes in the most cost-effective way?
+- a. S3
+- b. S3 - IA
+- c. S3 - 1Zone-IA
+- d. S3 - RRS
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. S3 - 1Zone-IA
+</p>
+</details>
+
+3. You have uploaded a file to S3. Which HTTP code would indicate that the upload was successful?
+- a. HTTP 404
+- b. HTTP 501
+- c. HTTP 200
+- d. HTTP 307
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. HTTP 200
+</p>
+</details>
+
+4. S3 has an eventual consistency for which HTTP Methods?
+- a. PUTS of new Objects and DELETES
+- b. Overwrite PUTS and DELETES
+- c. PUTS of new objects and UPDATES
+- d. UPDATES and DELETES
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. Overwrite PUTS and DELETES
+</p>
+</details>
+
+5. What is Amazon Glacier?
 - a. A tool that allows you to "freeze" an EBS volume
 - b. An AWS service designed for long term data archival
 - c. A highly secure firewall designed to keeo everything out
@@ -181,7 +233,7 @@ AWS offers virtual solutions for the following:
 </p>
 </details>
 
-2. You work for a health insurance company that amasses a large number of patients' health records. Each record will be used once when assessing a customer, and will then need to be securely stored for a period of 7 years. In some rare cases, you may need to retrieve this data within 24 hours of a claim being lodged. Given these requirements, which type of AWS storage would deliver the least expensive solution?
+6. You work for a health insurance company that amasses a large number of patients' health records. Each record will be used once when assessing a customer, and will then need to be securely stored for a period of 7 years. In some rare cases, you may need to retrieve this data within 24 hours of a claim being lodged. Given these requirements, which type of AWS storage would deliver the least expensive solution?
 - a. S3
 - b. S3 - IA
 - c. S3 - One Zone - IA
