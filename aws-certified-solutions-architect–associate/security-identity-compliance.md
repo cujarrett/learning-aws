@@ -22,6 +22,16 @@ IAM Features
 #### CloudWatch
 Can be used to create a billing alarm that can send emails or SNS topic when your account goes past the specified amount.
 
+#### Security Groups
+- Rules changes to Security Groups take effect immediately
+- Security Groups are **stateful**. For example, if you allow HTTP traffic in they automatically allow HTTP out.
+- You can not blacklist any IP Addresses or ports with Security Groups. Everything is blocked by default and you have to open things. You can use **Network Control Lists** to block IP addresses.
+- All inbound traffic is blocked by default
+- All outbound traffic is allowed
+- You can have any number of EC2 Instances within a security group
+- You can have multiple security groups attached to EC2 Instances
+- You can specify allow rules but not deny rules
+
 ### Review
 1. What is an additional way to secure the AWS accounts of both the root account and new users alike?
 - a. Implement Mulit-Factor Authentication for all accounts
