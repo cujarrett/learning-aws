@@ -30,3 +30,5 @@
     - Great for licensing which does not support multi-tenancy or cloud deployments
     - Can be purchased On-Demand (hourly)
     - Can be purchased as a Reservation for up to 70% off the On-Demand price
+    
+    #### [Security Groups](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#security-groups)
