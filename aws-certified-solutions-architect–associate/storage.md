@@ -184,13 +184,13 @@ AWS offers virtual solutions for the following:
 2. You run a meme creation website where users can create memes and then download them for use on their own sites. The original images are stored in S3 and each meme's metadata in DynamoDB. You need to decide upon a low-cost storage option for the memes, themselves. If a meme object is unavailable or lost, a Lambda function will automatically recreate it using the original file from S3 and the metadata from DynamoDB. Which storage solution should you use to store the non-critical, easily reproducible memes in the most cost-effective way?
 - a. S3
 - b. S3 - IA
-- c. S3 - 1Zone-IA
+- c. S3 - 1 Zone - IA
 - d. S3 - RRS
 
 <details>
 <summary>Show answer</summary>
 <p>
-- c. S3 - 1Zone-IA
+- c. S3 - 1 Zone - IA
 </p>
 </details>
 
@@ -236,7 +236,7 @@ AWS offers virtual solutions for the following:
 6. You work for a health insurance company that amasses a large number of patients' health records. Each record will be used once when assessing a customer, and will then need to be securely stored for a period of 7 years. In some rare cases, you may need to retrieve this data within 24 hours of a claim being lodged. Given these requirements, which type of AWS storage would deliver the least expensive solution?
 - a. S3
 - b. S3 - IA
-- c. S3 - One Zone - IA
+- c. S3 - 1 Zone - IA
 - d. S3 - RRS
 - e. Glacier
 
@@ -307,5 +307,58 @@ AWS offers virtual solutions for the following:
 <summary>Show answer</summary>
 <p>
 - a. `https://s3-eu-west-1.amazonaws.com/acloudguru1234`
+</p>
+</details>
+
+12. You work for a major news network in Europe. They have just released a new mobile app that allows users to post their photos of newsworthy events in real-time, which are then reviewed by your editors before being copied to your website and made public. Your organization expects this app to grow very quickly, essentially doubling its user base each month. The app uses S3 to store the images, and you are expecting sudden and sizable increases in traffic to S3 when a major news event takes place (as users will be uploading large amounts of content.) You need to keep your storage costs to a minimum, and it does not matter if some objects are lost. With these factors in mind, which storage media should you use to keep costs as low as possible?
+- a. S3 - IA
+- b. S3 - 1 Zone - IA
+- c. S3 - RRS
+- d. Glacier
+- e. S3 Provisioned IOPS
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. S3 - 1 Zone - IA
+</p>
+</details>
+
+13. How many S3 buckets can I have per account by default?
+- a. 10
+- b. 20
+- c. 50
+- d. 100
+
+<details>
+<summary>Show answer</summary>
+<p>
+- d. 100
+</p>
+</details>
+
+14. You work for a busy digital marketing company who currently store their data on-premise. They are looking to migrate to AWS S3 and to store their data in buckets. Each bucket will be named after their individual customers, followed by a random series of letters and numbers. Once written to S3 the data is rarely changed, as it has already been sent to the end customer for them to use as they see fit. However, on some occasions, customers may need certain files updated quickly, and this may be for work that has been done months or even years ago. You would need to be able to access this data immediately to make changes in that case, but you must also keep your storage costs extremely low. The data is not easily reproducible if lost. Which S3 storage class should you choose to minimize costs and to maximize retrieval times?
+- a. S3
+- b. S3 - IA
+- c. S3 - 1 Zone - IA
+- d. S3 - RRS
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. S3 - IA
+</p>
+</details>
+
+15. What is the availability of objects stored in S3?
+- a. 99%
+- b. 99.90%
+- c. 99.99%
+- d. 100%
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. 99.99%
 </p>
 </details>
