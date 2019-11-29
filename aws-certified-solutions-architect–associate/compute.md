@@ -32,3 +32,15 @@
     - Can be purchased as a Reservation for up to 70% off the On-Demand price
     
     #### [Security Groups](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#security-groups)
+
+#### EBS (Elastic Block Store)
+Elastic Block Store provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud. Each Amazon EBS volume is automatically replicated within its Availability Zone to protect you from component failure, offering high availability and durability.
+
+#### 5 Different EBS Storage Types
+- General Purpose (gp2) (SSD) - General purpose SSD volume that balances price and performance for a wide variety of transactional workloads
+- Provisioned IOPS (io1) (SSD) - Really fast input/outputs per second. Highest performing SSD volume designed for mission-critical applications.
+- Throughput Optimised Hard Disk Drive (st1) - Low cost HDD volume designed for frequently accessed, throughput intensive workloads
+- Cold Hard Disk Drive (sc1) - Lowest cost HDD volume designed for less frequently accessed workloads
+- Magnetic (Standard) - Previous generation HDD
+
+![ebs-info](https://user-images.githubusercontent.com/16245634/69844985-3bda8f00-1234-11ea-9736-f6b99fd13ef6.png)
