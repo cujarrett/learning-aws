@@ -36,6 +36,10 @@
 #### EBS (Elastic Block Store)
 Elastic Block Store provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud. Each Amazon EBS volume is automatically replicated within its Availability Zone to protect you from component failure, offering high availability and durability.
 
+- When adding additional volumes `Delete on Termination` is not checked automatically
+- You can change the type of EBS that the bootable OS is on to **Provisioned IOPS** (**io1**) without having downtime (crazy cool tech).
+- You can change EBS volume sizes and storage types on the fly
+
 #### 5 Different EBS Storage Types
 - **General Purpose** (**gp2**) (SSD) - General purpose SSD volume that balances price and performance for a wide variety of transactional workloads
 - **Provisioned IOPS** (**io1**) (SSD) - Really fast input/outputs per second. Highest performing SSD volume designed for mission-critical applications.
@@ -44,3 +48,26 @@ Elastic Block Store provides persistent block storage volumes for use with Amazo
 - **Magnetic** (**Standard**) - Previous generation HDD
 
 ![ebs-info](https://user-images.githubusercontent.com/16245634/69844985-3bda8f00-1234-11ea-9736-f6b99fd13ef6.png)
+
+#### Volumes & Snapshots
+- Volumes will ALWAYS be in the same Availability Zone as the EC2 instance
+- AMI (Amazon Machine Image) provides the information required to launch an instance
+- Volumes exist on EBS. Think of EBS as virtual hard disk in the cloud.
+- Snapshots exist on S3. Think of snapshots as a photograph of the disk.
+- Snapshots are point in time copies of Volumes.
+- Snapshots are incremental - this means that only the blocks that have changed since your last snapshot are moved to S3
+- If this is your first snapshot, it may take some time to create
+- To create a snapshot for Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot. However, you can take a snapshot of the instance while running.
+- You can create AMI's from both volumes and Snapshots
+
+#### Migration
+To move an EC2 volume from one Availability Zone to another:
+1. Take a snapshot of it
+2. create an AMI from the snapshot
+3. Use the AMI to launch the EC2 instance in a new Availability Zone
+
+To move an EC2 volume from one region to another:
+1. Take a snapshot of the volume
+2. Create an AMI from the snapshot
+3. Copy the AMI from one region to the other
+4. Use the copied AMI to launch the new EC2 instance in the new region
