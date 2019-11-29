@@ -59,6 +59,16 @@ Elastic Block Store provides persistent block storage volumes for use with Amazo
 - If this is your first snapshot, it may take some time to create
 - To create a snapshot for Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot. However, you can take a snapshot of the instance while running.
 - You can create AMI's from both volumes and Snapshots
+- Snapshots of encrypted volumes are encrypted automatically
+- Volumes restored from encrypted snapshots are encrypted automatically
+- You can share snapshots, but only if they are unencrypted
+- These snapshots can be shared with other AWS accounts or made public
+- You can now encrypt root device volumes upon creation of the EC2 instance
+- Process to encypt a root device volume if it was created unencrypted
+  1. Create a snapshot of the unencrypted device volume
+  2. Create a copy of the Snapshot and select the encrypt option
+  3. Create an AMI from the encrypted Snapshot
+  4. Use that AMI to launch a new encrypted instance(s)
 
 #### Migration
 To move an EC2 volume from one Availability Zone to another:
@@ -90,3 +100,4 @@ To move an EC2 volume from one region to another:
 - EBS backed instances can be stopped. You will not lise the data on this instance if it is stopped.
 - You can reboot both, you will not lose your data
 - By default, both ROOT volumes will be deleted on termination. However, with EBS volumes, you can tell AWS to keep the root device volume.
+
