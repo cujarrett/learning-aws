@@ -4,8 +4,12 @@
 Amazon CloudWatch is a monitoring service to monitor your AWS resources, as well as the applications that you run on AWS.
 
 - CloudWatch monitors performance
-- CloudWatch with EC2 will monitor events every 5 minuets by default, but you can run 1 minute intervals by turning on detailed monitoring
-- You can create a CloudWatch alarm which trigger notifications
+- CloudWatch Standard Monitoring is 5 minute intervals
+- CloudWatch Detailed Monitoring is 1 minute intervals
+- CloudWatch Dashboards can be global and or regional views to see what is happening with your AWS environment
+- CloudWatch Alarms allows you to set Alarms that notify you when particular thresholds are hit
+- CloudWatch Events help you respond to state changes in your AWS resources
+- CloudWatch Logs helps you aggregate, monitor, and store logs
 - CloudWatch can monitor things like
   - Compute
     - EC2 Instances
