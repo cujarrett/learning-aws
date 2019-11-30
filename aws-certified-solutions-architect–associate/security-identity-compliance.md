@@ -1,6 +1,6 @@
 ## Security, Identity & Compliance
 
-#### IAM (Identity Access Management)
+### IAM (Identity Access Management)
 IAM allows you to mange users and their level of access to the AWS Console. It is Global, as in it does not apply to a specific AWS Region but rather all AWS Regions for your account. The "root account" is simply the account created when you first set up your AWS account. It has complete Admin access. New Users have **no** permissions when first created. New Users can be assigned **Access Key ID** & **Secret Access Keys** when first created (used for programmatic access to AWS resources). Users can have access to AWS Console and or programatic access. Always use Multifactor Authentication on your root account (It's 2019, MFA all the things). You can create and customize password rotation policies.
 
 IAM Features
@@ -13,16 +13,16 @@ IAM Features
 - Allows you to set up your own password rotation policy
 - Provides PCI DSS Compliance
 
-#### IAM Key Terminology
+### IAM Key Terminology
 1. Users - End Users such as people, employees of an organization etc.
 2. Groups - A collection of users. Each user in the group will inherit the permissions of the group.
 3. Policies - Policies are made up of documents called Policy documents. These documents are in a format called JSON and they give permissions as to what a User/ Role is able to do.
 4. Roles - You create roles and then assign them to AWS Resources.
 
-#### CloudWatch
+### CloudWatch
 Can be used to create a billing alarm that can send emails or SNS topic when your account goes past the specified amount.
 
-#### Security Groups
+### Security Groups
 - Rules changes to Security Groups take effect immediately
 - Security Groups are **stateful**. For example, if you allow HTTP traffic in they automatically allow HTTP out.
 - You can not blacklist any IP Addresses or ports with Security Groups. Everything is blocked by default and you have to open things. You can use **Network Control Lists** to block IP addresses.
@@ -35,7 +35,7 @@ Can be used to create a billing alarm that can send emails or SNS topic when you
 ### Review
 1. What is an additional way to secure the AWS accounts of both the root account and new users alike?
 - a. Implement Mulit-Factor Authentication for all accounts
-- b. Store the access key id and secret access key of all users in a publicly accessible plain text document on S3 of which only you and members of your organization know the address. 
+- b. Store the access key id and secret access key of all users in a publicly accessible plain text document on S3 of which only you and members of your organization know the address.
 - c. Configure the AWS Console so that you can only log into it from a specific IP Address range
 - d. Configure the AWS Console so that you can only log into it from your internal network IP address range.
 
@@ -239,7 +239,7 @@ Can be used to create a billing alarm that can send emails or SNS topic when you
 </details>
 
 17. You have created a new AWS account for your company, and you have also configured multi-factor authentication on the root account. You are about to create your new users. What strategy should you consider in order to ensure that there is good security on this account.
-- a. Enact a strong password policy: user passwords must be changed every 45 days, with each password containing a combination of capital letters, lower case letters, numbers, and special symbols. 
+- a. Enact a strong password policy: user passwords must be changed every 45 days, with each password containing a combination of capital letters, lower case letters, numbers, and special symbols.
 - b. Require users only to be able to log in using biometric authentication
 - c. Restrict login to the corporate network only
 - d. Give all users the same password so that if they forget their password they can just ask their co-workers.
@@ -247,6 +247,6 @@ Can be used to create a billing alarm that can send emails or SNS topic when you
 <details>
 <summary>Show answer</summary>
 <p>
-- a. Enact a strong password policy: user passwords must be changed every 45 days, with each password containing a combination of capital letters, lower case letters, numbers, and special symbols. 
+- a. Enact a strong password policy: user passwords must be changed every 45 days, with each password containing a combination of capital letters, lower case letters, numbers, and special symbols.
 </p>
 </details>
