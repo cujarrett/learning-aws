@@ -3,6 +3,7 @@ A collection of stuff I ran accross that I want to self study with so I remember
 
 ---
 
+### Storage
 What are the two types of distributions in CloudFront?
 
 <details>
@@ -21,7 +22,7 @@ Instance Store Volumes are sometimes called ______________?
 <p>
 Ephemeral Storage
 
-[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#ebs-vs-instance-store-volumes)
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#instance-store-volumes)
 </p>
 </details>
 
@@ -30,10 +31,11 @@ What are the types of AMI storage for the Root Device Volume?
 <details>
 <summary>Show answer</summary>
 <p>
-- Instance Store (EPHEMERAL STORAGE)
+  
+- Instance Store Volumes (EPHEMERAL STORAGE)
 - EBS Backed Volumes
 
-[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#ami-types)
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#instance-store-volumes)
 </p>
 </details>
 
@@ -42,9 +44,9 @@ Which AMI Root Device Volume type can be stopped without losing data?
 <details>
 <summary>Show answer</summary>
 <p>
-Instance store volumes cannot be stopped. If the underlying host fails, you will lose your data.
+EBS backed instances can be stopped. You will not lise the data on this instance if it is stopped. Instance store volumes cannot be stopped. With Instance Store Volumes if the underlying host fails, you will lose your data.
 
-[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#ami-types)
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#instance-store-volumes)
 </p>
 </details>
 
@@ -55,7 +57,7 @@ Which AMI Storage for the Root Device Volume can be rebooted safely without data
 <p>
 You can reboot both Instance Store (EPHEMERAL STORAGE) and EBS Backed Volumes and you will not lose your data
 
-[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#ami-types)
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#instance-store-volumes)
 </p>
 </details>
 
