@@ -25,4 +25,4 @@ Bold topics are core services and very important to know well
 - [ ] - Analytics
 - [ ] - Desktop & App Streaming
 
-### [Personal Flash Card Questions](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/personal-flash-card-questions.md)
+### [Review Questions](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/review-questions.md)
