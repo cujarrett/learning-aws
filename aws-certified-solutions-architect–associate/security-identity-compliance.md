@@ -32,6 +32,12 @@ Can be used to create a billing alarm that can send emails or SNS topic when you
 - You can have multiple security groups attached to EC2 Instances
 - You can specify allow rules but not deny rules
 
+### Roles
+- Roles are more secure than storing your access key and secret access key on individual EC2 instances
+- Roles are easier to manage
+- Roles can be assigned to an EC2 instance after it is created using both the console & command line
+- Roles are universal - You can use them in any region
+
 ### Review
 1. What is an additional way to secure the AWS accounts of both the root account and new users alike?
 - a. Implement Mulit-Factor Authentication for all accounts
