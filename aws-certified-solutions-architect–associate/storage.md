@@ -167,6 +167,15 @@ AWS offers virtual solutions for the following:
 
 ### [S3 FAQ](https://aws.amazon.com/s3/faqs/)
 
+### EFS (Elastic File System)
+Amazon Elastic File System (EFS) is a file storage service for EC2 (Amazon Elastic Compute Cloud) instances. Amazon EFS is easy to use and provides a simple interface that allows you to create and configure file systems quickly and easily. With Amazon EFS, storage capacity is elastic, growing as you add and remove files, so your applications have the storage they need, when they need it.
+- Supports the Network File System version 4 (NFSv4) protocol
+- You only pay for the storage you use (no pre-provisioning required) (With EBS we had to say how much we wanted)
+- Can scale up to the petabytes
+- Can support thousands of concurrent NFS connections
+- Data is stored across multiple Availability Zones within a region
+- Read After Write Consistency
+
 ### Review
 1. You have been asked to advise on a scaling concern. The client has an elegant solution that works well. As the information base grows they use CloudFormation to spin up another stack made up of an S3 bucket and supporting compute instances. The trigger for creating a new stack is when the PUT rate approaches 100 PUTs per second. The problem is that as the business grows that number of buckets is growing into the hundreds and will soon be in the thousands. You have been asked what can be done to reduce the number of buckets without changing the basic architecture.
 - a. Refine the key hashing to randomise the name Key to achieve the potential of 300 PUTs per second
