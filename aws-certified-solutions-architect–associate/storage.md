@@ -216,7 +216,10 @@ To move an EC2 volume from one region to another:
 3. Copy the AMI from one region to the other
 4. Use the copied AMI to launch the new EC2 instance in the new region
 
-### AMI Types
+### AMI
+An Amazon Machine Image (AMI) provides the information required to launch an instance. You must specify an AMI when you launch an instance. You can launch multiple instances from a single AMI when you need multiple instances with the same configuration. You can use different AMIs to launch instances when you need instances with different configurations.
+
+#### AMI Types
 - Region
 - Operating System
 - Architecture (32 bit or 64 bit)
@@ -225,7 +228,7 @@ To move an EC2 volume from one region to another:
   - Instance Store (EPHEMERAL STORAGE)
   - EBS Backed Volumes
 
-### EBS vs Instance Store Volumes
+### Instance Store Volumes
 - All AMIs are categorized as either backed by Amazon EBS or backed by instance store
 - **For EBS Volumes**: The root device for an instance launched from the AMI is an Amazon EBS volume created from an Amazon EBS snapshot
 - **For Instance Store Volumes**: The root device for an instance from the AMI is an instance store volume created from a template stored in Amazon S3
