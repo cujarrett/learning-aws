@@ -58,3 +58,14 @@ You can reboot both Instance Store (EPHEMERAL STORAGE) and EBS Backed Volumes an
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#ami-types)
 </p>
 </details>
+
+Volumes exist on _________?
+
+<details>
+<summary>Show answer</summary>
+<p>
+EBS, think of EBS as virtual hard disk.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
