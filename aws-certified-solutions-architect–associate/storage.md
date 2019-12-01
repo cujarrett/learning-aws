@@ -1,7 +1,8 @@
 ## Storage
-### S3 (Simple Storage Service) provides developers and IT teams with secure durable, highly scalable object storage. Amazon S3 is easy to use, with a simple web service interface to store and retrieve any amount of data from anywhere on the web.
+### S3 (Simple Storage Service)
+S3 provides developers and IT teams with secure durable, highly scalable object storage. Amazon S3 is easy to use, with a simple web service interface to store and retrieve any amount of data from anywhere on the web.
 
-### What is S3?
+#### What is S3?
 - One type of storage in AWS
 - S3 is a safe place to store your files
 - S3 buckets are PRIVATE by default
@@ -20,8 +21,9 @@
 - Files are stored in Buckets (think of them like folders). S3 is a universal namespace. The Bucket names must be unique globally.
 - When you upload a file to S2 you receive a `HTTP 200 code` if the upload was successful
 - Because it's object based storage, it's not suitable to install an operating system or database on (for that you'd want block based storage)
+- [S3 FAQ](https://aws.amazon.com/s3/faqs/)
 
-### How does data consistency work for S3?
+#### How does data consistency work for S3?
 - Read after Write consistency for PUTS of new Objects
 - Eventual Consistency for overwrite PUTS and DELETES (can take some time to propagate)
 
@@ -29,12 +31,12 @@ In other words
 - If you write a new file and read it immediately afterwards you will be able to view that data.
 - If you update AN EXISTING file or delete a file and read it immediately, you may get the older version, or you may not. Basically the changes to objects take a bit of time to propagate.
 
-### S3 Guarantees from Amazon
+#### S3 Guarantees from Amazon
 - Built for 99.99% availability for the S3 platform
 - Amazon guarantee 99.9% availability
 - Amazon guarantee 99.999999999% durability for S3 information (Remember 11 x 9's)
 
-### S3 Features
+#### S3 Features
 - Tiered Storage available
   - **S3 Standard** - 99.99 availability 99.999999999, durability, stored redundantly across multiple devices in multiple facilities, and is designed to sustain the loss of 2 facilities concurrently.
   - **S3 IA (Infrequently Accessed)** - For data that is accessed less frequently, but requires rapid access when needed. Lower fee than S3, but you are charged a retrieval fee.
@@ -51,7 +53,7 @@ In other words
 - MFA for Delete optional to safeguard deletes
 - Secure your data with **Access Control Lists** and **Bucket Policies**
 
-### S3 Charges
+#### S3 Charges
 You are charged for S3 in the following ways:
 - Strorage
 - Requests
@@ -60,7 +62,7 @@ You are charged for S3 in the following ways:
 - Transfer Acceleration - Enables fast, easy, secure transfers of files over long distances between your end users and an S3 bucket. Transfer Acceleration takes advantage of Amazon CloudFront's globally distributed edge locations. As the data arrives at an edge location, data is routed to Amazon S3 over an optimized network path.
 - Cross Region Replication Pricing - Automatic replication to another bucket in a different region
 
-### Access Control
+#### S3 Access Control
 - Controlling access to S3 can be done using one of the following
   - **bucket ACL**
   - **Bucker Policies**
@@ -69,7 +71,7 @@ You are charged for S3 in the following ways:
   - Access Control Lists - Sets access at the individual object level
 - S3 buckets can be configured to create access logs which log all requests made to the S3 bucket. This can be sent to another bucket and even another bucket in another account (👀).
 
-### S3 Encryption
+#### S3 Encryption
 Encryption in Transit is achieved by `SSL`/`TLS`
 Encryption at Rest (Server Side) is achieved by
 - Server Side
@@ -78,7 +80,7 @@ Encryption at Rest (Server Side) is achieved by
   - **Server Side Encryption with Customer Provided Keys - SSE-C**
 - Client Side
 
-### S3 Versioning
+#### S3 Versioning
 - Stores all versions of an object (including all writes and even if you delete an object)
 - Great backup tool
 - Once enabled, **Versioning cannot be disabled**, only suspended. To remove versioning you'd have to delete the bucket and create a new one.
@@ -87,12 +89,12 @@ Encryption at Rest (Server Side) is achieved by
 - If you have versioning enabled the size of your bucket is the sum of all versions.
 - Deleting an object doesn't remove the object but rather places a delete marker over the object in a new version. You can delete the delete marker in that last version to restore the version before it was deleted.
 
-### S3 Lifecycle Management
+#### S3 Lifecycle Management
 - Automates moving your objects between the different storage tiers
 - Can be used in conjunction with versioning (but it can work without versioning also)
 - Can be applied to current version and if versioning is enabled previous versions
 
-### S3 Cross Regional Replication
+#### S3 Cross Regional Replication
 - Versioning must be enabled on both the source and destination bucket
 - Regions must be unique
 - Existing files in an existing bucket are not replicated automatically. When you add new files they will be then replicated atomically.
@@ -117,7 +119,7 @@ CloudFront can be used to deliver your entire website, including dynamic, static
 - You can clear ached objects, but you will be charged. This is called invalidating the cache.
 - You can restrict access to content served on CloudFront with signed URL's and or signed cookies
 
-### CloudFront Terminology
+#### CloudFront Terminology
 - **Edge Location** - A location where content will be cached. This is separate to an AWS Region/ Availability Zone.
 - **Origin** - This is the origin of all files that the CDN will distribute. This can be an S3 Bucket, an EC2 Instance, an Elastic Load Balancer, or Route 53
 - **Distribution** - This is the name given to the CDN which consists of a collection of Edge Locations
@@ -150,22 +152,20 @@ Storage Gateway's Software appliance is availablefor download as a virtual machi
 
 ![Storage Gateway Diagram](https://user-images.githubusercontent.com/16245634/69677758-4694f880-1069-11ea-8de6-3052e2f7cace.png)
 
-Storage Gateway Types
+#### Storage Gateway Types
 - File Gateway (NFS & SMB) - Files are stored as objects in your S3 buckets, accessed through a Network File System (NFS) mount point. Ownership, permissions, and timestamps are durably stored in S3 in the user-metadata of the object associated with the file. Once objects are transfered to S3, they can be managed as native S3 objects, and bucket policies such as versioning, lifecycle management, and cross-region replication apply directly to objects stored in your bucket.
 - Volume Gateway (iSCSI) - The volume interface presents your applications with disk volumes using the iSCSI block protocol. Data written to these volumes can be asyncchronously backed up as point-in-time shapshots of your volumes, and stored in the cloud as Amazon EBS snapshots. Snapshots are incremental backups that capture only your changed blocks. All snapshot storage is also compressed to minimize your storage charges. There are two types:
   - Stored Volumes - Enables you to store primary data locally, while asyncchronously backing up that data to AWS. Stored Volumes provide your on-premises applications with low-latency access to their entire adatasets, while providing durable, off-site backups. You can create storage volumes and mount them as iSCSI devices from your on-premises application servers. Data written to your stored volumes is stroed on your on-premises storage hardware. This data is asyncchronously backed up to Amazon S3 in the form of Amazon Elastic Block Stroage (Amazon EBS) snapshots.
   - Cached Volumes -  Enables you to use Amazon S3 as your primary data storage while retaining frequently accessed data locally in your Storage Gateway. Cached volumes minimize the need to scale your on-premises storage infrastructure, while still providing your applications with low-latency access to their frequently accessed data. You can create storage volumes up to 32TiB in size and attach them as iSCSI devices from your on-premises Storage Gateway's cache and upload buffer storage.
 - Tape Gateway (VTL) - Offers a durable, cost effective solution to archive your data in the AWS cloud. The VTL interface it provides lets you leverage your existing tape-based backup application infrastructure  to store on virtual tape cartridges that you create on your tape gateway. Each tape gateway is preconfigured with a media changer and tape drivesm which are available to your existing client backup applications as iSCSI devices. You add tape cartridges as you need to archive your data. Supported by NetBackup, Backup Exec, Veeam, etc.
 
-Storage Gateway TL;DR
+#### Storage Gateway TL;DR
 AWS offers virtual solutions for the following:
 - File Gateway - For flat files, stored directly on S3
 - Volume Gateway
   - Stored Volumes - Entire dataset is stored on site and is asyncchronously backed up to S3
   - Cached Volumes - Entire dataset is stored on S3 and the most frequently accessed data is cached on site
 - Gateway Virtual Tape Library
-
-### [S3 FAQ](https://aws.amazon.com/s3/faqs/)
 
 ### EBS (Elastic Block Store)
 Elastic Block Store provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud. Each Amazon EBS volume is automatically replicated within its Availability Zone to protect you from component failure, offering high availability and durability.
@@ -174,7 +174,7 @@ Elastic Block Store provides persistent block storage volumes for use with Amazo
 - You can change the type of EBS that the bootable OS is on to **Provisioned IOPS** (**io1**) without having downtime (crazy cool tech).
 - You can change EBS volume sizes and storage types on the fly
 
-### 5 Different EBS Storage Types
+#### 5 Different EBS Storage Types
 - **General Purpose** (**gp2**) (SSD) - General purpose SSD volume that balances price and performance for a wide variety of transactional workloads
 - **Provisioned IOPS** (**io1**) (SSD) - Really fast input/outputs per second. Highest performing SSD volume designed for mission-critical applications.
 - **Throughput Optimised Hard Disk Drive** (**st1**) - Low cost HDD volume designed for frequently accessed, throughput intensive workloads
