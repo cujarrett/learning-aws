@@ -43,7 +43,7 @@ In other words
   - **S3 Glacier** - S3 Glacier is a secure, durable, and low cost storage class for data archiving. You can reliably store any amount of data at costs that are competitive with or cheaper than on-premises solutions. Retrieval times are configurable from minuets to hours.
   - **S3 Glacier Deep Storage** - S3 Glacier Deep Storage is Amazon S3's lowest cost storage class where a retrieval time of 12 hours is acceptable.
 
-![s3-info](https://user-images.githubusercontent.com/16245634/69601206-07b76200-0fd9-11ea-81d6-9076ba03d117.png)
+![s3-info](https://user-images.githubusercontent.com/16245634/69920357-a49c5400-144c-11ea-8244-6eae0f98c1fa.png)
 
 - Lifecycle Management - ie. When an object is X days old have it on this tier and another tier when it hits Y days old
 - Versioning
@@ -181,7 +181,7 @@ Elastic Block Store provides persistent block storage volumes for use with Amazo
 - **Cold Hard Disk Drive** (**sc1**) - Lowest cost HDD volume designed for less frequently accessed workloads
 - **Magnetic** (**Standard**) - Previous generation HDD
 
-![ebs-info](https://user-images.githubusercontent.com/16245634/69844985-3bda8f00-1234-11ea-9736-f6b99fd13ef6.png)
+![ebs-info](https://user-images.githubusercontent.com/16245634/69920356-a49c5400-144c-11ea-819f-682c21563294.png)
 
 ### Volumes & Snapshots
 - Volumes will ALWAYS be in the same Availability Zone as the EC2 instance
