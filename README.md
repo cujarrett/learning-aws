@@ -3,9 +3,10 @@
 ## What?
 It's a collection of [AWS](https://aws.amazon.com/) topics I am or have studied for certificates or just for fun.
 
-## What AWS certificates are available?
+### What AWS certificates are available?
 As of 2019-12-01 this is the offering from AWS.
 
 ![certs available](https://user-images.githubusercontent.com/16245634/69920256-2ee3b880-144b-11ea-894c-9f004048773a.png)
 
-## [AWS Certified Solutions Architect – Associate (WIP)](./aws-certified-solutions-architect–associate/index.md)
+### Which certificates am I working on?
+### - [ ] - [AWS Certified Solutions Architect – Associate (WIP)](./aws-certified-solutions-architect–associate/index.md)
