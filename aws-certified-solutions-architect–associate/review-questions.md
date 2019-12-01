@@ -55,7 +55,7 @@ Which AMI Storage for the Root Device Volume can be rebooted safely without data
 <details>
 <summary>Show answer</summary>
 <p>
-You can reboot both Instance Store (EPHEMERAL STORAGE) and EBS Backed Volumes and you will not lose your data
+You can reboot both Instance Store Volumes (EPHEMERAL STORAGE) and EBS Backed Volumes and you will not lose your data
 
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#instance-store-volumes)
 </p>
