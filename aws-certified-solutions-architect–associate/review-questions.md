@@ -1,9 +1,9 @@
-## Matt's Made Up Questions
+# Review Questions
 A collection of stuff I ran accross that I want to self study with so I remember that content.
 
 ---
 
-### Security, Identity & Compliance
+## Security, Identity & Compliance
 Are Roles more or less secure than storing your access key and secret access key on individual EC2 instances?
 
 <details>
@@ -26,7 +26,7 @@ False
 </p>
 </details>
 
-### Storage
+## Storage
 What are the two types of distributions in CloudFront?
 
 <details>
@@ -282,7 +282,7 @@ Read After Write Consistency
 </p>
 </details>
 
-### Management & Governance
+## Management & Governance
 What can you use to monitor most of AWS as well as your applications that run on AWS?
 
 <details>
