@@ -134,6 +134,115 @@ True
 </details>
 
 ## Storage
+_________ is Object Based storage?
+
+<details>
+<summary>Show answer</summary>
+<p>
+S3
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-simple-storage-service)
+</p>
+</details>
+
+True or False, S3 is a universal namespace?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-simple-storage-service)
+</p>
+</details>
+
+What are the two access control mechanisms for controlling access to S3 buckets?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Bucket Policies
+- Access Control Lists
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-access-control)
+</p>
+</details>
+
+What are the fundamental parts of S3?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Key
+- Value
+- Version ID
+- Metadata
+- Subresources
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#what-is-s3)
+</p>
+</details>
+
+What is the consistency model for S3?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Read After Write consistency for PUTS of new Objects
+- Eventual Consistency for overwrite PUTS and DELETES (can take some time to propagate)
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#how-does-data-consistency-work-for-s3)
+</p>
+</details>
+
+What are the types of S3?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- S3 Standard
+- S3 - IA
+- S3 - 1 Zone - IA
+- S3 - Intelligent Tiering
+- S3 Glacier
+- S3 Glacier Deep Archive
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-tiered-storage-options)
+</p>
+</details>
+
+Encryption In Transit is achieved by?
+
+<details>
+<summary>Show answer</summary>
+<p>
+SSL/TLS
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-encryption)
+</p>
+</details>
+
+Encryption At Rest is achieved by?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+Server Side
+- S3 Managed Keys (SSE-S3)
+- AWS KMS (Key Management Service) (SSE-KMS)
+- Server Side Encryption with Customer Provided Keys (SSE-C)
+
+Client Side Encryption
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-encryption)
+</p>
+</details>
+
 What are the two types of distributions in CloudFront?
 
 <details>
