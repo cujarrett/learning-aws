@@ -33,6 +33,9 @@ Can be used to create a billing alarm that can send emails or SNS topic when you
 - You can have multiple security groups attached to EC2 Instances
 - You can specify allow rules but not deny rules
 
+### Users
+- New Users have no permissions when first created
+
 ### Roles
 - Roles are more secure than storing your access key and secret access key on individual EC2 instances
 - Roles are easier to manage
