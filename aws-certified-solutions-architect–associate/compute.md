@@ -52,18 +52,18 @@ EC2 is a web service that provides resizeable compute capacity in the cloud. Ama
 The 3 types of Placement Groups:
 1. **Cluster Placement Group**
 A Cluster placement Group is a grouping of instances within a single Availability Zone. Placement groups are recomended for applications that need low network latency, high netowrk throughput, or both.
-- A Cluster Placement Group can't span multiple Availability Zones
-- AWS recomended homogenous instanes within Cluster placement Groups (same instance types)
+    - A Cluster Placement Group can't span multiple Availability Zones
+    - AWS recomended homogenous instanes within Cluster placement Groups (same instance types)
 
 2. **Spread Placement Group**
 A Spread Placement Group is a group of instances that are each placed on distinct underlying hardware.
-- Spread Placement Groups are recomended for applications that have a small number of critical instances that should be kept separate from each other.
-- **Think individual instances**
-- Designed to protect your instances from individual failure
-- A Spread Placement Group can span multiple Availability Zones, but they still have to be within the same region
+    - Spread Placement Groups are recomended for applications that have a small number of critical instances that should be kept separate from each other.
+    - **Think individual instances**
+    - Designed to protect your instances from individual failure
+    - A Spread Placement Group can span multiple Availability Zones, but they still have to be within the same region
 
 3. **Partitioned Placement Group**
 Partitioned Placement Groups divides each group into logical segments called partitions. Amazon EC2 ensures that each partition within a placment group has its own set of racks. Each two partitions within a placement group share the same racks, allowing you to isolate the impact of hardware failure within your application.
-- **Think multiple instances**
-- Could be used in multiple instances of HDFS, HBase, Cassandra
-- A Partitioned Placement Group can span multiple Availability Zones, but they still have to be within the same region
+    - **Think multiple instances**
+    - Could be used in multiple instances of HDFS, HBase, Cassandra
+    - A Partitioned Placement Group can span multiple Availability Zones, but they still have to be within the same region
