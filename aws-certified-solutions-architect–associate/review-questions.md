@@ -243,6 +243,94 @@ Client Side Encryption
 </p>
 </details>
 
+True or False, for S3 Cross Region Replication, Versioning must be enabled ob both the source and destination buckets??
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-cross-regional-replication)
+</p>
+</details>
+
+True or False, regions in Cross Region Replication must be unique?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-cross-regional-replication)
+</p>
+</details>
+
+True or False, Existing files in an S3 bucket are not automatically replicated when you turn on Cross Region Replication?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True, all subsequent updated files will be replicated automatically
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-cross-regional-replication)
+</p>
+</details>
+
+True or False, with Cross Region Replication, delete markers are not replicated?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-cross-regional-replication)
+</p>
+</details>
+
+True or False, with Cross Region Replication, deleting individual versions or delete markers will not be replicated?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-cross-regional-replication)
+</p>
+</details>
+
+What AWS service automates moving your objects between the different S3 tiers??
+
+<details>
+<summary>Show answer</summary>
+<p>
+Lifecycle Management
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-lifecycle-management)
+</p>
+</details>
+
+True or False, Lifecycle Policies can be used with S3 Versioning?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-lifecycle-management)
+</p>
+</details>
+
+True or False, Lifecycle Policies can be applied to current versions and previous versions?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-lifecycle-management)
+</p>
+</details>
+
 What are the two types of distributions in CloudFront?
 
 <details>
