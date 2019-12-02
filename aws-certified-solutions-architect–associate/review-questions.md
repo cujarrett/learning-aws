@@ -71,3 +71,69 @@ EBS, think of EBS as virtual hard disk.
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
 </p>
 </details>
+
+Snapshots exist on ___________?
+
+<details>
+<summary>Show answer</summary>
+<p>
+S3
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
+
+Snapshots are __________ copies of Volumes.
+
+<details>
+<summary>Show answer</summary>
+<p>
+point in time
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
+
+ Why do initial snapshots take some time to create but subsequent snapshots areq more quick?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Snapshots are incremental - this means that only the blocks that have changed since your last snapshot are moved to S3
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
+
+What can you create AMI's from?
+
+<details>
+<summary>Show answer</summary>
+<p>
+EBS Volume or Snapshots
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
+
+True or False, you can change EBS volume sizes and storage types on the fly?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#ebs-elastic-block-store)
+</p>
+</details>
+
+True or False, Volumes will always be in the same Availability Zone as the EC2 instance?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
