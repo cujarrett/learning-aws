@@ -336,7 +336,46 @@ What are the two types of distributions in CloudFront?
 <details>
 <summary>Show answer</summary>
 <p>
-Web and RTMP
+
+- Web - Used for websites
+- RTMP - Used for media streaming
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#cloudfront)
+</p>
+</details>
+
+CloudFront origin locations can be what type(s)?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- S3
+- EC2 Instance
+- ELB (Elastic Load Balancer)
+- Route53
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#cloudfront-terminology)
+</p>
+</details>
+
+True or False, Edge Locations are READ only?
+
+<details>
+<summary>Show answer</summary>
+<p>
+False, you can write to them too (ie put an object on to them)
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#cloudfront)
+</p>
+</details>
+
+True or False, you can clear cached items in CloudFront?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True, you can invalidate a cached item but you will be charged
 
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#cloudfront)
 </p>
