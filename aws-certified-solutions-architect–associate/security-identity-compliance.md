@@ -80,6 +80,8 @@ Can be used to create a billing alarm that can send emails or SNS topic when you
 <summary>Show answer</summary>
 <p>
 - b. Will be able to interact with AWS using their access key ID and secret access key using the API, CLI, or the AWS SDKs
+
+To access the console you use an account and password combination. To access AWS programmatically you use a Key and Secret Key combination
 </p>
 </details>
 
