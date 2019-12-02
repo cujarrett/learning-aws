@@ -33,6 +33,8 @@ Edge Locations are endpoints for AWS which are used for caching content. Typical
 <summary>Show answer</summary>
 <p>
 - c. Networking Services
+
+A Virtual Private Cloud (VPC) is a virtual network dedicated to a single AWS account. It is logically isolated from other virtual networks in the AWS cloud, providing compute resources with security and robust networking functionality.
 </p>
 </details>
 
@@ -46,6 +48,8 @@ Edge Locations are endpoints for AWS which are used for caching content. Typical
 <summary>Show answer</summary>
 <p>
 - d. A distinct location within a geographic area designed to provide high level availability to a specific geography.
+
+Each region is a separate geographic area. Each region has multiple, isolated locations known as Availability Zones.
 </p>
 </details>
 
@@ -59,6 +63,8 @@ Edge Locations are endpoints for AWS which are used for caching content. Typical
 <summary>Show answer</summary>
 <p>
 - d. Distinct locations from within an AWS region that are engineered to be isolated from failures.
+
+An Availability Zone (AZ) is a distinct location within an AWS Region. Each Region comprises at least two AZs.
 </p>
 </details>
 
@@ -72,6 +78,8 @@ Edge Locations are endpoints for AWS which are used for caching content. Typical
 <summary>Show answer</summary>
 <p>
 - b. A region is a geographic area divided into Availability Zones. Each region contains at least two Availability Zones.
+
+A region is a geographical area divided into Availability Zones. Each region contains at least two Availability Zones.
 </p>
 </details>
 
@@ -85,6 +93,8 @@ Edge Locations are endpoints for AWS which are used for caching content. Typical
 <summary>Show answer</summary>
 <p>
 - c. # of Edge Locations > # Availability Zones > # Regions
+
+The number of Edge Locations is greater than the number of Availability Zones, which is greater than the number of Regions.
 </p>
 </details>
 
@@ -98,5 +108,7 @@ Edge Locations are endpoints for AWS which are used for caching content. Typical
 <summary>Show answer</summary>
 <p>
 - c. Edge Location
+
+CloudFront content is cached in Edge Locations.
 </p>
 </details>
