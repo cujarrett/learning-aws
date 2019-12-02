@@ -37,7 +37,13 @@ In other words
 - Amazon guarantee 99.999999999% durability for S3 information (Remember 11 x 9's)
 
 #### S3 Features
-- Tiered Storage available
+- Lifecycle Management - ie. When an object is X days old have it on this tier and another tier when it hits Y days old
+- Versioning
+- Encryption (at rest)
+- MFA for Delete optional to safeguard deletes
+- Secure your data with **Access Control Lists** and **Bucket Policies**
+
+#### S3 Tiered Storage Options
   - **S3 Standard** - 99.99 availability 99.999999999, durability, stored redundantly across multiple devices in multiple facilities, and is designed to sustain the loss of 2 facilities concurrently.
   - **S3 IA (Infrequently Accessed)** - For data that is accessed less frequently, but requires rapid access when needed. Lower fee than S3, but you are charged a retrieval fee.
   - **S3 One Zone IA** - For when you want a lower cost option for infrequently accessed data, but do not require the multiple Availability Zone data resilience.
@@ -46,12 +52,6 @@ In other words
   - **S3 Glacier Deep Storage** - S3 Glacier Deep Storage is Amazon S3's lowest cost storage class where a retrieval time of 12 hours is acceptable.
 
 ![s3-info](https://user-images.githubusercontent.com/16245634/69920357-a49c5400-144c-11ea-8244-6eae0f98c1fa.png)
-
-- Lifecycle Management - ie. When an object is X days old have it on this tier and another tier when it hits Y days old
-- Versioning
-- Encryption (at rest)
-- MFA for Delete optional to safeguard deletes
-- Secure your data with **Access Control Lists** and **Bucket Policies**
 
 #### S3 Charges
 You are charged for S3 in the following ways:
