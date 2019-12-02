@@ -258,6 +258,8 @@ Amazon Elastic File System (EFS) is a file storage service for EC2 (Amazon Elast
 <summary>Show answer</summary>
 <p>
 - b. Change the trigger level to around 3000 as S3 can now accomodate much higher PUT and GET levels
+
+Until 2018 there was a hard limit on S3 puts of 100 PUTs per second. To achieve this care needed to be taken with the structure of the name Key to ensure parallel processing. As of July 2018 the limit was raised to 3500 and the need for the Key design was basically eliminated. Disk IOPS is not the issue with the problem. The account limit is not the issue with the problem.
 </p>
 </details>
 
@@ -271,6 +273,9 @@ Amazon Elastic File System (EFS) is a file storage service for EC2 (Amazon Elast
 <summary>Show answer</summary>
 <p>
 - c. S3 - 1 Zone - IA
+
+
+S3 – OneZone-IA is the recommended storage for when you want cheaper storage for infrequently accessed objects. It has the same durability but less availability. There can be cost implications if you use it frequently or use it for short lived storage. Glacier is cheaper, but has a long retrieval time. RRS has effectively been deprecated. It still exists but is not a service that AWS want to sell anymore.
 </p>
 </details>
 
@@ -324,6 +329,8 @@ Amazon Elastic File System (EFS) is a file storage service for EC2 (Amazon Elast
 <summary>Show answer</summary>
 <p>
 - e. Glacier
+
+The recovery rate is a key decider. The record shortage must be; safe, durable, low cost, and the recovery can be slow. All features of Glacier.
 </p>
 </details>
 
@@ -348,6 +355,8 @@ Amazon Elastic File System (EFS) is a file storage service for EC2 (Amazon Elast
 <summary>Show answer</summary>
 <p>
 - b. 99.50%
+
+OneZone-IA is only stored in one Zone. While it has the same Durability, it may be less Available than normal S3 or S3-IA.
 </p>
 </details>
 
@@ -401,6 +410,8 @@ Amazon Elastic File System (EFS) is a file storage service for EC2 (Amazon Elast
 <summary>Show answer</summary>
 <p>
 - b. S3 - 1 Zone - IA
+
+The key driver here is cost, so an awareness of cost is necessary to answer this. Full S3 is quite expensive at around $0.023 per GB for the lowest band. S3 standard IA is $0.0125 per GB, S3 One-Zone-IA is $0.01 per GB, and Legacy S3-RRS is around $0.024 per GB for the lowest band. Of the offered solutions SS3 One-Zone-IA is the cheapest suitable option. Glacier cannot be considered as it is not intended for direct access, however it comes in at around $0.004 per GB. Of course you spotted that RRS is being deprecated, and there is no such thing as S3 – Provisioned IOPS. In this case OneZone
 </p>
 </details>
 
@@ -427,6 +438,8 @@ Amazon Elastic File System (EFS) is a file storage service for EC2 (Amazon Elast
 <summary>Show answer</summary>
 <p>
 - b. S3 - IA
+
+The need to immediate access is an important requirement along with cost. Glacier has a long recovery time at a low cost or a shorter recovery time at a high cost, and 1Zone-IA has a lower Availability level which means that it may not be available when needed.
 </p>
 </details>
 
@@ -505,5 +518,7 @@ Amazon Elastic File System (EFS) is a file storage service for EC2 (Amazon Elast
 <summary>Show answer</summary>
 <p>
 - a. It is a physical or virtual appliance that can be used to cache S3 locally at a customer's site.
+
+At its heart it is a way of using AWS S3 managed storage to supplement on-premise storage. It can also be used within a VPC in a similar way.
 </p>
 </details>
