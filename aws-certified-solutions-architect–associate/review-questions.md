@@ -26,6 +26,43 @@ False
 </p>
 </details>
 
+## Compute
+What are the three types of EC2 Placement Groups?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+1. Clustered - for low network latency and or high network throughput
+2. Spread - for individual critical EC2 instances
+3. Partitioned - for multiple EC2 instances HDFS, HBase, Cassandra
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#ec2-placement-groups)
+</p>
+</details>
+
+True or False, a Clustered Placement Group can span multiple Availability Zones?
+
+<details>
+<summary>Show answer</summary>
+<p>
+False
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#ec2-placement-groups)
+</p>
+</details>
+
+True or False, a Spread Placement Group and a Partitioned Placement Group can span multiple Availability Zones?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#ec2-placement-groups)
+</p>
+</details>
+
 ## Storage
 What are the two types of distributions in CloudFront?
 
