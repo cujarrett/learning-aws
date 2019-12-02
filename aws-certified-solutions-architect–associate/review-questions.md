@@ -26,6 +26,76 @@ False
 </p>
 </details>
 
+IAM consists of what?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Users
+- Groups
+- Roles
+- Policies
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#iam-key-terminology)
+</p>
+</details>
+
+IAM Policies are stored in what format?
+
+<details>
+<summary>Show answer</summary>
+<p>
+JSON
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#iam-key-terminology)
+</p>
+</details>
+
+True or False, IAM is universal?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#iam-identity-access-management)
+</p>
+</details>
+
+True or False, new Users have all permissions when first created?
+
+<details>
+<summary>Show answer</summary>
+<p>
+False, new Users have NO permissions when first created
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#users)
+</p>
+</details>
+
+True or False, you can use the Access Key ID and Secret Access Key that is created when creating a new User to log into the AWS console.
+
+<details>
+<summary>Show answer</summary>
+<p>
+False, you can not use the Access Key ID and Secret Access Key to log into the AWS Console. You can only use the Access Key ID and Secret Access Key to access the AWS API's via the Command Line.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#users)
+</p>
+</details>
+
+True or False, you can use IAM to create and customize your own password rotation policies?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#iam-identity-access-management)
+</p>
+</details>
+
 ## Compute
 What are the three types of EC2 Placement Groups?
 
