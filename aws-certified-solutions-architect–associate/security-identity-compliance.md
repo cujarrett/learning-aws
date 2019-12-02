@@ -35,6 +35,7 @@ Can be used to create a billing alarm that can send emails or SNS topic when you
 
 ### Users
 - New Users have no permissions when first created
+- Users can have Access Key ID and Secret Access Key generated for them, these are used to access the AWS API via the AWS CLI. The Access Key ID and Secret Access Key can not be used to log into the AWS Console.
 
 ### Roles
 - Roles are more secure than storing your access key and secret access key on individual EC2 instances
