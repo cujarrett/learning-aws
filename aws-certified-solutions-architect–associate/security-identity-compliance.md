@@ -12,6 +12,7 @@ IAM Features
 - Provides temporary access for users/ devices and services where necessary
 - Allows you to set up your own password rotation policy
 - Provides PCI DSS Compliance
+- IAM is Universal, it does not apply to regions at this time
 
 ### IAM Key Terminology
 1. Users - End Users such as people, employees of an organization etc.
