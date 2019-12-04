@@ -22,6 +22,10 @@ AWS RDS Offerings
 - Multi Availability Zone - For disaster recovery
 - Read Replicas - For performance
   - You can have up to 5 copies of Read Replica in RDS
+- RDS runs on virtual machines
+  - You cannot log into (ssh) these operating systems however
+- Patching of the RDS Operating System and DB is Amazon's responsibility
+- RDS is not Serverless (with the exception of Aurora Serverless)
 
 #### Non Relational Database
 - Collection = Table
