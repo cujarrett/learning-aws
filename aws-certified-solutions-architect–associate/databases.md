@@ -80,7 +80,7 @@ AWS ElastiCache supports two open-source in-memory caching engines
 
   Automated Backups are enabled by default. The backup data is stored in S3 and you get free storage equal to the size of your database. So if you have an RDS instance of 10Gb, you will get 10Gb worth of storage.
 
-  Backups are taken within a defined window. During the backup window, storage I/O may be suspended while your data is being backed up and you may expereince elevated latency.
+  Backups are taken within a defined maintenance window. During the backup window, storage I/O may be suspended while your data is being backed up and you may expereince elevated latency.
   
 - **Database Snapshots** - Done manually, (ie they are user intiated). They are stored even after you delete the orginal RDS instance, unlike automated backups.
 
@@ -94,12 +94,22 @@ __image from [A Cloud Guru](https://acloud.guru/)
 ### RDS Encryption At Rest
 Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, MariaDB, Aurora. Encryption is done using the AWS Key Management Service (KMS). Once your RDS instance is encrypted, as are its backups, read replicas, and snapshots.
 
+Encryption at rest is available for the following RDS database types:
+- MySQL
+- Oracle
+- SQL Server
+- PostgreSQL
+- MariaDB
+- Aurora
+
 #### RDS Multi-AZ (Multiple Availability Zone)
 Multi-AZ allows you to have an exact copy of your production database in another Availability Zone. AWS handles the replicatoon for you, so when your production database is written to, this write will automatically be synchronized to the stand by database.
 
 In the event of planned database maintenance, DB instance failure, or an Availability Zone failure, Amazon RDS will automatically failover to the standby so that database operations can resume quickly without administrative intervention.
 
 Multi-AZ is for Disaster Recovery only. It is not primarily used for improving performance. For performance improvement, you need Read Replicas.
+
+You can force a failover from one Availability Zone to another by rebooting the RDS instance.
 
 Multi-AZ is available for the following RDS database types:
 - SQL Server
@@ -113,7 +123,7 @@ Multi-AZ is available for the following RDS database types:
 ### RDS Read Replica
 Read Replicas allow you to have a read-only copy of your production database. This is achieved by using Asynchronous replication from the primary RDS instance to the read replica. You use read replicas primarily for very read-havy database workloads.
 
-- Used for scaling, not DR
+- Used for scaling, not Disaster Recovery. Used to increase performance.
 - Must have automatic backups turned on in order to deploy a read replica
 - You can have up to 5 read replica copies of any database
 - You can have read replicas of read replicas (but watch out for latency)
