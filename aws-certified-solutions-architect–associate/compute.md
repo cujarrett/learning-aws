@@ -1,6 +1,6 @@
-## Compute
+# Compute
 
-### EC2 (Elastic Compute Cloud)
+## EC2 (Elastic Compute Cloud)
 EC2 is a web service that provides resizeable compute capacity in the cloud. Amazon EC2 reduces the time required to obtain and boot new server instances to minuets, allowing you to quickly scale capacity both up and down, as your computing requirements change.
 
 - Termination Protection is **turned off** by default, you must turn it on
@@ -8,7 +8,7 @@ EC2 is a web service that provides resizeable compute capacity in the cloud. Ama
 - EBS Root Volumes of your DEFAULT AMI's **CAN** be encrypted. You can also use a third party tool (such as bit locker etc) to encrypt the root volume, or this can be done when creating AMI's in the AWS console or using the API.
 - Additional volumes can be encrypted
 
-#### EC2 Pricing Models
+### EC2 Pricing Models
 1. **On Demand** - Allows you to pay a fixed rate by the hour (or by the second) with no commitment
     - Users that want the low cost and flexibility of Amazon EC2 without any up front payment or long term commitment.
     - Applications with short term, spikey, or upredictable workloads that cannot be interrupted.
@@ -32,9 +32,9 @@ EC2 is a web service that provides resizeable compute capacity in the cloud. Ama
     - Can be purchased On-Demand (hourly)
     - Can be purchased as a Reservation for up to 70% off the On-Demand price
 
-#### [Security Groups](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#security-groups)
+### [Security Groups for EC2](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#security-groups)
 
-#### Instance Metadata
+### Instance Metadata
 - Used to get information about an instance (such as public ip)
 - `curl http://169.254.169.254/latest/meta-data/` - Shows metadata
 - `curl http://169.254.169.254/latest/user-data/` - Shows the bootstap script used to spin up instance
@@ -43,7 +43,7 @@ EC2 is a web service that provides resizeable compute capacity in the cloud. Ama
 
 ### [EFS (Elastic File System)](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#efs-elastic-file-system)
 
-#### EC2 Placement Groups
+### EC2 Placement Groups
 - The name you specify for a placement group must be unique within your AWS account
 - Only certian instances can be launched in a placement group
 - You can't merge placement groups
@@ -68,7 +68,7 @@ Partitioned Placement Groups divides each group into logical segments called par
     - Could be used in multiple instances of HDFS, HBase, Cassandra
     - A Partitioned Placement Group can span multiple Availability Zones, but they still have to be within the same region
 
-### Review
+## Compute Review
 1. Can Spread Placement Groups be deployed across multiple Availability Zones?
 - a. Yes
 - b. Only in `Us-East-1`
