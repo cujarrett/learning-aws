@@ -138,3 +138,10 @@ AWS ElastiCache supports two open-source in-memory caching engines
   - Memcached
   - Redis
   
+## DynamoDB
+Fast and flexiable NOSQL database service for all applications that need consistent, single-digit millisecond latency at any scale. It is a fully managed database and supports both document and key-value data models. Its flexible data model and reliable performance make it a great fit for mobile, web, gaming, ad-tech, IoT, and many other applications.
+
+- Stored on SSD storage
+- Spread across 3 geographically distinct data centres
+- Eventual Consistent Reads (default) - Consistency across all copies of data usually reached within a second. Repeating a read after a short time should return the updated data. (Best Read Performance)
+- Strongly Consistent Reads - A Strongly Consistent read returns a result that reflects all writes that received a sucessful response prior to the read.
