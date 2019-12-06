@@ -193,11 +193,17 @@ Redshift uses Massively Parallel Processing (MPP) automically to distribute data
 ## ElastiCache
 ElastiCache is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud. The service improves the performance of web applications by allowing you to retrieve information from fast, managed, in-memory caches, instead of relying entirely on slower disk-based databases.
 
-- Used to speed up performance of an existing databases (frequent identical queries)
+- Use ElastiCache to uncrease databases (frequent identical queries) and web application performance
 
 AWS ElastiCache supports two open-source in-memory caching engines
   - Memcached
   - Redis
+
+### Memcached vs Redis
+![memcached vs redis chart](https://user-images.githubusercontent.com/16245634/70358428-efe4a700-183e-11ea-99dd-6de1c37b271a.png)
+
+- Redis is Multi Avability Zone
+- You can do backups and restores of Redis
   
 ## DynamoDB
 Fast and flexiable NOSQL database service for all applications that need consistent, single-digit millisecond latency at any scale. It is a fully managed database and supports both document and key-value data models. Its flexible data model and reliable performance make it a great fit for mobile, web, gaming, ad-tech, IoT, and many other applications.
