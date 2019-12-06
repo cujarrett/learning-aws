@@ -1,15 +1,15 @@
-## AWS Global Infrastructure
+# AWS Global Infrastructure
 
-### Availability Zones
+## Availability Zones
 A Data Center is a building in the country side or in the city that's filled with computer tech like servers, SANS, switches, firewalls, load balancers, storage. An Availability Zone could be one data center or several close together of data centers within a couple of miles of each other.
 
-### Regions
+## Regions
 A Region is a physical location, a geographical area consistenting of two or more Availability Zones.
 
-### Edge Locations
+## Edge Locations
 Edge Locations are endpoints for AWS which are used for caching content. Typically consists of CloudFront (Amazon's Content Delivery Network (CDN)). There are many more Edge Locations than Regions. There are more than 150 Edge Locations as of 2019.
 
-### Review
+# AWS Global Infrastructure Review
 1. What does VPC stand for?
 - a. Virtual Public Compute
 - b. Virtual Private Cloud
