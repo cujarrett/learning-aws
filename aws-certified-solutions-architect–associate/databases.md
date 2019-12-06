@@ -1,13 +1,19 @@
-## Databases
+# Databases
 
-#### Relational Database
+## Relational Database vs Non Relational Database
+### Relational Database
 A Relational Database are what most of us are all used to. They have been around since the 70's. Think of a traditional spreadsheet.
 - Databases
 - Tables
 - Row
 - Fields
 
-### AWS RDS (Relational Database Service)
+### Non Relational Database
+- Collection = Table
+- Document = Row
+- Key Value Pair = Fields
+
+## RDS (Relational Database Service)
 - Used in Online Transactional Processing (OLTP)
 
 AWS RDS Offerings
@@ -27,55 +33,7 @@ AWS RDS Offerings
 - Patching of the RDS Operating System and DB is Amazon's responsibility
 - RDS is not Serverless (with the exception of Aurora Serverless)
 
-#### Non Relational Database
-- Collection = Table
-- Document = Row
-- Key Value Pair = Fields
-
-AWS Non Relational Database Offerings
-  - DynamoDB (NOSQL)
-
-### Data Warehousing
-Used for business intelligence. Tools like Congos, Jaspersoft, SQL Server Reporting Services, Oracle Hyperion, SAP NetWeaver.
-
-- Used to pull in very large and complex data sets. Usually used by management to do queries on data (such as current performance vs targets etc)
-- Data Warehousing databases use different types of architecture both from a database perspective and infrastructure layer.
-- Amazon's Data Warehouse solution is called Redshift
-
-AWS Data Warehousing Offerings
-  - Red Shift - For Online Analytics Processing (OLAP)
-
-### Online Transactional Processing (OLTP) vs Online Analytics Processing (OLAP)
-Online Transactional Processing (OLTP) differes from Online Analytics Processing (OLAP) in terms of the types of queries you will run.
-
-OLTP Example:
-```
-Order number 2120121
-Pulls up a row of data such as
-Name, Date, Address to Deliver to, Delivery Status, etc
-```
-
-OLAP Example:
-```
-Net profit for EMEA and Pacific for the Digital Radio Product.
-Pulls in large numbers of records
-
-Sum of Radios Sold in EMEA
-Sum of Radios Sold in Pacific
-Unit Cost of Radio in each region
-Sales price of each radio
-Sales price - Unit cost.
-```
-### ElastiCache
-ElastiCache is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud. The service improves the performance of web applications by allowing you to retrieve information from fast, managed, in-memory caches, instead of relying entirely on slower disk-based databases.
-
-- Used to speed up performance of an existing databases (frequent identical queries)
-
-AWS ElastiCache supports two open-source in-memory caching engines
-  - Memcached
-  - Redis
-
-### Backups With RDS
+## Backups With RDS
 - **Automated Backups** - Allow you to recover your database to any point in time within a retention period. The retention period can be between 1 and 35 days. Automated Backups will take a full daily snapshot and will also store transactional logs throughout the day. When you do a recovery, AWS will first choose the most recent daily backup, and then apply transactional logs relevent to that day. This allows you to do point in time recovery down to a second, within the retention period.
 
   Automated Backups are enabled by default. The backup data is stored in S3 and you get free storage equal to the size of your database. So if you have an RDS instance of 10Gb, you will get 10Gb worth of storage.
@@ -102,7 +60,7 @@ Encryption at rest is available for the following RDS database types:
 - MariaDB
 - Aurora
 
-#### RDS Multi-AZ (Multiple Availability Zone)
+### RDS Multi-AZ (Multiple Availability Zone)
 Multi-AZ allows you to have an exact copy of your production database in another Availability Zone. AWS handles the replicatoon for you, so when your production database is written to, this write will automatically be synchronized to the stand by database.
 
 In the event of planned database maintenance, DB instance failure, or an Availability Zone failure, Amazon RDS will automatically failover to the standby so that database operations can resume quickly without administrative intervention.
@@ -139,3 +97,44 @@ Read Replicas are available for the following RDS database types:
 - MariaDB
 - Oracle
 - Aurora
+
+## Data Warehousing
+Used for business intelligence. Tools like Congos, Jaspersoft, SQL Server Reporting Services, Oracle Hyperion, SAP NetWeaver.
+
+- Used to pull in very large and complex data sets. Usually used by management to do queries on data (such as current performance vs targets etc)
+- Data Warehousing databases use different types of architecture both from a database perspective and infrastructure layer.
+- Amazon's Data Warehouse solution is called Redshift
+
+AWS Data Warehousing Offerings
+  - Red Shift - For Online Analytics Processing (OLAP)
+
+### Online Transactional Processing (OLTP) vs Online Analytics Processing (OLAP)
+Online Transactional Processing (OLTP) differes from Online Analytics Processing (OLAP) in terms of the types of queries you will run.
+
+OLTP Example:
+```
+Order number 2120121
+Pulls up a row of data such as
+Name, Date, Address to Deliver to, Delivery Status, etc
+```
+
+OLAP Example:
+```
+Net profit for EMEA and Pacific for the Digital Radio Product.
+Pulls in large numbers of records
+
+Sum of Radios Sold in EMEA
+Sum of Radios Sold in Pacific
+Unit Cost of Radio in each region
+Sales price of each radio
+Sales price - Unit cost.
+```
+## ElastiCache
+ElastiCache is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud. The service improves the performance of web applications by allowing you to retrieve information from fast, managed, in-memory caches, instead of relying entirely on slower disk-based databases.
+
+- Used to speed up performance of an existing databases (frequent identical queries)
+
+AWS ElastiCache supports two open-source in-memory caching engines
+  - Memcached
+  - Redis
+  
