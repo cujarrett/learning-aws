@@ -47,7 +47,7 @@ Whenever you restore either an Automated Backup or Snapshot Backup, the restored
 
 ![backups-get-a-new-dns-endpoint](https://user-images.githubusercontent.com/16245634/70203166-a599e380-16e1-11ea-9f88-52a76e175825.png)
 
-__image from [A Cloud Guru](https://acloud.guru/)
+_image from [A Cloud Guru](https://acloud.guru/)_
 
 ### RDS Encryption At Rest
 Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, MariaDB, Aurora. Encryption is done using the AWS Key Management Service (KMS). Once your RDS instance is encrypted, as are its backups, read replicas, and snapshots.
