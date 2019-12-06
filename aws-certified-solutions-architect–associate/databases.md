@@ -129,6 +129,47 @@ Unit Cost of Radio in each region
 Sales price of each radio
 Sales price - Unit cost.
 ```
+
+## Redshift
+Redshift is Amazons Data Warehousing soltuion. Redshift is a fast and powerful, fully managed, petabyte-scale service in the cloud. Customers can start small for just $.025 per hour with no commitments or upfront costs and scale to a petabyte or more for $1,000 per terabyte per year, less than a tenth of most other data warehousing solutions.
+
+- Redshift is used for Business Intelligence
+- Available in only 1 Availability Zone
+
+### Redshift Configuration Options
+- Single Node (160Gb)
+- Multi-Node is made up of:
+  - Leader Node - Manages client connections and recieves queries
+  - Compute Node - Store data and perform queries and computations. Up to 128 Compute Nodes.
+
+### Redshift Compression
+Redshift uses advanced compresion. Columnar data stores can be compressed much more than row-based data stores becuase similar data is stored sequentually on disk. Amazon Redshift employs multiple compression techniques and can often achieve significant compression relative to traditional relational data stores. In addition, Amazon Redshift doesn't require indexes or materialized views, and so uses less space than traditional relational database systems. When loading data into an empty table, Amazon Redshift automatically samples your data and selects the most appropiate compression scheme.
+
+### Redshift Backups
+- Enabled by default with a 1 day retention period
+- Maxium retention period is 35 days
+- Redshift always attempts to maintain at least three copies of your data (the orginal and replica on the compute nodes and a backup in S3)
+- Redshift can also asynchronously replicate your snapshots to S3 in another region for disaster recovery
+
+### Redshift Parallel Processing
+Redshift uses Massively Parallel Processing (MPP) automically to distribute data and query load across all nodes. Amazon Redshift makes it easy to add nodes to your data warehouse and enables you to maintian fast query performance as your data warehouse grows.
+
+### Redshift Pricing
+- Compute Node Hours (total number of hours you run across all your compute nodes for the billing period. You are billed for 1 unit per node per hour. For example, a 3 node data warehouse cluster running persistently for an entire month would incure 2,160 instance hours. You will not be charged for the leader node hours, only compute nodes will incur charges.
+- Backup(s)
+- Data Transfer (only within a VPC, not outside it)
+
+### Redshift Security Considerations
+- Encrypted in transit using SSL
+- Encrypted at rest using AES-256 encryption
+- By default Redshift takes care of key management
+  - You could manage your own keys through HSM
+  - AWS Key Management Service
+
+### Redshift Availability
+- Currently only available in 1 Availability Zone
+- Can restore snapshots to new Availability Zones in the event of an outage
+
 ## ElastiCache
 ElastiCache is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud. The service improves the performance of web applications by allowing you to retrieve information from fast, managed, in-memory caches, instead of relying entirely on slower disk-based databases.
 
