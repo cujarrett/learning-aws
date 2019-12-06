@@ -33,7 +33,7 @@ AWS RDS Offerings
 - Patching of the RDS Operating System and DB is Amazon's responsibility
 - RDS is not Serverless (with the exception of Aurora Serverless)
 
-## Backups With RDS
+### Backups With RDS
 - **Automated Backups** - Allow you to recover your database to any point in time within a retention period. The retention period can be between 1 and 35 days. Automated Backups will take a full daily snapshot and will also store transactional logs throughout the day. When you do a recovery, AWS will first choose the most recent daily backup, and then apply transactional logs relevent to that day. This allows you to do point in time recovery down to a second, within the retention period.
 
   Automated Backups are enabled by default. The backup data is stored in S3 and you get free storage equal to the size of your database. So if you have an RDS instance of 10Gb, you will get 10Gb worth of storage.
