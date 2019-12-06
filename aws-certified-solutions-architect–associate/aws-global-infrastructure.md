@@ -9,7 +9,7 @@ A Region is a physical location, a geographical area consistenting of two or mor
 ## Edge Locations
 Edge Locations are endpoints for AWS which are used for caching content. Typically consists of CloudFront (Amazon's Content Delivery Network (CDN)). There are many more Edge Locations than Regions. There are more than 150 Edge Locations as of 2019.
 
-# AWS Global Infrastructure Review
+## AWS Global Infrastructure Review
 1. What does VPC stand for?
 - a. Virtual Public Compute
 - b. Virtual Private Cloud
