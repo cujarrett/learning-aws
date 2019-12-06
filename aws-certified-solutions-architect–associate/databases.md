@@ -98,6 +98,26 @@ Read Replicas are available for the following RDS database types:
 - Oracle
 - Aurora
 
+## Aurora
+Amazon Aurora is a MySQL-compatible, relational database engine that combines the speed and availability of high end commercial databases with the simplicity and cost effectiveness of open source databases. Amazon Aurora provides up to five times better performance than MySQL at a price point one tenth that of a commercial database while delivering similar performance and availability.
+
+- 2 copies of your data is contained in each Availability Zone, with a minimum of 3 Availability Zones. 6 copies of your data.
+- Starts with 10GB, scales in 10GB increments to 64TB (Storage Autoscaling)
+- Compute resources can scale up to 32vCPUs and 244GB of Memory
+
+### Aurora Scaling
+- Aurora is designed to transparently handle the loss of up to two copies of data without affecting database write availability and up to three copies without affecting read availability.
+- Aurora storage is self healing. Data blocks and disks are continuously scanned for errors adn repaired automatically.
+
+### Aurora Read Replicas
+- Aurora Replicas (currently 15) - Automated failover is only available with Aurora Replicas
+- MySQL Read Replicas (currently 5)
+
+### Aurora Backups
+- Automated backups are always enabled on Amazon Aurora DB instances. Backups do not impact database performance.
+- You can also take snapshots with Aurora. This also does not impact performance.
+- You can share Aurora Snapshots with oter AWS accounts
+
 ## Data Warehousing
 Used for business intelligence. Tools like Congos, Jaspersoft, SQL Server Reporting Services, Oracle Hyperion, SAP NetWeaver.
 
