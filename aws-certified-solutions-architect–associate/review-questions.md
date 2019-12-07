@@ -1,8 +1,6 @@
 # Review Questions
 A collection of stuff I ran accross that I want to self study with so I remember that content.
 
----
-
 ## Security, Identity & Compliance
 Are Roles more or less secure than storing your access key and secret access key on individual EC2 instances?
 
@@ -722,5 +720,23 @@ Which AWS service monitors API calls in the AWS platform?
 CloudTrail
 
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudtrail)
+</p>
+</details>
+
+## Databases
+What transactional process is RDS a good choice for?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Online Transactional Processing (OLTP)
+</p>
+</details>
+
+What is AWS's NOSQL offering?
+<details>
+<summary>Show answer</summary>
+<p>
+DynamoDB
 </p>
 </details>
