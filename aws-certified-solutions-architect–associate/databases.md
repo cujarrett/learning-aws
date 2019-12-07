@@ -155,6 +155,7 @@ Redshift is Amazons Data Warehousing soltuion. Redshift is a fast and powerful, 
 
 - Redshift is used for Business Intelligence
 - Available in only 1 Availability Zone
+- Red Shift is good for Online Analytics Processing (OLAP)
 
 ### Redshift Configuration Options
 - Single Node (160Gb)
