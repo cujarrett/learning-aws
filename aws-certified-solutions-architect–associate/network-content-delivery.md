@@ -82,8 +82,12 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
   Route 53 will monitor the health of your primary site using a health check.
 
   A health check monitors the health of your end points.
+
 - ##### Geolocation Routing
-- ##### Geoproximity ROuting (Traffic Flow Only)
+  ![Geolocational Routing example](https://user-images.githubusercontent.com/16245634/70398395-88fef380-19e0-11ea-86ff-f069ce9678ab.png)
+  Geolocation Routing lets you choose where your traffic will be sent based on the geographic location of your users (ie the location from which DNS queries originate). For example, you may want all queries from Europe to be routed to a fleet of EC2 instanes that are specifically configured for your European customers. These servers may have the local language of your European customers and all prices are displayed in Euros.
+
+- ##### Geoproximity Routing (Traffic Flow Only)
 - ##### Multivalue Answer Routing
 
 ### Route 53 Health Checks
