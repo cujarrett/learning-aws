@@ -61,14 +61,21 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
 
 ### Route 53 Routing Policies
 - #### Simple Routing
-  If you choose the Simple Routing Policy you can only have one record with multiple IP addresses. If you specify multiple values in a record, Route 53 returns all values to the user in a random order.
-  
   ![Simple Routing example](https://user-images.githubusercontent.com/16245634/70397187-b09c8e80-19d5-11ea-8b76-c3261956393a.png)
   _image from [A Cloud Guru](https://acloud.guru/)_
+  If you choose the Simple Routing Policy you can only have one record with multiple IP addresses. If you specify multiple values in a record, Route 53 returns all values to the user in a random order.
 
-- Weighted Routing
-- Latency-based ROuting
-- Failover Routing
-- Geolocation Routing
-- Geoproximity ROuting (Traffic Flow Only)
-- Multivalue Answer Routing
+- #### Weighted Routing
+  ![Weighted Routing example](https://user-images.githubusercontent.com/16245634/70397476-2e619980-19d8-11ea-8291-f99f8a820976.png)
+  Allows you to split your traffic based on different weights assigned. For example, you can set 10% of your traffic to go to `US-EAST-1` and 90% to go to `EU-WEST-1`.
+
+- #### Latency-based ROuting
+- ##### Failover Routing
+- ##### Geolocation Routing
+- ##### Geoproximity ROuting (Traffic Flow Only)
+- ##### Multivalue Answer Routing
+
+### Route 53 Health Checks
+- You can set health checks on individual recordds sets
+- If a record set fails a health check it will be removed from Route53 until it passes the health 
+- You can set SNS notifications to alert you if a health check is failed
