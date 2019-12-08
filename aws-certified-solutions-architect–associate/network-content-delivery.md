@@ -58,3 +58,17 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
 - ELBs do not have pre-defined IPv4 addresses; you resolve to them using a DNS name
 - Understand the difference between an ALias Record and a CName
 - Given the choice, always choose an Alias Record over a CName
+
+### Route 53 Routing Policies
+- #### Simple Routing
+  If you choose the Simple Routing Policy you can only have one record with multiple IP addresses. If you specify multiple values in a record, Route 53 returns all values to the user in a random order.
+  
+  ![Simple Routing example](https://user-images.githubusercontent.com/16245634/70397187-b09c8e80-19d5-11ea-8b76-c3261956393a.png)
+  _image from [A Cloud Guru](https://acloud.guru/)_
+
+- Weighted Routing
+- Latency-based ROuting
+- Failover Routing
+- Geolocation Routing
+- Geoproximity ROuting (Traffic Flow Only)
+- Multivalue Answer Routing
