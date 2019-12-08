@@ -3,14 +3,6 @@
 ## DNS
 DNS is used to convert human friendly domain names such as https://acloud.guru into an Internet Protocol (IP) address such as http://82.124.53.1. IP addresses are used by computers to identify each other on the network. IP addresses commonly come in 2 different forms, IPv4 and IPv6.
 
-### Common DNS Types
-- SOA Records
-- NS Records
-- A Records
-- CName
-- MX Records
-- PTR Records
-
 ## IPv4 vs IPv6
 The IPv4 space is a 32 bit field and has over 4 billion different addresses (4,294,967,296 to be precise).
 
@@ -23,24 +15,28 @@ Top Level Domain names are controlled by the Internet Assigned Numbers Authority
 
 Becuase all of the names in a given domain name have to be unique there needs to be a way to organize this all so that domain names aren't duplicated. This is where domain registars come in. A registar is an authority that can assign domain names directly under one or more top-level domains. These domains are registered with the InterNIC, a service of ICANN, which enforces uniqueness of domain names across the internet. Each domain name becomes registered in a central database known as the WhoIS database. Popular domain registars include: Amazon, Google, GoDaddy.com, 123-reg.co.uk etc.
 
-## SOA (Start of Authority Record)
-The SOA stores info about:
-- The name of the server that supplied the data for the zone
-- The administrator of the zone
-- The current version of the data file
-- The default number of seconds for the time to live file on resource records
+## Common DNS Types
+- ### SOA (Start of Authority Record)
+  The SOA stores info about:
+  - The name of the server that supplied the data for the zone
+  - The administrator of the zone
+  - The current version of the data file
+  - The default number of seconds for the time to live file on resource records
+    
+- ### NS (Name Server Records)
+  They are used by Top Level Domain servers to direct traffic to the Content DNS server which contains the authoritative DNS records.
 
-## NS (Name Server Records)
-They are used by Top Level Domain servers to direct traffic to the Content DNS server which contains the authoritative DNS records.
+- ### A Record
+    An "A" Record is the fundamental type of DNS record. The "A" in A Record stands for "Address". The A Record is used by a computer to translate the name of the domain to an IP address. For example, http://www.acloud.guru might point to http://123.10.10.80.
 
-## A Record
-An "A" Record is the fundamental type of DNS record. The "A" in A Record stands for "Address". The A Record is used by a computer to translate the name of the domain to an IP address. For example, http://www.acloud.guru might point to http://123.10.10.80.
+- ### CName
+  A Canonical Name (CName) can be used to resolve one domain name to another. For example, you may have a mobile website with the domain name http://m.acloud.guru that is used for when users browse to your domain name on their mobile devices. You may also want the name http://mobile.acloud.guru to resolve to this same address.
+
+- ### MX Records
+- ### PTR Records
 
 ## TTL (Time to Live)
 TTL is the length that a DNS record is cached on either the Resolving Server or the users own local PC is equal to the value of the "Time To Live" (TTL) in seconds. The lower the time to live, the faster changes to DNS records take to propagate throughout the internet.
-
-## CName
-A Canonical Name (CName) can be used to resolve one domain name to another. For example, you may have a mobile website with the domain name http://m.acloud.guru that is used for when users browse to your domain name on their mobile devices. You may also want the name http://mobile.acloud.guru to resolve to this same address.
 
 ## Alias Records
 Alias Records are used to map resource record sets in your hosted zone to Elastic Load Balancers, CloudFront, CloudFront distributions, or S3 buckets that are configured as websites.
