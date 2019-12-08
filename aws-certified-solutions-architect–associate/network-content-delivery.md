@@ -69,7 +69,12 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
   ![Weighted Routing example](https://user-images.githubusercontent.com/16245634/70397476-2e619980-19d8-11ea-8291-f99f8a820976.png)
   Allows you to split your traffic based on different weights assigned. For example, you can set 10% of your traffic to go to `US-EAST-1` and 90% to go to `EU-WEST-1`.
 
-- #### Latency-based ROuting
+- #### Latency-based Routing
+  ![Latency-based Routing example](https://user-images.githubusercontent.com/16245634/70398028-d2e5da80-19dc-11ea-941f-c48c65efb696.png)
+  Latency-based Routing allows you to route your traffic based on the lowest network latency for your end user (ie which region will give them the fastest response time).
+  
+  To use Latency-based Routing, you create a latency resource record set for the Amazon EC2 (or ELB) resource in each region that hosts your website. When AmazonRoute 53 receives a query for your site, it selects the latency resource record set for the region that gives the lowest latency. Route 53 then responds with the value associated with that resource record set.
+
 - ##### Failover Routing
 - ##### Geolocation Routing
 - ##### Geoproximity ROuting (Traffic Flow Only)
