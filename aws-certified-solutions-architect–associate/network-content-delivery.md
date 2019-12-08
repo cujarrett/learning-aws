@@ -3,6 +3,9 @@
 ## DNS
 DNS is used to convert human friendly domain names such as https://acloud.guru into an Internet Protocol (IP) address such as http://82.124.53.1. IP addresses are used by computers to identify each other on the network. IP addresses commonly come in 2 different forms, IPv4 and IPv6.
 
+![DNS Example](https://user-images.githubusercontent.com/16245634/70384081-cca12100-193e-11ea-8ae5-4df3c715248a.png)
+_image from [A Cloud Guru](https://acloud.guru/)_
+
 ## IPv4 vs IPv6
 The IPv4 space is a 32 bit field and has over 4 billion different addresses (4,294,967,296 to be precise).
 
@@ -44,8 +47,6 @@ Alias Records are used to map resource record sets in your hosted zone to Elasti
 Alias Records work like a CName record in that you can map one DNS name (www.example.com) to another "target" DNS name (elb1234.elb.amazonaws.com).
 
 Key difference, A CName can't be used for naked domain names (zone apex record). You can't have a CName for http://acloud.guru, it must be either a A Record or and Alias.
-
-![DNS Example](https://user-images.githubusercontent.com/16245634/70384081-cca12100-193e-11ea-8ae5-4df3c715248a.png)
 
 ## Route53
 - ELBs do not have pre-defined IPv4 addresses; you resolve to them using a DNS name.
