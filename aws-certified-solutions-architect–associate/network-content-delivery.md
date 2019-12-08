@@ -76,6 +76,12 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
   To use Latency-based Routing, you create a latency resource record set for the Amazon EC2 (or ELB) resource in each region that hosts your website. When AmazonRoute 53 receives a query for your site, it selects the latency resource record set for the region that gives the lowest latency. Route 53 then responds with the value associated with that resource record set.
 
 - ##### Failover Routing
+  ![Failover Routing example](https://user-images.githubusercontent.com/16245634/70398195-8a2f2100-19de-11ea-9db7-3c839296ee59.png)
+  Failover Routing policies are used when you want to create an activity/ passive set up. For example, you may want your primary site in `EU-WEST-2` and your secondary DR site in `AP-SOUTHEAST-2`.
+
+  Route 53 will monitor the health of your primary site using a health check.
+
+  A health check monitors the health of your end points.
 - ##### Geolocation Routing
 - ##### Geoproximity ROuting (Traffic Flow Only)
 - ##### Multivalue Answer Routing
