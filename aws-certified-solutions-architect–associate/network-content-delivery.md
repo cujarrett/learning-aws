@@ -88,6 +88,10 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
   Geolocation Routing lets you choose where your traffic will be sent based on the geographic location of your users (ie the location from which DNS queries originate). For example, you may want all queries from Europe to be routed to a fleet of EC2 instanes that are specifically configured for your European customers. These servers may have the local language of your European customers and all prices are displayed in Euros.
 
 - ##### Geoproximity Routing (Traffic Flow Only)
+  Geoproximity Routing lets Amazon Route 53 route traffic to your resources based on the geographic location of your users and  your resources. You can also optionally choose to route more traffic or less traffic to a given resource by specifying a value, known as a bias. A bias expands or shrinks the size of the geographic region from which traffic is routed to a resource.
+
+  To use Geoproximity Routing, you must use Route 53 Traffic Flow
+
 - ##### Multivalue Answer Routing
 
 ### Route 53 Health Checks
