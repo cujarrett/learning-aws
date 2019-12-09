@@ -1185,3 +1185,199 @@ Memcached
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#aurora-backups)
 </p>
 </details>
+
+## Network & Content Delivery
+
+Do ELB's have pre-defined IPv4 addresses?
+<details>
+<summary>Show answer</summary>
+<p>
+No, you resolve to them using a DNS name.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#route-53)
+</p>
+</details>
+
+What is the difference between a Alias Record and a CName?
+<details>
+<summary>Show answer</summary>
+<p>
+Think of the Alias Address as a phone book where Bruce Wayne's phone number 123-456-7890 and a CName would say Batman, see Bruce Wayne.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#common-dns-types)
+</p>
+</details>
+
+Given the choice of CName and Alias Record, which should you always choose?
+<details>
+<summary>Show answer</summary>
+<p>
+Alias Record
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#route-53)
+</p>
+</details>
+
+What are the common DNS types?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- SOA Record
+- NS Record
+- A Record
+- CName
+- MX Records
+- PTR Records
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#common-dns-types)
+</p>
+</details>
+
+What are the routing policies available with Route 53?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Simple Routing
+- Weighted Routing
+- Latency-based Routing
+- Failover Routing
+- Geolocation Routing
+- Geoproximity Routing (Traffic Flow Only)
+- Multivalue Answer Routing
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#route-53-routing-policies)
+</p>
+</details>
+What can you set Route 53 health checks on?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Individual record sets
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#route-53-health-checks)
+</p>
+</details>
+
+What happens if a record set fails a health check?
+<details>
+<summary>Show answer</summary>
+<p>
+It will be removed until it passes the health check
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#route-53-health-checks)
+</p>
+</details>
+
+How can you stay informed of a failing health check?
+<details>
+<summary>Show answer</summary>
+<p>
+You can set up SNS notifications to alert you if a health check is failed
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#route-53-health-checks)
+</p>
+</details>
+
+If you choose a Simple Routing policy, how many records can you have with multiple IP addresses?
+<details>
+<summary>Show answer</summary>
+<p>
+1
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#simple-routing)
+</p>
+</details>
+
+If you specify multiple values in a Simple Routing policy record how will Route 53 choose which node to send the traffic?
+<details>
+<summary>Show answer</summary>
+<p>
+Random
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#simple-routing)
+</p>
+</details>
+
+Can you have a health check on a Route 53 Simple Routing policy?
+<details>
+<summary>Show answer</summary>
+<p>
+No
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#simple-routing)
+</p>
+</details>
+
+What Route 53 routing would you choose to split traffic 90% to Europe server and 10% to US server?
+<details>
+<summary>Show answer</summary>
+<p>
+Weighted Routing
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#weighted-routing)
+</p>
+</details>
+
+What Route 53 routing would you choose to route customers to a server based on their Internet connection?
+<details>
+<summary>Show answer</summary>
+<p>
+Latency-based Routing
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#latency-based-routing)
+</p>
+</details>
+
+What Route 53 routing would you choose to route customers to a different instance or region if a health check fails on the server in the primary instance or region?
+<details>
+<summary>Show answer</summary>
+<p>
+Failover Routing
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#failover-routing)
+</p>
+</details>
+
+
+What Route 53 routing would you choose to route United State customers to a US EC2 EC2 instance and European customers to a EU EC2 instance?
+<details>
+<summary>Show answer</summary>
+<p>
+Geolocation Routing
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#geolocation-routing)
+</p>
+</details>
+
+Does Geolocation Routing take into account latency when deciding which instance or region to direct traffic?
+<details>
+<summary>Show answer</summary>
+<p>
+No, only location of the request
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#geolocation-routing)
+</p>
+</details>
+
+To use Geoproximity Routing what must you use in Route 53?
+<details>
+<summary>Show answer</summary>
+<p>
+Traffic Flow Only
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#geoproximity-routing-traffic-flow-only)
+</p>
+</details>
+
+What Route 53 routing is basicly the same as Simple Routing but allows you to set up health checks?
+<details>
+<summary>Show answer</summary>
+<p>
+Multivalue Answer Routing
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#multivalue-answer-routing)
+</p>
+</details>
