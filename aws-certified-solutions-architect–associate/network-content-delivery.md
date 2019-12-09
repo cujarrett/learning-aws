@@ -103,3 +103,98 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
 - You can set health checks on individual recordds sets
 - If a record set fails a health check it will be removed from Route53 until it passes the health 
 - You can set SNS notifications to alert you if a health check is failed
+
+## Network Content Delivery Review
+1. Which of the following Route 53 policies allow you to a) route data to a second resource if the first is unhealthy, and b) route data to resources that have better performance?
+- a. Failover and Simple Routing
+- b. Geoproximity Routing and Geolocational Routing
+- c. Geolocational Routing and Latency-based Routing
+- d. Failover Routing and Latency-based Routing
+
+<details>
+<summary>Show answer</summary>
+<p>
+- d. Failover Routing and Latency-based Routing
+
+Failover Routing and Latency-based Routing are the only two correct options, as they consider routing data based on whether the resource is healthy or whether one set of resources is more performant than another. Any answer containing location based routing (Geoproximity and Geolocation) cannot be correct in this case, as these types only consider where the client or resources are located before routing the data. They do not take into account whether a resource is online or slow. Simple Routing can also be discounted as it does not take into account the state of the resources.
+</p>
+</details>
+
+2. Route 53 is Amazon's DNS Service.
+- a. True
+- b. False
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. True
+</p>
+</details>
+
+3. Route 53 is named so because ________.
+- a. It was invented in 1953
+- b. Route 66 was already registered with Microsoft
+- c. The DNS port is on port 53 and Route 53 is a DNS Service
+- d. Beats me - only people in marketing can tell you the reason behind its name
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. The DNS port is on port 53 and Route 53 is a DNS Service
+</p>
+</details>
+
+4. You have created a new subdomain for your popular website, and you need this subdomain to point to an Elastic Load Balancer using Route53. Which DNS record set should you create?
+- a. A
+- b. AAAA
+- c. MX
+- d. CName
+
+<details>
+<summary>Show answer</summary>
+<p>
+- d. CName
+</p>
+</details>
+
+5. True or False: There is a limit to the number of domain names that you can manage using Route 53.
+- a. True. There is a hard limit of 100 domain names. You cannot go above this number.
+- b. True and False. With Route 53, there is a default limit of 50 domain names. However, this limit can be increased by contacting AWS support.
+- c. False. By default, you can support as many domain names on ROute 53 as you want.
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. True and False. With Route 53, there is a default limit of 50 domain names. However, this limit can be increased by contacting AWS support.
+</p>
+</details>
+
+6. You are hosting a website and would like visitors from United Kingdom to see a different site than those in Australia. Which Routing Policy would help you to accomplish this?
+- a. Failover Routing policy
+- b. Geolocation Routing policy
+- c. Geoproximity Routing policy
+- d. Latency Routing policy
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. Geolocation Routing policy
+
+Geolocation routing lets you choose the resources that serve your traffic based on the geographic location of your users, meaning the location that DNS queries originate from. For example, you might want all queries from Europe to be routed to an ELB load balancer in the Frankfurt region.
+</p>
+</details>
+
+7. Your company hosts 10 web servers all serving the same web content in AWS. They want Route 53 to serve traffic to random web servers. Which routing policy will meet this requirement, and provide the best resiliency?
+- a. Simple Routing
+- b. Weighted Routing
+- c. Multivalue Routing
+- d. Latency-based Routing
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. Multivalue Routing
+
+Multivalue answer routing lets you configure Amazon Route 53 to return multiple values, such as IP addresses for your web servers, in response to DNS queries. Route 53 responds to DNS queries with up to eight healthy records and gives different answers to different DNS resolvers. The choice of which to use is left to the requesting service effectively creating a form or randomization.
+</p>
+</details>
