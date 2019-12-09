@@ -93,6 +93,9 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
   To use Geoproximity Routing, you must use Route 53 Traffic Flow
 
 - ##### Multivalue Answer Routing
+  Multivalue Answer Routing lets you configure Amazon Route 53 to return multiple values, such as IP addresses for your web servers, in response to DNS queries. You can specify multiple values for almost any record, but Multivalue Answer Routing also lets you check the health of each resource, so Route 53 returns only values for healthy resources.
+  
+  **This is similar to Simple Routing however it allows you to put health checks on each record set.**
 
 ### Route 53 Health Checks
 - You can set health checks on individual recordds sets
