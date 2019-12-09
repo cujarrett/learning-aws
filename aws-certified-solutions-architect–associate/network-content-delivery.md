@@ -64,6 +64,7 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
   ![Simple Routing example](https://user-images.githubusercontent.com/16245634/70397187-b09c8e80-19d5-11ea-8b76-c3261956393a.png)
   _image from [A Cloud Guru](https://acloud.guru/)_
   If you choose the Simple Routing Policy you can only have one record with multiple IP addresses. If you specify multiple values in a record, Route 53 returns all values to the user in a random order.
+  - You can not have a health check with a Simple Routing. Consider Multivalue Answer Routing for a good option similar to Simple Routing.
 
 - #### Weighted Routing
   ![Weighted Routing example](https://user-images.githubusercontent.com/16245634/70397476-2e619980-19d8-11ea-8291-f99f8a820976.png)
