@@ -901,6 +901,7 @@ Yes
 
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-read-replica)
 </p>
+</details>
 
 If a Read Replica is promoted to master, what will happen to the Read Replica?
 <details>
