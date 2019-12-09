@@ -63,17 +63,20 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
 - #### Simple Routing
   ![Simple Routing example](https://user-images.githubusercontent.com/16245634/70397187-b09c8e80-19d5-11ea-8b76-c3261956393a.png)
   _image from [A Cloud Guru](https://acloud.guru/)_
+  
   If you choose the Simple Routing Policy you can only have one record with multiple IP addresses. If you specify multiple values in a record, Route 53 returns all values to the user in a random order.
   - You can not have a health check with a Simple Routing. Consider Multivalue Answer Routing for a good option similar to Simple Routing.
 
 - #### Weighted Routing
   ![Weighted Routing example](https://user-images.githubusercontent.com/16245634/70397476-2e619980-19d8-11ea-8291-f99f8a820976.png)
   _image from [A Cloud Guru](https://acloud.guru/)_
+  
   Allows you to split your traffic based on different weights assigned. For example, you can set 10% of your traffic to go to `US-EAST-1` and 90% to go to `EU-WEST-1`.
 
 - #### Latency-based Routing
   ![Latency-based Routing example](https://user-images.githubusercontent.com/16245634/70398028-d2e5da80-19dc-11ea-941f-c48c65efb696.png)
   _image from [A Cloud Guru](https://acloud.guru/)_
+  
   Latency-based Routing allows you to route your traffic based on the lowest network latency for your end user (ie which region will give them the fastest response time).
   
   To use Latency-based Routing, you create a latency resource record set for the Amazon EC2 (or ELB) resource in each region that hosts your website. When AmazonRoute 53 receives a query for your site, it selects the latency resource record set for the region that gives the lowest latency. Route 53 then responds with the value associated with that resource record set.
@@ -81,6 +84,7 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
 - ##### Failover Routing
   ![Failover Routing example](https://user-images.githubusercontent.com/16245634/70398195-8a2f2100-19de-11ea-9db7-3c839296ee59.png)
   _image from [A Cloud Guru](https://acloud.guru/)_
+  
   Failover Routing policies are used when you want to create an activity/ passive set up. For example, you may want your primary site in `EU-WEST-2` and your secondary DR site in `AP-SOUTHEAST-2`.
 
   Route 53 will monitor the health of your primary site using a health check.
@@ -90,6 +94,7 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
 - ##### Geolocation Routing
   ![Geolocational Routing example](https://user-images.githubusercontent.com/16245634/70398395-88fef380-19e0-11ea-86ff-f069ce9678ab.png)
   _image from [A Cloud Guru](https://acloud.guru/)_
+  
   Geolocation Routing lets you choose where your traffic will be sent based on the geographic location of your users (ie the location from which DNS queries originate). For example, you may want all queries from Europe to be routed to a fleet of EC2 instanes that are specifically configured for your European customers. These servers may have the local language of your European customers and all prices are displayed in Euros.
 
 - ##### Geoproximity Routing (Traffic Flow Only)
