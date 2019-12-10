@@ -113,6 +113,42 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
 - If a record set fails a health check it will be removed from Route53 until it passes the health 
 - You can set SNS notifications to alert you if a health check is failed
 
+## VPC (Virtual Private Cloud)
+Amazon Virtual Cloud (Amazon VPC) lets you provision a logically isolated section of the Amazon Web Services (AWS) Cloud where you can launch AWS resources in a virtual network that you define. You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways.
+
+You can easily customize the network configuration for your Amazon Virtual Private Cloud. For example, you can create a public facing subnet for your webservers that has access to the Internet, and place your backend systems such as databases or application servers in a private-facing subnet with no Internet access. You can leverage multiple layers of security, including security groups and network access control lists, to help control access to Amazon EC2 instances in each subnet.
+
+Additionaly, youo can create a Hardware Virtual Private Network (VPN) connection between your corporate datacenter and your VPC and leverage the AWS cloud as an extension of your corporate datacenter.
+
+- Think of a VPC as a virtual data center in the cloud.
+- Consists of IGWs (or Virtual Private Gateways), Route Tables, Network Access Control Lists, Subnets, Security Groups
+- 1 Subnet = 1 Availability Zone
+- Security Groups are Stateful; Network Access Control Lists are Stateless
+- NO TRANSITIVE PEERING
+
+![VPC Diagram](https://user-images.githubusercontent.com/16245634/70491350-b3c37780-1ac6-11ea-9d84-e2b9676b1c8d.png)
+_image from [A Cloud Guru](https://acloud.guru/)_
+
+### VPC Features
+- Launch instances into a subnet of your choosing
+- Assign custom IP address ranges in each subnet
+- Configure route tables between subnets
+- Create Internet gateway and attach it to our VPC
+- Much better security control over your AWS resources
+- Instance security Groups
+- Subnet network access control lists (ACLS)
+
+### Default VPC vs Custom VPC
+- Default VPC is user friendly, allowing you to immediately deploy instances
+- All subnets in default VPC have a route out to the Internet
+- Each EC2 instance has both a public and private IP address
+
+### VPC Peering
+- Allows you to connect one VPC to another via a direct network route using private IP addresses
+- Instance behave as if they were on the same private network
+- You can peer VPC's with other AWS accounts as well as with other VPCs in the same account
+- Peering is in a star configuration: ie 1 central VPC peers with 4 others. NO TRANSITIVE PEERING!
+
 ## Network Content Delivery Review
 1. Which of the following Route 53 policies allow you to a) route data to a second resource if the first is unhealthy, and b) route data to resources that have better performance?
 - a. Failover and Simple Routing
