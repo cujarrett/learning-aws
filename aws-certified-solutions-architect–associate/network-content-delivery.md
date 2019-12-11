@@ -125,6 +125,12 @@ Additionaly, youo can create a Hardware Virtual Private Network (VPN) connection
 - 1 Subnet = 1 Availability Zone
 - Security Groups are Stateful; Network Access Control Lists are Stateless
 - NO TRANSITIVE PEERING
+- When you create a VPC a default Route Table, Network Access Control List (NACL) and a default Security Group
+- It won't create any subnets, nor will it create a default Internet gateway
+- `US-East-1A` in your AWS account can be a complettly different availability Zone to `US-East-1A` in another AWS account. The Availability Zones are randominzed.
+- Amazon always reserves 5 IP addresses within your subnets
+- You can only have 1 Internet Gateway per VPC
+- Security Groups can't span VPCs
 
 ![VPC Diagram](https://user-images.githubusercontent.com/16245634/70491350-b3c37780-1ac6-11ea-9d84-e2b9676b1c8d.png)
 _image from [A Cloud Guru](https://acloud.guru/)_
