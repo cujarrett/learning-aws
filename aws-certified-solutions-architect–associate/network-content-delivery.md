@@ -155,6 +155,25 @@ _image from [A Cloud Guru](https://acloud.guru/)_
 - You can peer VPC's with other AWS accounts as well as with other VPCs in the same account
 - Peering is in a star configuration: ie 1 central VPC peers with 4 others. NO TRANSITIVE PEERING!
 
+## NAT Instances
+- When creating a NAT instance, Disable Source and Destination Checks on the instance
+- NAT instances myst be in a public subnet
+- There must be a route out of the private subnet to the NAT instance, in order for this to work
+- The ammount of traffic that NAT instances can support depends on the instance size. If you are bottlenecking, increase the instance size
+- You can create high availability using Autoscaling Groups, multiple subnets in different Availability Zones, and script to automate failover
+- Behind a Security Group
+
+## NAT Gateways
+- Redundant inside the Availability Zone
+- You can only have one NAT Gateway innside one Availability Zone, NAT Gateways can not span Availability Zones
+- Starts at 5Gbs and scales currently to 45Gbs (You won't be tested on this)
+- No need to patch
+- Not associated with Security Groups
+- Automatically assigned a public IP address
+- Remember to update your route tables
+- No need to disable Source and Destination Checks
+- If you have resources in multiple Availability Zones and they share one NAT Gateway, in the event that the NAT Gateway's Availability Zone is down, resources in the other Availability Zones lose internet access. To create an Availability Zone independent architecture, create a NAT gateway in each Availability Zone and configure your routing to ensure that resources use the NAT Gateway in the same Availability Zone.
+
 ## Network Content Delivery Review
 1. Which of the following Route 53 policies allow you to a) route data to a second resource if the first is unhealthy, and b) route data to resources that have better performance?
 - a. Failover and Simple Routing
