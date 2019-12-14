@@ -202,6 +202,13 @@ VPC FLow Logs is a feature that enables you to capture information about the IP 
 - No need to disable Source and Destination Checks
 - If you have resources in multiple Availability Zones and they share one NAT Gateway, in the event that the NAT Gateway's Availability Zone is down, resources in the other Availability Zones lose internet access. To create an Availability Zone independent architecture, create a NAT gateway in each Availability Zone and configure your routing to ensure that resources use the NAT Gateway in the same Availability Zone.
 
+## Bastion Host
+A Bastion Host is a special computer on a network specifically designed and configured to withstand attacks. The computer generally hosts a single application, for example a proxy server, and all other services are removed or limited to reduce the threat to the computer. It is hardened in this manner primarily due to its location and purpose, which is either on the outside of the firewall or in a demilitarized zone (DMZ) and usually involves access from untrusted networks or computers.
+
+- A NAT Gateway or NAT Instance is used to provide Internet traffic to EC2 instances in a private subnets
+- A Bastion Host is used to securely administer EC2 instances (using SSH or RDP). Bastions are called Jump Boxes in Australia.
+- You cannot use a NATE Gateway as a Bastion Host
+
 ## Network Content Delivery Review
 1. Which of the following Route 53 policies allow you to a) route data to a second resource if the first is unhealthy, and b) route data to resources that have better performance?
 - a. Failover and Simple Routing
