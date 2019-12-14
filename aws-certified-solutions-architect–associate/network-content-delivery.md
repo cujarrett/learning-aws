@@ -209,6 +209,16 @@ A Bastion Host is a special computer on a network specifically designed and conf
 - A Bastion Host is used to securely administer EC2 instances (using SSH or RDP). Bastions are called Jump Boxes in Australia.
 - You cannot use a NATE Gateway as a Bastion Host
 
+## Direct Connect
+AWS Direct Connect is a cloud service solution that makes it easy to estabilish a dedicated network connection from your premises to AWS. Using AWS Direct Connectm you can estabilish private connectivity between AWS and your datacenter, office, colocation environment, which in many cases can reduce your network costs, increase bandwidth throughput, and provide a more consistent network experience than Internet based connections.
+
+![Direct Connect diagram](https://user-images.githubusercontent.com/16245634/70855101-b0dfd280-1e8a-11ea-94a1-5f9e5db27450.png)
+_image from [A Cloud Guru](https://acloud.guru/)_
+
+- Direct Connect directly connects your data center to AWS
+- Useful for high throughput workloads (ie lots of network traffic)
+- Useful if you need a stable and reliable secure connection
+
 ## Network Content Delivery Review
 1. Which of the following Route 53 policies allow you to a) route data to a second resource if the first is unhealthy, and b) route data to resources that have better performance?
 - a. Failover and Simple Routing
