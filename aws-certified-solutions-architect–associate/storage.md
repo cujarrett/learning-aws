@@ -522,3 +522,494 @@ The need to immediate access is an important requirement along with cost. Glacie
 At its heart it is a way of using AWS S3 managed storage to supplement on-premise storage. It can also be used within a VPC in a similar way.
 </p>
 </details>
+
+21. _________ is Object Based storage?
+
+<details>
+<summary>Show answer</summary>
+<p>
+S3
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-simple-storage-service)
+</p>
+</details>
+
+22. True or False, S3 is a universal namespace?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-simple-storage-service)
+</p>
+</details>
+
+23. What are the two access control mechanisms for controlling access to S3 buckets?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Bucket Policies
+- Access Control Lists
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-access-control)
+</p>
+</details>
+
+24. What are the fundamental parts of S3?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Key
+- Value
+- Version ID
+- Metadata
+- Subresources
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#what-is-s3)
+</p>
+</details>
+
+25. What is the consistency model for S3?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Read After Write consistency for PUTS of new Objects
+- Eventual Consistency for overwrite PUTS and DELETES (can take some time to propagate)
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#how-does-data-consistency-work-for-s3)
+</p>
+</details>
+
+26. What are the types of S3?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- S3 Standard
+- S3 - IA
+- S3 - 1 Zone - IA
+- S3 - Intelligent Tiering
+- S3 Glacier
+- S3 Glacier Deep Archive
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-tiered-storage-options)
+</p>
+</details>
+
+27. Encryption In Transit is achieved by?
+
+<details>
+<summary>Show answer</summary>
+<p>
+SSL/TLS
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-encryption)
+</p>
+</details>
+
+28. Encryption At Rest is achieved by?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+Server Side
+- S3 Managed Keys (SSE-S3)
+- AWS KMS (Key Management Service) (SSE-KMS)
+- Server Side Encryption with Customer Provided Keys (SSE-C)
+
+Client Side Encryption
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-encryption)
+</p>
+</details>
+
+29. True or False, for S3 Cross Region Replication, Versioning must be enabled ob both the source and destination buckets??
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-cross-regional-replication)
+</p>
+</details>
+
+30. True or False, regions in Cross Region Replication must be unique?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-cross-regional-replication)
+</p>
+</details>
+
+31. True or False, Existing files in an S3 bucket are not automatically replicated when you turn on Cross Region Replication?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True, all subsequent updated files will be replicated automatically
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-cross-regional-replication)
+</p>
+</details>
+
+32. True or False, with Cross Region Replication, delete markers are not replicated?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-cross-regional-replication)
+</p>
+</details>
+
+33. True or False, with Cross Region Replication, deleting individual versions or delete markers will not be replicated?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-cross-regional-replication)
+</p>
+</details>
+
+34. What AWS service automates moving your objects between the different S3 tiers??
+
+<details>
+<summary>Show answer</summary>
+<p>
+Lifecycle Management
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-lifecycle-management)
+</p>
+</details>
+
+35. True or False, Lifecycle Policies can be used with S3 Versioning?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-lifecycle-management)
+</p>
+</details>
+
+36. True or False, Lifecycle Policies can be applied to current versions and previous versions?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#s3-lifecycle-management)
+</p>
+</details>
+
+37. What are the two types of distributions in CloudFront?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Web - Used for websites
+- RTMP - Used for media streaming
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#cloudfront)
+</p>
+</details>
+
+38. CloudFront origin locations can be what type(s)?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- S3
+- EC2 Instance
+- ELB (Elastic Load Balancer)
+- Route53
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#cloudfront-terminology)
+</p>
+</details>
+
+39. True or False, Edge Locations are READ only?
+
+<details>
+<summary>Show answer</summary>
+<p>
+False, you can write to them too (ie put an object on to them)
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#cloudfront)
+</p>
+</details>
+
+40. True or False, you can clear cached items in CloudFront?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True, you can invalidate a cached item but you will be charged
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#cloudfront)
+</p>
+</details>
+
+41. Instance Store Volumes are sometimes called ______________?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Ephemeral Storage
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#instance-store-volumes)
+</p>
+</details>
+
+42. What are the types of AMI storage for the Root Device Volume?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Instance Store Volumes (EPHEMERAL STORAGE)
+- EBS Backed Volumes
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#instance-store-volumes)
+</p>
+</details>
+
+43. Which AMI Root Device Volume type can be stopped without losing data?
+
+<details>
+<summary>Show answer</summary>
+<p>
+EBS backed instances can be stopped. You will not lise the data on this instance if it is stopped. Instance store volumes cannot be stopped. With Instance Store Volumes if the underlying host fails, you will lose your data.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#instance-store-volumes)
+</p>
+</details>
+
+44. Which AMI Storage for the Root Device Volume can be rebooted safely without data loss?
+
+<details>
+<summary>Show answer</summary>
+<p>
+You can reboot both Instance Store Volumes (EPHEMERAL STORAGE) and EBS Backed Volumes and you will not lose your data
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#instance-store-volumes)
+</p>
+</details>
+
+45. Volumes exist on _________?
+
+<details>
+<summary>Show answer</summary>
+<p>
+EBS, think of EBS as virtual hard disk.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
+
+46. Snapshots exist on ___________?
+
+<details>
+<summary>Show answer</summary>
+<p>
+S3
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
+
+47. Snapshots are __________ copies of Volumes.
+
+<details>
+<summary>Show answer</summary>
+<p>
+point in time
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
+
+48. Why do initial snapshots take some time to create but subsequent snapshots areq more quick?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Snapshots are incremental - this means that only the blocks that have changed since your last snapshot are moved to S3
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
+
+49. What can you create AMI's from?
+
+<details>
+<summary>Show answer</summary>
+<p>
+EBS Volume or Snapshots
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
+
+50. True or False, you can change EBS volume sizes and storage types on the fly?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#ebs-elastic-block-store)
+</p>
+</details>
+
+51. True or False, Volumes will always be in the same Availability Zone as the EC2 instance?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
+
+52. What are the steps to move an EC2 volume from one Availability Zone to another?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+1. Take a snapshot
+2. Create an AMI from the snapshot
+3. Use the AMI to launch the EC2 instance in the new Availability Zone
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#migration)
+</p>
+</details>
+
+53. What are the steps to move an EC2 volume from one region to another?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+1. Take a snapshot
+2. Create an AMI from the snapshot
+3. Copy the AMI from the orginal region to the desired region
+4. Use the AMI to launch the EC2 instance in the new region
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#migration)
+</p>
+</details>
+
+54. True or False, Snapshots of encrypted volumes are encrypted automatically?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
+
+55. True or False, Volumes restored from encrypted snapshots are encrypted automatically?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#volumes--snapshots)
+</p>
+</details>
+
+56. What are the steps to encrypt an unencrypted root device volume that needs to be encrypted?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+1. Create a Snapshot of the unencrypted root device volume
+2. Create a copy of the Snapshot and select the encrypt option
+3. Create an AMI from the encrypted Snapshot
+4. Use that AMI to launch new encrypted instances
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#migration)
+</p>
+</details>
+
+57. What protocol does EFS support?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Network File System version 4 (NFSv4)
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#efs-elastic-file-system)
+</p>
+</details>
+
+58. True or False, with EFS, you only pay for the storage you use?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True, no pre-provisioning required
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#efs-elastic-file-system)
+</p>
+</details>
+
+59. True or False, NFS can support thousands of concurrent NFS connections?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#efs-elastic-file-system)
+</p>
+</details>
+
+60. True or False, EFS data is stored in a single Availability Zone within a region?
+
+<details>
+<summary>Show answer</summary>
+<p>
+False
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#efs-elastic-file-system)
+</p>
+</details>
+
+61. What is the consistency model for EFS?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Read After Write Consistency
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/storage.md#efs-elastic-file-system)
+</p>
+</details>
