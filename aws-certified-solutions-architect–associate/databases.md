@@ -561,18 +561,7 @@ DynamoDB
 </p>
 </details>
 
-28. What transactional process is Redshift a good choice for?
-
-<details>
-<summary>Show answer</summary>
-<p>
-Online Analytics Processing (OLAP)
-
-[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#redshift)
-</p>
-</details>
-
-29. What are the types of Elasticache AWS offers?
+28. What are the types of Elasticache AWS offers?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -584,7 +573,7 @@ Online Analytics Processing (OLAP)
 </p>
 </details>
 
-30. What infrastucture does RDS run on?
+29. What infrastucture does RDS run on?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -595,7 +584,7 @@ Virtual Machines
 </p>
 </details>
 
-31. Is it possibe to ssh into the machine that runs a RDS?
+30. Is it possibe to ssh into the machine that runs a RDS?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -606,7 +595,7 @@ No
 </p>
 </details>
 
-32. Who is responsible for patching Operating Systems and Databases for RDS?
+31. Who is responsible for patching Operating Systems and Databases for RDS?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -616,7 +605,7 @@ Amazon
 </p>
 </details>
 
-33. Is RDS Serverless?
+32. Is RDS Serverless?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -626,7 +615,7 @@ No, with the exception of Aurora Serverless offering
 </p>
 </details>
 
-34. What are the kinds of backups for RDS?
+33. What are the kinds of backups for RDS?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -638,7 +627,7 @@ No, with the exception of Aurora Serverless offering
 </p>
 </details>
 
-35. Can Read Replicas be Multi Availbiltity Zone?
+34. Can Read Replicas be Multi Availbiltity Zone?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -648,7 +637,7 @@ Yes
 </p>
 </details>
 
-36. Why would you use Read Replicas?
+35. Why would you use Read Replicas?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -658,7 +647,7 @@ Increased performance
 </p>
 </details>
 
-37. Is it possible to have Read Replicas enabled with Backups turned off?
+36. Is it possible to have Read Replicas enabled with Backups turned off?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -668,7 +657,7 @@ No
 </p>
 </details>
 
-38. Can you have Read Replicas in different Regions?
+37. Can you have Read Replicas in different Regions?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -678,7 +667,7 @@ Yes
 </p>
 </details>
 
-39. What types of Read Replicas does AWS support?
+38. What types of Read Replicas does AWS support?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -693,7 +682,7 @@ Yes
 </p>
 </details>
 
-40. Can a Read Replica be promoted to master?
+39. Can a Read Replica be promoted to master?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -703,7 +692,7 @@ Yes
 </p>
 </details>
 
-41. If a Read Replica is promoted to master, what will happen to the Read Replica?
+40. If a Read Replica is promoted to master, what will happen to the Read Replica?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -713,7 +702,7 @@ It will break the Read Replication
 </p>
 </details>
 
-42. What can help prepare for Disaster Recovery?
+41. What can help prepare for Disaster Recovery?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -723,7 +712,7 @@ Multi Availability Zone
 </p>
 </details>
 
-43. Can you use Multi Availability Zone to help performance?
+42. Can you use Multi Availability Zone to help performance?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -733,7 +722,7 @@ No
 </p>
 </details>
 
-44. How can you force a failover with Multiple Availability Zone RDS?
+43. How can you force a failover with Multiple Availability Zone RDS?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -743,7 +732,7 @@ By rebooting the RDS instance
 </p>
 </details>
 
-45. How is Encryption at rest handled with RDS?
+44. How is Encryption at rest handled with RDS?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -753,7 +742,7 @@ KMS (Key Management Service)
 </p>
 </details>
 
-46. True or False, once your RDS instance is encrypted, the data stored at rest in the underlying storage is encrypted, as are its automated backups, read replicas, and snapshots.
+45. True or False, once your RDS instance is encrypted, the data stored at rest in the underlying storage is encrypted, as are its automated backups, read replicas, and snapshots.
 <details>
 <summary>Show answer</summary>
 <p>
@@ -763,7 +752,7 @@ True
 </p>
 </details>
 
-47. What type of storage does DynamoDB use?
+46. What type of storage does DynamoDB use?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -773,7 +762,7 @@ SSD
 </p>
 </details>
 
-48. How many geographically distinct data centers is DynamoDB spread across?
+47. How many geographically distinct data centers is DynamoDB spread across?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -783,7 +772,7 @@ SSD
 </p>
 </details>
 
-49. What are the default type of Data Consistency with DynamoDB?
+48. What are the default type of Data Consistency with DynamoDB?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -793,7 +782,7 @@ Eventual Consistent Reads
 </p>
 </details>
 
-50. What are the optional Data Consistency type can you opt for with DynamoDB?
+49. What are the optional Data Consistency type can you opt for with DynamoDB?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -803,7 +792,7 @@ Strongly Consistent Reads
 </p>
 </details>
 
-51. What is the difference between Strongly Consistent Reads and Strongly Consistent Reads?
+50. What is the difference between Strongly Consistent Reads and Strongly Consistent Reads?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -815,7 +804,7 @@ Strongly Consistent Reads
 </p>
 </details>
 
-52. What AWS Database is usful for Business Intelligence?
+51. What AWS Database is usful for Business Intelligence?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -825,7 +814,7 @@ Redshift
 </p>
 </details>
 
-53. Is it possible to have Multi Availability Zone with Redshift?
+52. Is it possible to have Multi Availability Zone with Redshift?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -835,7 +824,7 @@ No
 </p>
 </details>
 
-54. Are backups enabled by default with Redshift?
+53. Are backups enabled by default with Redshift?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -845,7 +834,7 @@ Yes
 </p>
 </details>
 
-55. What is the default number of days Redshift backups are held for?
+54. What is the default number of days Redshift backups are held for?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -855,7 +844,7 @@ Yes
 </p>
 </details>
 
-56. What is the maximum number of days Redshift backups can be held for?
+55. What is the maximum number of days Redshift backups can be held for?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -865,7 +854,7 @@ Yes
 </p>
 </details>
 
-57. How many copies of the data does Redshift attempt to keep?
+56. How many copies of the data does Redshift attempt to keep?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -875,7 +864,7 @@ Yes
 </p>
 </details>
 
-58. What actions can you take to prepare for Disaster Recovery with Redshift?
+57. What actions can you take to prepare for Disaster Recovery with Redshift?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -885,7 +874,7 @@ Set up asynchronous replication of snapshots to S3 in another region
 </p>
 </details>
 
-59. How are copies of your data held when using Aurora?
+58. How are copies of your data held when using Aurora?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -895,7 +884,7 @@ Set up asynchronous replication of snapshots to S3 in another region
 </p>
 </details>
 
-60. Can you share Aurora Snapshots with other AWS Accounts?
+59. Can you share Aurora Snapshots with other AWS Accounts?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -905,7 +894,7 @@ Yes
 </p>
 </details>
 
-61. What kinds of Read Replicas are available with Aurora?
+60. What kinds of Read Replicas are available with Aurora?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -917,7 +906,7 @@ Yes
 </p>
 </details>
 
-62. What is required for automated failover with Aurora Read Replicas?
+61. What is required for automated failover with Aurora Read Replicas?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -927,7 +916,7 @@ The Read Replica must be Aurora Replica. It can not be done with MySQL Replicas
 </p>
 </details>
 
-63. Are automated backups turned on by default with Aurora?
+62. Are automated backups turned on by default with Aurora?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -937,7 +926,7 @@ Yes
 </p>
 </details>
 
-64. Can you take snapshots of Aurora?
+63. Can you take snapshots of Aurora?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -947,7 +936,7 @@ Yes
 </p>
 </details>
 
-65. What is Elasticache used for?
+64. What is Elasticache used for?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -957,7 +946,7 @@ Increase database and web application performance
 </p>
 </details>
 
-66. If you need Multi Availabilty Zone with Elasticache, what must you use?
+65. If you need Multi Availabilty Zone with Elasticache, what must you use?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -967,7 +956,7 @@ Redis
 </p>
 </details>
 
-67. If you need Backups with Elasticache, what must you use?
+66. If you need Backups with Elasticache, what must you use?
 <details>
 <summary>Show answer</summary>
 <p>
@@ -977,7 +966,7 @@ Redis
 </p>
 </details>
 
-68. If you need to scale horizontally with Elasticache, what must you use?
+67. If you need to scale horizontally with Elasticache, what must you use?
 <details>
 <summary>Show answer</summary>
 <p>
