@@ -24,5 +24,3 @@ Bold topics are core services and very important to know well
 - [ ] - [Management & Governance](./management-governance.md)
 - [ ] - Analytics
 - [ ] - Desktop & App Streaming
-
-### [Review Questions](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/review-questions.md)
