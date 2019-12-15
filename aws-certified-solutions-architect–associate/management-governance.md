@@ -38,3 +38,104 @@ CloudWatch & CloudTrail TL;DR
 - You can interact with AWS from anywhere in the world just by using the command line (CLI)
 - You will need to set up access in IAM
 - Commands themselves are not in the exam, but some basic commands will be useful to know for real life
+
+## Management & Governance Review
+
+1. What can you use to monitor most of AWS as well as your applications that run on AWS?
+
+<details>
+<summary>Show answer</summary>
+<p>
+CloudWatch
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudwatch)
+</p>
+</details>
+
+2. What is the default monitor interval for CloudWatch for EC2?
+
+<details>
+<summary>Show answer</summary>
+<p>
+5 minutes
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudwatch)
+</p>
+</details>
+
+3. What is the detailed monitor interval for CloudWatch for EC2?
+
+<details>
+<summary>Show answer</summary>
+<p>
+1 minutes
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudwatch)
+</p>
+</details>
+
+4. CloudWatch is all about ___________?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Performance
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudwatch)
+</p>
+</details>
+
+5. CloudTrail is all about ___________?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Auditing
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudtrail)
+</p>
+</details>
+
+6. In which AWS Service can you create Dashboards?
+
+<details>
+<summary>Show answer</summary>
+<p>
+CloudWatch
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudwatch)
+</p>
+</details>
+
+7. In which AWS Service can you create Alarms?
+
+<details>
+<summary>Show answer</summary>
+<p>
+CloudWatch
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudwatch)
+</p>
+</details>
+
+8. In which AWS Service can you manage Logs?
+
+<details>
+<summary>Show answer</summary>
+<p>
+CloudWatch
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudwatch)
+</p>
+</details>
+
+9. Which AWS service monitors API calls in the AWS platform?
+
+<details>
+<summary>Show answer</summary>
+<p>
+CloudTrail
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudtrail)
+</p>
+</details>
