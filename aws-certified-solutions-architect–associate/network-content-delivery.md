@@ -202,6 +202,7 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 
 ## NAT Gateways
 - Redundant inside the Availability Zone
+- Prefered for enterprise use
 - You can only have one NAT Gateway innside one Availability Zone, NAT Gateways can not span Availability Zones
 - Starts at 5Gbs and scales currently to 45Gbs (You won't be tested on this)
 - No need to patch
@@ -513,5 +514,361 @@ Traffic Flow Only
 Multivalue Answer Routing
 
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#multivalue-answer-routing)
+</p>
+</details>
+
+26. Think of a VPC as a ____________________.
+<details>
+<summary>Show answer</summary>
+<p>
+Logical datacenter in AWS.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#vpc-virtual-private-cloud)
+</p>
+</details>
+
+27. What does a VPC consist of?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Internet Gateways (or Virtual Private Gateways)
+- Route Tables
+- Network Access COntrol Lists
+- Subnets
+- Security Groups
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#vpc-virtual-private-cloud)
+</p>
+</details>
+
+28. 1 Subnet = ___ Avability Zone?
+<details>
+<summary>Show answer</summary>
+<p>
+1
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#vpc-virtual-private-cloud)
+</p>
+</details>
+
+29. Security Groups are __________,
+<details>
+<summary>Show answer</summary>
+<p>
+Stateful
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#vpc-virtual-private-cloud)
+</p>
+</details>
+
+30. Network Access Control Lists are __________,
+<details>
+<summary>Show answer</summary>
+<p>
+Stateless
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#vpc-virtual-private-cloud)
+</p>
+</details>
+
+31. Can you have Transitive Peering?
+<details>
+<summary>Show answer</summary>
+<p>
+No
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#vpc-virtual-private-cloud)
+</p>
+</details>
+
+32. When you create a VPC, what is created as default?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- default Route Table
+- Network Access Control Lists (NACL)
+- default Security Group
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#vpc-virtual-private-cloud)
+</p>
+</details>
+
+33. When you create a VPC, what is not created as default?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- any Subnets
+- default Internet Gateway
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#vpc-virtual-private-cloud)
+</p>
+</details>
+
+34. True or False, `US-East-1A` in your AWS account can be a complettly different availability Zone to `US-East-1A` in another AWS account.
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#vpc-virtual-private-cloud)
+</p>
+</details>
+
+35. Amazon reserves how many IP addresses within your Subnets?
+<details>
+<summary>Show answer</summary>
+<p>
+5
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#vpc-virtual-private-cloud)
+</p>
+</details>
+
+36. How many Internet Gateways can you have per VPC?
+<details>
+<summary>Show answer</summary>
+<p>
+1
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#vpc-virtual-private-cloud)
+</p>
+</details>
+
+37. Can Security Groups span VPCs?
+<details>
+<summary>Show answer</summary>
+<p>
+No
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#vpc-virtual-private-cloud)
+</p>
+</details>
+
+38. When creating a NAT instance what should you do to the instance?
+<details>
+<summary>Show answer</summary>
+<p>
+Disable Source/Destination Check
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#nat-instances)
+</p>
+</details>
+
+39. NAT instances must be in what kind of Subnet?
+<details>
+<summary>Show answer</summary>
+<p>
+Public
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#nat-instances)
+</p>
+</details>
+
+40. The ammount of traffic that NAT instances can support depends on the instance size. If you are bottlenecking, what should you do?
+<details>
+<summary>Show answer</summary>
+<p>
+Increase the instance size
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#nat-instances)
+</p>
+</details>
+
+41. Are NAT Gateways redundant inside the Availability Zone?
+<details>
+<summary>Show answer</summary>
+<p>
+Yes
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#nat-gateways)
+</p>
+</details>
+
+42. Which are prefered for enterprise use, NAT Instance or NAT Gateway?
+<details>
+<summary>Show answer</summary>
+<p>
+NAT Gateway
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#nat-gateways)
+</p>
+</details>
+
+43. Do you need to own the patching maintenance for NAT Gateways?
+<details>
+<summary>Show answer</summary>
+<p>
+No
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#nat-gateways)
+</p>
+</details>
+
+44. Are NAT Gateways automatically assigned a public IP address?
+<details>
+<summary>Show answer</summary>
+<p>
+Yes
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#nat-gateways)
+</p>
+</details>
+
+45. When you create a NAT Gateway what do you need to update so that the NAT Gateway has a route out to the Internet?
+<details>
+<summary>Show answer</summary>
+<p>
+Route Tables
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#nat-gateways)
+</p>
+</details>
+
+46. Do you need to disable Source/Destination Checks with NAT Gateways?
+<details>
+<summary>Show answer</summary>
+<p>
+No
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#nat-gateways)
+</p>
+</details>
+
+47. The default VPC comes with a default Network ACL, how does it handle all inbound and outbound traffic by default?
+<details>
+<summary>Show answer</summary>
+<p>
+Allows all outbound and inbound traffic
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#network-access-control-lists)
+</p>
+</details>
+
+48. When you create a custom Network ACL, how does it handle all inbound and outbound traffic by default?
+<details>
+<summary>Show answer</summary>
+<p>
+Denies all outbound and inbound traffic until you add rules
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#network-access-control-lists)
+</p>
+</details>
+
+49. If you don't associate a Network ACL with each Subet in your VPC what would happen?
+<details>
+<summary>Show answer</summary>
+<p>
+The subnet is automatically associated with the default ACL
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#network-access-control-lists)
+</p>
+</details>
+
+50. What can you use to block IP addresses?
+<details>
+<summary>Show answer</summary>
+<p>
+Network ACLs. You cannot block IP addresses with Security Groups
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#network-access-control-lists)
+</p>
+</details>
+
+51. True or False, you can associate a Network ACL with multiple subnets.
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#network-access-control-lists)
+</p>
+</details>
+
+52. True or False, a subnet can be associated with more than one network ACL at a time.
+<details>
+<summary>Show answer</summary>
+<p>
+False
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#network-access-control-lists)
+</p>
+</details>
+
+53. How are Network ACL rules evaluated?
+<details>
+<summary>Show answer</summary>
+<p>
+In numerical order starting with the lowest numbered rule
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#network-access-control-lists)
+</p>
+</details>
+
+54. A NAT Gateway or NAT Instance is used to provide Internet traffic to EC2 instances in ________________?
+<details>
+<summary>Show answer</summary>
+<p>
+a private subnets
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#bastion-host)
+</p>
+</details>
+
+55. What can you use to securely administer EC2 instances (using SSH or RDP)
+<details>
+<summary>Show answer</summary>
+<p>
+Bastion
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#bastion-host)
+</p>
+</details>
+
+56. True or False, you can use a NAT Gateway as a Bastion Host?
+<details>
+<summary>Show answer</summary>
+<p>
+False
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#bastion-host)
+</p>
+</details>
+
+57. When would you use a AWS Dirrect Connect?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Useful for high throughput workloads (ie lots of network traffic)
+- Useful if you need a stable and reliable secure connection
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#direct-connect)
+</p>
+</details>
+
+58. What are the kinds of VPC Endpoints?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Interface Endpoints
+- Gateway Endpoints
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#two-types-of-vpc-endpoints)
+</p>
+</details>
+
+59. What are the services Gateway Endpoints supports?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- S3
+- DynamoDB
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#two-types-of-vpc-endpoints)
 </p>
 </details>
