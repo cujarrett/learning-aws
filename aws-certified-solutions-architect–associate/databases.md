@@ -39,7 +39,7 @@ AWS RDS Offerings
   Automated Backups are enabled by default. The backup data is stored in S3 and you get free storage equal to the size of your database. So if you have an RDS instance of 10Gb, you will get 10Gb worth of storage.
 
   Backups are taken within a defined maintenance window. During the backup window, storage I/O may be suspended while your data is being backed up and you may expereince elevated latency.
-  
+
 - **Database Snapshots** - Done manually, (ie they are user intiated). They are stored even after you delete the orginal RDS instance, unlike automated backups.
 
 ### Restoring Backups With RDS
@@ -205,7 +205,7 @@ AWS ElastiCache supports two open-source in-memory caching engines
 
 - Redis is Multi Avability Zone
 - You can do backups and restores of Redis
-  
+
 ## DynamoDB
 Fast and flexiable NOSQL database service for all applications that need consistent, single-digit millisecond latency at any scale. It is a fully managed database and supports both document and key-value data models. Its flexible data model and reliable performance make it a great fit for mobile, web, gaming, ad-tech, IoT, and many other applications.
 
@@ -273,12 +273,12 @@ I/O may be briefly suspended while the backup process initializes (typically und
 - a. Aurora, MySQL, SQL Server, Cassandra
 - b. PostgreSQL, MariaDB, MongoDB, Aurora
 - c. MariaDB, SQL Server, MySQL, Cassandra
-- d. Oracle, SQL Server, MySQL, PostgreSQL 
+- d. Oracle, SQL Server, MySQL, PostgreSQL
 
 <details>
 <summary>Show answer</summary>
 <p>
-- d. Oracle, SQL Server, MySQL, PostgreSQL 
+- d. Oracle, SQL Server, MySQL, PostgreSQL
 </p>
 </details>
 
@@ -521,5 +521,468 @@ I/O may be briefly suspended while the backup process initializes (typically und
 - b. False
 
 Technically a destination port number is needed, however with a DB security group the RDS instance port number is automatically applied to the RDS DB Security Group.
+</p>
+</details>
+
+25. What transactional process is RDS a good choice for?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Online Transactional Processing (OLTP)
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-relational-database-service)
+</p>
+</details>
+
+26. What types of RDS databases does AWS support?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- SQL
+- MySQL
+- PostgreSQL
+- Oracel
+- Aurora
+- MariaDB
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-relational-database-service)
+</p>
+</details>
+
+27. What is AWS's NOSQL offering?
+<details>
+<summary>Show answer</summary>
+<p>
+DynamoDB
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#dynamodb)
+</p>
+</details>
+
+28. What transactional process is Redshift a good choice for?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Online Analytics Processing (OLAP)
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#redshift)
+</p>
+</details>
+
+29. What are the types of Elasticache AWS offers?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Memcached - Used if we want something simple
+- Redis - Used if there's a need for multiple data types, need for multiple Availability Zones, and or a need for backups
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#elasticache)
+</p>
+</details>
+
+30. What infrastucture does RDS run on?
+<details>
+<summary>Show answer</summary>
+<p>
+
+Virtual Machines
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-key-features)
+</p>
+</details>
+
+31. Is it possibe to ssh into the machine that runs a RDS?
+<details>
+<summary>Show answer</summary>
+<p>
+
+No
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-key-features)
+</p>
+</details>
+
+32. Who is responsible for patching Operating Systems and Databases for RDS?
+<details>
+<summary>Show answer</summary>
+<p>
+Amazon
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-key-features)
+</p>
+</details>
+
+33. Is RDS Serverless?
+<details>
+<summary>Show answer</summary>
+<p>
+No, with the exception of Aurora Serverless offering
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-key-features)
+</p>
+</details>
+
+34. What are the kinds of backups for RDS?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Automated Backups
+- Database Snapshots
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#backups-with-rds)
+</p>
+</details>
+
+35. Can Read Replicas be Multi Availbiltity Zone?
+<details>
+<summary>Show answer</summary>
+<p>
+Yes
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-read-replica)
+</p>
+</details>
+
+36. Why would you use Read Replicas?
+<details>
+<summary>Show answer</summary>
+<p>
+Increased performance
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-read-replica)
+</p>
+</details>
+
+37. Is it possible to have Read Replicas enabled with Backups turned off?
+<details>
+<summary>Show answer</summary>
+<p>
+No
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-read-replica)
+</p>
+</details>
+
+38. Can you have Read Replicas in different Regions?
+<details>
+<summary>Show answer</summary>
+<p>
+Yes
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-read-replica)
+</p>
+</details>
+
+39. What types of Read Replicas does AWS support?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- MySQL
+- PostgreSQL
+- MariaDB
+- Oracle
+- Aurora
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-read-replica)
+</p>
+</details>
+
+40. Can a Read Replica be promoted to master?
+<details>
+<summary>Show answer</summary>
+<p>
+Yes
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-read-replica)
+</p>
+</details>
+
+41. If a Read Replica is promoted to master, what will happen to the Read Replica?
+<details>
+<summary>Show answer</summary>
+<p>
+It will break the Read Replication
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-read-replica)
+</p>
+</details>
+
+42. What can help prepare for Disaster Recovery?
+<details>
+<summary>Show answer</summary>
+<p>
+Multi Availability Zone
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-multi-az-multiple-availability-zone)
+</p>
+</details>
+
+43. Can you use Multi Availability Zone to help performance?
+<details>
+<summary>Show answer</summary>
+<p>
+No
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-multi-az-multiple-availability-zone)
+</p>
+</details>
+
+44. How can you force a failover with Multiple Availability Zone RDS?
+<details>
+<summary>Show answer</summary>
+<p>
+By rebooting the RDS instance
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-multi-az-multiple-availability-zone)
+</p>
+</details>
+
+45. How is Encryption at rest handled with RDS?
+<details>
+<summary>Show answer</summary>
+<p>
+KMS (Key Management Service)
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-encryption-at-rest)
+</p>
+</details>
+
+46. True or False, once your RDS instance is encrypted, the data stored at rest in the underlying storage is encrypted, as are its automated backups, read replicas, and snapshots.
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#rds-encryption-at-rest)
+</p>
+</details>
+
+47. What type of storage does DynamoDB use?
+<details>
+<summary>Show answer</summary>
+<p>
+SSD
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#dynamodb)
+</p>
+</details>
+
+48. How many geographically distinct data centers is DynamoDB spread across?
+<details>
+<summary>Show answer</summary>
+<p>
+3
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#dynamodb)
+</p>
+</details>
+
+49. What are the default type of Data Consistency with DynamoDB?
+<details>
+<summary>Show answer</summary>
+<p>
+Eventual Consistent Reads
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#dynamodb)
+</p>
+</details>
+
+50. What are the optional Data Consistency type can you opt for with DynamoDB?
+<details>
+<summary>Show answer</summary>
+<p>
+Strongly Consistent Reads
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#dynamodb)
+</p>
+</details>
+
+51. What is the difference between Strongly Consistent Reads and Strongly Consistent Reads?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Eventual Consistent Reads (default) - Consistency across all copies of data usually reached within a second. Repeating a read after a short time should return the updated data. (Best Read Performance)
+- Strongly Consistent Reads - A Strongly Consistent read returns a result that reflects all writes that received a sucessful response prior to the read.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#dynamodb)
+</p>
+</details>
+
+52. What AWS Database is usful for Business Intelligence?
+<details>
+<summary>Show answer</summary>
+<p>
+Redshift
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#redshift)
+</p>
+</details>
+
+53. Is it possible to have Multi Availability Zone with Redshift?
+<details>
+<summary>Show answer</summary>
+<p>
+No
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#redshift)
+</p>
+</details>
+
+54. Are backups enabled by default with Redshift?
+<details>
+<summary>Show answer</summary>
+<p>
+Yes
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#redshift)
+</p>
+</details>
+
+55. What is the default number of days Redshift backups are held for?
+<details>
+<summary>Show answer</summary>
+<p>
+1
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#redshift)
+</p>
+</details>
+
+56. What is the maximum number of days Redshift backups can be held for?
+<details>
+<summary>Show answer</summary>
+<p>
+35
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#redshift)
+</p>
+</details>
+
+57. How many copies of the data does Redshift attempt to keep?
+<details>
+<summary>Show answer</summary>
+<p>
+3, the orginal, the replica, and a backup in S3
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#redshift)
+</p>
+</details>
+
+58. What actions can you take to prepare for Disaster Recovery with Redshift?
+<details>
+<summary>Show answer</summary>
+<p>
+Set up asynchronous replication of snapshots to S3 in another region
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#redshift)
+</p>
+</details>
+
+59. How are copies of your data held when using Aurora?
+<details>
+<summary>Show answer</summary>
+<p>
+2 copies of your data is contained in each Availability Zone, with a minimum of 3 Availability Zones. 6 copies of your data.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#aurora)
+</p>
+</details>
+
+60. Can you share Aurora Snapshots with other AWS Accounts?
+<details>
+<summary>Show answer</summary>
+<p>
+Yes
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#aurora-backups)
+</p>
+</details>
+
+61. What kinds of Read Replicas are available with Aurora?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Aurora Replicas
+- MySQL Replicas
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#aurora-read-replicas)
+</p>
+</details>
+
+62. What is required for automated failover with Aurora Read Replicas?
+<details>
+<summary>Show answer</summary>
+<p>
+The Read Replica must be Aurora Replica. It can not be done with MySQL Replicas
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#aurora-read-replicas)
+</p>
+</details>
+
+63. Are automated backups turned on by default with Aurora?
+<details>
+<summary>Show answer</summary>
+<p>
+Yes
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#aurora-backups)
+</p>
+</details>
+
+64. Can you take snapshots of Aurora?
+<details>
+<summary>Show answer</summary>
+<p>
+Yes
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#aurora-backups)
+</p>
+</details>
+
+65. What is Elasticache used for?
+<details>
+<summary>Show answer</summary>
+<p>
+Increase database and web application performance
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#elasticache)
+</p>
+</details>
+
+66. If you need Multi Availabilty Zone with Elasticache, what must you use?
+<details>
+<summary>Show answer</summary>
+<p>
+Redis
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#aurora-backups)
+</p>
+</details>
+
+67. If you need Backups with Elasticache, what must you use?
+<details>
+<summary>Show answer</summary>
+<p>
+Redis
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#aurora-backups)
+</p>
+</details>
+
+68. If you need to scale horizontally with Elasticache, what must you use?
+<details>
+<summary>Show answer</summary>
+<p>
+Memcached
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/databases.md#aurora-backups)
 </p>
 </details>
