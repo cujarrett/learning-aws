@@ -263,3 +263,95 @@ To access the console you use an account and password combination. To access AWS
 - a. Enact a strong password policy: user passwords must be changed every 45 days, with each password containing a combination of capital letters, lower case letters, numbers, and special symbols.
 </p>
 </details>
+
+18. Are Roles more or less secure than storing your access key and secret access key on individual EC2 instances?
+
+<details>
+<summary>Show answer</summary>
+<p>
+more
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#roles)
+</p>
+</details>
+
+19. True or False, you can assign roles to an EC2 instance both before and after it is created using both the console and command line?
+
+<details>
+<summary>Show answer</summary>
+<p>
+False
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#roles)
+</p>
+</details>
+
+20. IAM consists of what?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Users
+- Groups
+- Roles
+- Policies
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#iam-key-terminology)
+</p>
+</details>
+
+21. IAM Policies are stored in what format?
+
+<details>
+<summary>Show answer</summary>
+<p>
+JSON
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#iam-key-terminology)
+</p>
+</details>
+
+22. True or False, IAM is universal?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#iam-identity-access-management)
+</p>
+</details>
+
+23. True or False, new Users have all permissions when first created?
+
+<details>
+<summary>Show answer</summary>
+<p>
+False, new Users have NO permissions when first created
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#users)
+</p>
+</details>
+
+24. True or False, you can use the Access Key ID and Secret Access Key that is created when creating a new User to log into the AWS console.
+
+<details>
+<summary>Show answer</summary>
+<p>
+False, you can not use the Access Key ID and Secret Access Key to log into the AWS Console. You can only use the Access Key ID and Secret Access Key to access the AWS API's via the Command Line.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#users)
+</p>
+</details>
+
+25. True or False, you can use IAM to create and customize your own password rotation policies?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#iam-identity-access-management)
+</p>
+</details>
