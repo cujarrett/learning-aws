@@ -1,7 +1,7 @@
 ## What?
 I'd like to pass the [AWS Certified Solutions Arch](Associatehttps://aws.amazon.com/certification/certified-solutions-architect-associate/)
 
-### Tasks
+## Tasks
 - [ ] - [Ryan Kroonenburg's AWS Certified Solutions Arch Associate course](https://www.udemy.com/course/aws-certified-solutions-architect-associate/)
 - [ ] - [Jon Bonso's AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams/)
 - [ ] - [Skillcertpro's AWS Certified Solutions Architect 2019 Practice Questions](https://www.udemy.com/course/aws-certified-solutions-architect-2018-practice-questions/)
@@ -11,7 +11,7 @@ I'd like to pass the [AWS Certified Solutions Arch](Associatehttps://aws.amazon.
 #### Notes Preface
 I am going to focus on probable elements in the exam to streamline note taking. For example I will detail difference between a Regions and an Availability Zone but I won't take notes on current number of each as it's not as important and in constant change.
 
-### AWS Topics Studied
+## AWS Topics Studied
 Bold topics are core services and very important to know well
 - [x] - [**AWS Global Infrastructure**](./aws-global-infrastructure.md)
 - [x] - [**Security, Identity & Compliance**](security-identity-compliance.md)
