@@ -229,6 +229,25 @@ _image from [A Cloud Guru](https://acloud.guru/)_
 - Useful for high throughput workloads (ie lots of network traffic)
 - Useful if you need a stable and reliable secure connection
 
+## Elastic Load Balancer (ELB)
+Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and Lambda functions. It can handle the varying load of your application traffic in a single Availability Zone or across multiple Availability Zones. Elastic Load Balancing offers three types of load balancers that all feature the high availability, automatic scaling, and robust security necessary to make your applications fault tolerant.
+
+### ELB Types
+- #### Application Load Balancer
+    Application Load Balancerare best suited for load balancing of HTTP and HTTPS traffic. They opperate at Layer 7 and are application aware. They are intelligent, and you can create advanced request routing, sending specified requests to specific web servers.
+
+- #### Network Load Balancer
+    Network Load Balancer are best suited for load balancing of TCP traffic where extream performance is required. Operating at the connection level (Layer 4), Network Load Balancer are capable of handling millions of requests per second, while maintaining ultra-low latencies. Use for extream performance.
+
+- #### Classic Load Balancer
+Classic Load Balancer are legacy Elastic Load Balancers. You can load balance HTTP/HTTPS applications and use Layer 7 specific features such as X-Forwarded and sticky sessions. You can also use strict Layer 4 load balancing for applications that rely purely on the TCP protocol.
+
+### ELB Errors
+If your application stops responding, the ELB (Classic Load Balancer) responds with a 504 (GateWay Timeout) error. This means that the application is having issues. This could be either at the Web Server layer or at the Database layer. Identy where the application is failing, and scale it up or out where possible.
+
+### X-Forwarded-For Header
+Holds the users IPv4 address, useful when a user goes through a load balancer before hitting your app.
+
 ## Network Content Delivery Review
 1. Which of the following Route 53 policies allow you to a) route data to a second resource if the first is unhealthy, and b) route data to resources that have better performance?
 - a. Failover and Simple Routing
