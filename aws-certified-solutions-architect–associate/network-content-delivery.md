@@ -257,6 +257,19 @@ If your application stops responding, the ELB (Classic Load Balancer) responds w
 ### X-Forwarded-For Header
 Holds the users IPv4 address, useful when a user goes through a load balancer before hitting your app.
 
+### Advanced Load Balancer Theory
+- ### Sticky Sessions
+    Classic Load Balancer routes each request independently to the registered EC2 instance with the smallest load. Sticky Sessions allow you to bind a user's session to a specific EC2 instance. This ensures that all requests from the user during the session are sent to the same instance.
+
+    You can enable Sticky Sessions for Application Load Balancers as well, but the traffic will be sent at the Target Group Level.
+
+    If you have EC2 instances that are receiving no traffic you can disable Sticky Sessions to fix that problem.
+
+- ### Cross Zone
+    With cross-zone load balancing, each load balancer node for your Classic Load Balancer distributes requests evenly across the registered instances in all enabled Availability Zones. If cross-zone load balancing is disabled, each load balancer node distributes requests evenly across the registered instances in its Availability Zone only.
+- ### Path Patterns
+    You can create a listenerwith rules to forward requests based on the URL path. This is known as path-based routing. If you are running microservices, you can route traffic to multiple back-end services using path-based routing. For example, you can route general requests to one target group and requests to render images to another target group.
+
 ## Network Content Delivery Review
 1. Which of the following Route 53 policies allow you to a) route data to a second resource if the first is unhealthy, and b) route data to resources that have better performance?
 - a. Failover and Simple Routing
