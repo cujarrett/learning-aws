@@ -3,7 +3,7 @@ I'd like to pass the [AWS Certified Solutions Arch](Associatehttps://aws.amazon.
 
 ## Tasks
 - [ ] - [Ryan Kroonenburg's AWS Certified Solutions Arch Associate course](https://www.udemy.com/course/aws-certified-solutions-architect-associate/)
-- [ ] - Review Longest Prefix Match Understanding Advanced Concepts in VPC Peering](https://tutorialsdojo.com/longest-prefix-match-understanding-advanced-concepts-in-vpc-peering/)
+- [ ] - [Review Longest Prefix Match Understanding Advanced Concepts in VPC Peering](https://tutorialsdojo.com/longest-prefix-match-understanding-advanced-concepts-in-vpc-peering/)
 - [ ] - [Jon Bonso's AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams/)
 - [ ] - [Skillcertpro's AWS Certified Solutions Architect 2019 Practice Questions](https://www.udemy.com/course/aws-certified-solutions-architect-2018-practice-questions/)
 - [ ] - Take AWS Certified Solutions Arch Associate exam
