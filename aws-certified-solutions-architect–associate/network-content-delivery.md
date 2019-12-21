@@ -270,6 +270,17 @@ Holds the users IPv4 address, useful when a user goes through a load balancer be
 - ### Path Patterns
     You can create a listenerwith rules to forward requests based on the URL path. This is known as path-based routing. If you are running microservices, you can route traffic to multiple back-end services using path-based routing. For example, you can route general requests to one target group and requests to render images to another target group.
 
+## HA Architecture
+![HA Architecture example](https://user-images.githubusercontent.com/16245634/71314232-15121180-240a-11ea-8421-397e7bdc5961.png)
+Everything fails. Everything. You should plan for failure.
+
+- Design for failure
+- Use multiple Availability Zones and multiple Regions where ever you can
+- Know the difference between Multi Availability Zone and Read Replicas for RDS
+- Know the difference between scaling out and scaling up
+  - Scaling out could be autoscaling EC2 instances
+  - Scaling up could be increasing the resources in each EC2 instance, aka going from a T2 micro to a 6X instance
+- Know the different S3 storage classes, standard S3 is high availability by default, reduced redundancy and S3 single Availability Zone are not highly available    
 ## Network Content Delivery Review
 1. Which of the following Route 53 policies allow you to a) route data to a second resource if the first is unhealthy, and b) route data to resources that have better performance?
 - a. Failover and Simple Routing
