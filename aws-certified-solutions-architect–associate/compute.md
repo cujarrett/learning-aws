@@ -429,3 +429,14 @@ True
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#ec2-placement-groups)
 </p>
 </details>
+
+27. What AWS Compute offering offers quick methods of deploying and managing applications in the AWS Cloud without worrying about the infrastructure that runs those applications.
+
+<details>
+<summary>Show answer</summary>
+<p>
+Elastic BeanStalk, you simply upload your application and Elastic Beanstalk automatically handles the details of capacity provisioning, load balancing, scaling, and application health monitoring. 
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#elastic-beanstalk)
+</p>
+</details>
