@@ -68,6 +68,9 @@ Partitioned Placement Groups divides each group into logical segments called par
     - Could be used in multiple instances of HDFS, HBase, Cassandra
     - A Partitioned Placement Group can span multiple Availability Zones, but they still have to be within the same region
 
+## Elastic Beanstalk
+Elastic Beanstalk allows you to quickly deploy and manage applications in the AWS Cloud without worrying about the infrastructure that runs those applications. You simply upload your application, and Elastic BeanStalk automatically handles the details of capacity provisioning, load balancing, scaling, and application health monitoring.
+
 ## Compute Review
 1. Can Spread Placement Groups be deployed across multiple Availability Zones?
 - a. Yes
