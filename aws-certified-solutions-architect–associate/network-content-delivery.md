@@ -280,7 +280,8 @@ Everything fails. Everything. You should plan for failure.
 - Know the difference between scaling out and scaling up
   - Scaling out could be autoscaling EC2 instances
   - Scaling up could be increasing the resources in each EC2 instance, aka going from a T2 micro to a 6X instance
-- Know the different S3 storage classes, standard S3 is high availability by default, reduced redundancy and S3 single Availability Zone are not highly available    
+- Know the different S3 storage classes, standard S3 is high availability by default, reduced redundancy and S3 single Availability Zone are not highly available
+
 ## Network Content Delivery Review
 1. Which of the following Route 53 policies allow you to a) route data to a second resource if the first is unhealthy, and b) route data to resources that have better performance?
 - a. Failover and Simple Routing
@@ -1193,5 +1194,110 @@ The /16 offers 65,536 possible addresses.
 - b. No
 
 0.0.0.0/0 would allow ANYONE from ANYWHERE to connect to your instances. This is generally a bad plan. The phrase 'web-facing subnets' does not mean just web servers. It would include any instances in that subnet some of which you may not strangers attacking. You would only allow 0.0.0.0/0 on port 80 or 443 to to connect to your public facing Web Servers, or preferably only to an ELB. Good security starts by limiting public access to only what the customer needs. Please see the AWS Security whitepaper for complete details.
+</p>
+</details>
+
+80. What are the three kinds of load balancers?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Classic Load Balancer
+- Application Load Balancer
+- Network Load Balancer
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#elb-types)
+</p>
+</details>
+
+81. What does a 504 Error mean?
+<details>
+<summary>Show answer</summary>
+<p>
+The gateway has timed out. The application is not responding within the idle timeout period.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#elb-errors)
+</p>
+</details>
+
+82. What should you do when you see a 504 Error?
+<details>
+<summary>Show answer</summary>
+<p>
+Troubleshoot the application. Is it the Web Server or the Database Server?
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#elb-errors)
+</p>
+</details>
+
+83. If you are using a Load Balancer and need the IP address of your end user what can you use to accomplish this?
+<details>
+<summary>Show answer</summary>
+<p>
+X-Forwarded-For
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#x-forwarded-for-header)
+</p>
+</details>
+
+83. What are the status reported for instances monitored by ELB?
+<details>
+<summary>Show answer</summary>
+<p>
+
+- InService
+- OutOfService
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#elb-status)
+</p>
+</details>
+
+84. How can you check the instance health?
+<details>
+<summary>Show answer</summary>
+<p>
+Health Checks talk to the instance
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#health-checks)
+</p>
+</details>
+
+85. How do you access a Load Balancer?
+<details>
+<summary>Show answer</summary>
+<p>
+DNS Name, you are never given an IP address for a Load Balancer
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#elastic-load-balancer-elb)
+</p>
+</details>
+
+86. How can you ensure users of your load balanced application stay in the same instance for the duration of their interactions?
+<details>
+<summary>Show answer</summary>
+<p>
+Sticky Sessions
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#sticky-sessions)
+</p>
+</details>
+
+87. How can you load balance across multiple availability zones?
+<details>
+<summary>Show answer</summary>
+<p>
+Cross Zone Load Balancing
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#cross-zone)
+</p>
+</details>
+
+88. How can you load balance your application to different EC2 instances based on the URL contained in the request?
+<details>
+<summary>Show answer</summary>
+<p>
+Path Patterns Load Balancing
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#path-patterns)
 </p>
 </details>
