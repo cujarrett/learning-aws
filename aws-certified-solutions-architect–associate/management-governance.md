@@ -39,6 +39,10 @@ CloudWatch & CloudTrail TL;DR
 - You will need to set up access in IAM
 - Commands themselves are not in the exam, but some basic commands will be useful to know for real life
 
+## CloudFormation
+- Is a way of completely scripting your cloud environment
+- Quick Start is a bunch of CloudFormation templates already built by AWS Solutions Architects allowing you to create complex environments very quickly
+
 ## Management & Governance Review
 
 1. What can you use to monitor most of AWS as well as your applications that run on AWS?
