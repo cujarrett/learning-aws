@@ -147,7 +147,7 @@ CloudTrail
 </p>
 </details>
 
-9. Which AWS service can be useful for scripting your cloud environment?
+10. Which AWS service can be useful for scripting your cloud environment?
 
 <details>
 <summary>Show answer</summary>
@@ -158,13 +158,13 @@ CloudFormation
 </p>
 </details>
 
-9. What is the collection of AWS scripted infrastructure called?
+11. What is the collection of AWS scripted infrastructure called?
 
 <details>
 <summary>Show answer</summary>
 <p>
 QuickStart, it's bunch of CloudFormation templates already built by AWS Solutions Architects allowing you to create complex environments very quickly
 
-[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudformation)
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#aws-quick-start)
 </p>
 </details>
