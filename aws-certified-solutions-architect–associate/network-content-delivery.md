@@ -1301,3 +1301,223 @@ Path Patterns Load Balancing
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#path-patterns)
 </p>
 </details>
+
+89. You have a website with three distinct services, each hosted by different web server autoscaling groups. Which AWS service should you use?
+- a. S3 Static websites
+- b. Elastic Load Balancers (ELB)
+- c. Application Load Balancers (ALB)
+- d. Classic Load Balancers (CLB)
+- e. Network Load Balancers (NLB)
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. Application Load Balancers (ALB)
+
+The ALB has functionality to distinguish traffic for different targets (mysite.co/accounts vs. mysite.co/sales vs. mysite.co/support) and distribute traffic based on rules for target group, condition, and priority.
+</p>
+</details>
+
+90. You manage a high-performance site that collects scientific data using a bespoke protocol over TCP port 1414. The data comes in at high speed and is distributed to an autoscaling group of EC2 compute services spread over three AZs. Which type of AWS load balancer would best meet this requirement?
+- a. CloudFront combined with Lambda@Edge
+- b. Elastic Load Balancers (ELB)
+- c. Application Load Balancers (ALB)
+- d. Network Load Balancers (NLB)
+
+<details>
+<summary>Show answer</summary>
+<p>
+- d. Network Load Balancers (NLB)
+
+The Network Load Balancer is specifically designed for high performance traffic that is not conventional web traffic. The Classic LB might also do the job, but would not offer the same performance.
+</p>
+</details>
+
+91. You have been tasked with creating a resilient website for your company. You create the Classic Load Balancer with a standard health check, a Route 53 alias pointing at the ELB, and a launch configuration based on a reliable Linux AMI. You have also checked all the security groups, NACLs, routes, gateways and NATs. You run the first test and cannot reach your web servers via the ELB or directly. What might be wrong?
+- a. The launch configuration is not being triggered correctly
+- b. The health check is not set up correctly
+- c. Your autoscaling group is set to zero instances
+- d. You have specified the wrong key pair and the servers cannot start the http service properly
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. The launch configuration is not being triggered correctly
+
+In a question like this you need to evaluate if all the necessary services are in place. The glaring omission is that you have not built an autoscaling group to invoke the launch configuration you specified. The instance count and health check depend on instances being created by the autoscaling group. Finally, key pairs have no relevance to services running on the instance.
+</p>
+</details>
+
+92. If you are told that an EC2 instance is being changed to have more RAM, Is this considered scaling up or scaling out?
+- a. Scaling out
+- b. Scaling up
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. Scaling up
+
+Scaling out is where you have more of the same resource separately working in parallel (visualize services sitting side by side). Scaling up is where you make it bigger and bigger like and ugly tower with more floors being added after the initial design was finished.
+</p>
+</details>
+
+93. In discussions about cloud services the words 'availability', 'durability', 'reliability' and 'resiliency' are often used. Which term is used to refer to the likelihood that you can access a resource or service when you need it?
+- a. Availability
+- b. Durability
+- c. Resilency
+- d. Reliability
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. Availability
+
+Each word has a specific meaning and your ability to select the correct answer may depend on understanding the difference. Availability can be described as the % of a time period when the service will be able to respond to your request in some fashion.
+</p>
+</details>
+
+94. In discussions about cloud services the words 'availability', 'durability', 'reliability' and 'resiliency' are often used. Which term is used to refer to the likelihood that a resource will continue to exist until you decide to remove it?
+- a. Availability
+- b. Durability
+- c. Resilency
+- d. Reliability
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. Durability
+
+Each word has a specific meaning and your ability to select a correct answer may depend on understanding the difference. Durability refers to the on-going existence of the object or resource. Note that it does not mean you can access it, only that it continues to exist.
+</p>
+</details>
+
+95. In discussions about cloud services the words 'availability', 'durability', 'reliability' and 'resiliency' are often used. Which term is used to refer to the likelihood that a resource ability to recover from damage or disruption?
+- a. Availability
+- b. Durability
+- c. Resilency
+- d. Reliability
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. Resilency
+
+Each word has a specific meaning and your ability to select the correct answer may depend on understanding the difference. Resiliency can be described as the ability to a system to self heal after damage or an event. Note that this does not mean that it will be available continuously during the event, only that it will self recover.
+</p>
+</details>
+
+96. In discussions about cloud services the words 'availability', 'durability', 'reliability' and 'resiliency' are often used. Which term is used to refer to the likelihood that a resource will work as designed?
+- a. Availability
+- b. Durability
+- c. Resilency
+- d. Reliability
+
+<details>
+<summary>Show answer</summary>
+<p>
+- d. Reliability
+
+Each word has a specific meaning and your ability to select a correct answer may depend on understanding the difference. Reliability is closely related to availability, however a system can be 'available' but not be working properly. Reliability is the probability that a system will work as designed. This term is not used much in AWS, but is still worth understanding.
+</p>
+</details>
+
+97. You work for a major news network in Europe. They have just released a new mobile app that allows users to post their photos of newsworthy events in real-time. Your organization expects this app to grow very quickly, essentially doubling its user base each month. The app uses S3 to store the images, and you are expecting sudden and sizable increases in traffic to S3 when a major news event takes place (as users will be uploading large amounts of content.) You need to keep your storage costs to a minimum, and you are happy to temporally lose access to up to 0.1% of uploads per year. With these factors in mind, which storage media should you use to keep costs as low as possible?
+- a. S3 Standard IA
+- b. S3 Standard
+- c. S3 One Zone Infrequent Access
+- d. S3 Reduced Redundancy Storage (RRS)
+- e. Glacier
+- f. S3 Provisioned IOPS
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. S3 Standard IA
+
+The key drivers here are availability and cost, so an awareness of cost is necessary to answer this. Full S3 is quite expensive at around $0.023 per GB for the lowest band. S3 standard IA is $0.0125 per GB, S3 OneZone-IA is $0.01 per GB, and Legacy S3-RRS is around $0.024 per GB for the lowest band. Of the offered solutions S3 One Zone-IA is the cheapest suitable option. Glacier cannot be considered as it is not intended for direct access, however it comes in at around $0.004 per GB. S3 has an availability of 99.99%, S3-IA has an availability of 99.9% while S3-1Zone-IA only has 99.5%.
+</p>
+</details>
+
+98. You work for a manufacturing company that operate a hybrid infrastructure with systems located both in a local data center and in AWS, connected via AWS Direct Connect. Currently, all on-premise servers are backed up to a local NAS, but your CTO wants you to decide on the best way to store copies of these backups in AWS. He has asked you to propose a solution which will provide access to the files within milliseconds should they be needed, but at the same time minimizes cost. As these files will be copies of backups stored on-premise, availability is not as critical as durability. Choose the best option from the following which meets the brief.
+- a. Copy the files form the NAS to an S3 bucket configured as Standard class
+- b. Copy the files to an EC2 instance with a large EBS volume attached
+- c. Copy the files from the NAS to an S3 bucket with the One Zone IA class
+- d. Copy the files from the NAS to an S3 bucket with the Reduced Redundancy Storage class
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. Copy the files from the NAS to an S3 bucket with the One Zone IA class
+
+S3 OneZone-IA provides on-line access to files, while offering the same 11 9's of durability as all other storage classes. The trade-off is in the availability - 99.5% as opposed to 99.9%-99.99%. However in this brief as cost is more important than availability, S3 OneZone-IA is the logical choice . RRS is deprecated and new uses are strongly discouraged by AWS.
+</p>
+</details>
+
+99. You need to use an object-based storage solution to store your critical, non-replaceable data in a cost-effective way. This data will be frequently updated and will need some form of version control enabled on it. Which S3 storage solution should you use?
+- a. S3
+- b. S3 IA
+- c. S3 One Zone IA
+- d. S3 RRS
+- e. Glacier
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. S3
+
+The key point in the questions is that the data is non-replaceable and is frequently updated. The 1st excludes anything the has reduced durability, the second excluded anything with long recall, reduced availability, or billing based on infrequent access.
+</p>
+</details>
+
+100. In S3 the durability of my files is ________.
+- a. 99.99%
+- b. 99.999999999%
+- c. 99%
+- d. 100%
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. 99.999999999%
+</p>
+</details>
+
+101. When you have deployed an RDS database into multiple availability zones, can you use the secondary database as an independent read node?
+- a. No
+- b. Only in US-West-1
+- c. It depends on how you set it up
+- d. Yes
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. No
+</p>
+</details>
+
+102. Placement groups can either be of the type 'cluster', 'spread', or 'partition'. Choose options from below which are only specific to Spread Placement Groups.
+- a. Spread placement groups require a name that is unique within your AWS account for the region
+- b. An instance can be launched in one placement group at a time and cannot span multiple placement groups
+- c. A spread placement group is a logical grouping of instances within a single Availability Zone
+- d. A spread placement group is a group of instances that are each placed on distinct underlying hardware
+
+<details>
+<summary>Show answer</summary>
+<p>
+- d. A spread placement group is a group of instances that are each placed on distinct underlying hardware
+
+There is only one answer that is specific to Spread Placement Groups, and that is the final option. Whilst some of these answers are correct for either Cluster Placement Groups only, or for both Cluster and Spread Placement Groups, the question stated that only options specific to Spread Placement Groups should be chosen. This would rule out two options as they are true for both Spread & Cluster type placement groups. The Logical grouping of instances within a single Availability Zone is only true of Cluster Placement Groups and is also incorrect.
+</p>
+</details>
+
+103. Can I "force" a failover for any RDS instance that has multi-AZ configured?
+- a. Yes
+- b. No
+- c. Only for Oracle RDS instances
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. Yes
+</p>
+</details>
