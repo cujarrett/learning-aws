@@ -27,14 +27,14 @@ CloudWatch Host Level Metrics Consist of
 - Disk
 - Status Check
 
-### CloudTrail
+## CloudTrail
 AWS CloudTrail increases visibility into your user and resource activity by recording AWS Management Console actions and API calls. You can identify which users and accounts called AWS, the source IP address from which the calls were made, and when the calls occured.
 
 CloudWatch & CloudTrail TL;DR
 - CloudWatch monitors performance
 - CloudTrail monitors API calls in the AWS platform. CloudTrail is all about auditing.
 
-### AWS CLI
+## AWS CLI
 - You can interact with AWS from anywhere in the world just by using the command line (CLI)
 - You will need to set up access in IAM
 - Commands themselves are not in the exam, but some basic commands will be useful to know for real life
@@ -42,6 +42,9 @@ CloudWatch & CloudTrail TL;DR
 ## CloudFormation
 - Is a way of completely scripting your cloud environment
 - Quick Start is a bunch of CloudFormation templates already built by AWS Solutions Architects allowing you to create complex environments very quickly
+
+### AWS Quick Start
+AWS Quick Start is a bunch of CloudFormation templates already built by AWS Solutions Architects allowing you to create complex environments very quickly.
 
 ## Management & Governance Review
 
@@ -141,5 +144,27 @@ CloudWatch
 CloudTrail
 
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudtrail)
+</p>
+</details>
+
+9. Which AWS service can be useful for scripting your cloud environment?
+
+<details>
+<summary>Show answer</summary>
+<p>
+CloudFormation
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudformation)
+</p>
+</details>
+
+9. What is the collection of AWS scripted infrastructure called?
+
+<details>
+<summary>Show answer</summary>
+<p>
+QuickStart, it's bunch of CloudFormation templates already built by AWS Solutions Architects allowing you to create complex environments very quickly
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/management-governance.md#cloudformation)
 </p>
 </details>
