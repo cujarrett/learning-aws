@@ -21,7 +21,7 @@ The queue acts as a buffer between the component producing and saving data, and 
     Amazon SQS offers standard as the default queue type. A standard queue lets you have nearly unlimited number of transactions per second. Standard queues guarentee that a message is delivered at least once. However, occasionally (because of the highly distributed architecture that allows high throughput), more than one copy of a message might be delivered out of order. Standard queues provide best effort ordering which ensures that messages are generally delivered in the same order they are sent.
 
 - #### FIFO Queues
- The FIFO queue complements the Standard Queue. The most important features of this queue type are FIFO (first in first out) delivery and exactly once processing: The order in which messages are sent and recieved is strictly preserved and a message is delivered once and remains available until a consumer processes and deletes it; duplicates are not introduced into the queue.
+    The FIFO queue complements the Standard Queue. The most important features of this queue type are FIFO (first in first out) delivery and exactly once processing: The order in which messages are sent and recieved is strictly preserved and a message is delivered once and remains available until a consumer processes and deletes it; duplicates are not introduced into the queue.
  
- FIFO queues also support message groups that allow multiple ordered message groups within a single queue. FIFO queries are limited to 300 transactions per second (TPS), but have all the capabilities of standard queues.
+    FIFO queues also support message groups that allow multiple ordered message groups within a single queue. FIFO queries are limited to 300 transactions per second (TPS), but have all the capabilities of standard queues.
  
