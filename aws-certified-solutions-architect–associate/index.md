@@ -25,4 +25,4 @@ Bold topics are core services and very important to know well
 - [ ] - Machine Learning
 - [ ] - [Management & Governance](./management-governance.md)
 - [ ] - Analytics
-- [ ] - Desktop & App Streaming
+- [ ] - Media Services
