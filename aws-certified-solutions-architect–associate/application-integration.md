@@ -1,6 +1,6 @@
 # Application Integration
 
-## SQS
+## SQS Simple Queue Service
 Amazon SQS is a web service that gives you access to a message queue that can be used to store messages while waiting for a computer to process them. Amazon SQS is a distributed queue system that enables web service applications to quickly and reliably queue messages that one component in the application generates to be consumed by another component. A queue is a temporary repository for messages that are awaiting processing.
 
 Using SQS you can decouple the components of an application so they run independently, easing message management between components. Any component of a distributed application can store messages in a fail-safe queue. Messages can contain up to 256 KB of text in any format. Any component can later retrieve the message programmatically using Amazon SQS API.
@@ -25,3 +25,25 @@ The queue acts as a buffer between the component producing and saving data, and 
  
     FIFO queues also support message groups that allow multiple ordered message groups within a single queue. FIFO queries are limited to 300 transactions per second (TPS), but have all the capabilities of standard queues.
  
+ ## SWF (Simple Workflow Service)
+Amazon Simple Workflow Service Service (SWF) is a web service that makes it easy to coordinate work across distributed application components. SWF enables applications for a range of use cases, including media processing, web application backends, business process workflows, and analytics pipelines, to be designed as a coordination of tasks.
+
+Tasks represent invocations of various processing steps in an application which can be performed by executable code, web service calls, human actions, and scripts.
+
+- A way to combine your digital environment along with manual tasks carried out by humans.
+
+### SWF Actors
+- #### Workflow Starters
+    An application that can initiate (start) a workflow. Could be your e-commerce website following the placement of an order, or a mobile app searching for bus times.
+
+- ### Deciders
+    Control the flow of activity tasks in a workflow execution. If something has finished (or failed) in a workflow, a Decider decides what to do next.
+
+- ### Activity Workers
+    Carry out the activity tasks
+
+## SQS vs SWF
+- SQS has a retention period of up to 14 days. SWF workflow executions can last up to 1 year.
+- Amazon SWF presents a task-oriented API, whereas Amazon SQS offers a message-oriented API
+- Amazon SWF ensures that a task is assigned only once and is never duplicated. With Amazon SQS you need to handle duplicated messages and may also need to ensure that a message is processed only once.
+- SWF keeps track of all the tasks and events in an application. With SQS you need to implement your own application level tracking, especially if your application uses multiple queues.
