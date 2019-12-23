@@ -42,8 +42,32 @@ Tasks represent invocations of various processing steps in an application which 
 - ### Activity Workers
     Carry out the activity tasks
 
-## SQS vs SWF
+### SWF vs SQS
 - SQS has a retention period of up to 14 days. SWF workflow executions can last up to 1 year.
 - Amazon SWF presents a task-oriented API, whereas Amazon SQS offers a message-oriented API
 - Amazon SWF ensures that a task is assigned only once and is never duplicated. With Amazon SQS you need to handle duplicated messages and may also need to ensure that a message is processed only once.
 - SWF keeps track of all the tasks and events in an application. With SQS you need to implement your own application level tracking, especially if your application uses multiple queues.
+
+## SNS (Simple Notification Service)
+Amazon Simple Notification Service (SNS) is a web service that makes it easy to set up, operate, and send notifications from the cloud. It provides developers with a highly scalable, flexible, and cost-effective capability to publish messages from an application and immediately deliver them to subscribers or other applications.
+
+SNS supports push notifications to Apple, Google, Fire OS, and Windows devices, as well as Android devices in China with Baidu Cloud Push.
+
+Besides pushing cloud notifications directly to mobile devices, SQS can alos deliver notifications by SMS text message or email to Amazon SQS queues, or to any HTTP endpoint.
+
+SNS allows you to group multiple recipients using topics. A topic is an "access point" for allowing recipients to dynamically subscribe for identical copies of the same notification.
+
+One topic can support deliveries to multiple endpoint types - for example you can group together iOS, Android, and SMS recipients. When you publish once to a topic, SNS delivers appropriately formatted copies of your message to each subscriber.
+
+To prevent messages from being lost, all messages published to Amazon SNS are stored redundantly across multiple availability zones.
+
+### SNS Benefits
+- Instanteous push based delivery (no pulling)
+- Simple API and easy integration with applications
+- Flexible message delivery over multiple transport protocols
+- Inexpensive, pay as you go model with no up front costs
+- Web based AWS Management Console offers the simplicity of a point and click interface
+
+### SNS vs SQS
+- Both messaging services in AWS
+- SNS is push based where as SQS is pull based
