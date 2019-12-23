@@ -282,6 +282,59 @@ Everything fails. Everything. You should plan for failure.
   - Scaling up could be increasing the resources in each EC2 instance, aka going from a T2 micro to a 6X instance
 - Know the different S3 storage classes, standard S3 is high availability by default, reduced redundancy and S3 single Availability Zone are not highly available
 
+## API Gateway
+API Gateway is a fully managed service that makes it easy for developers to publish, maintain, monitor, and secure APIs at any scale.
+
+With a few clicks in the AWS Management Console, you can create an API that acts as a "front door" for applications to access datam business logic, or functionality from your back end services, such as applications runnon on EC2, code running in Amazon Lambda, or any web application.
+
+- API Gateway has caching capabilities to increase performance
+- API Gateway is low cost and scales automatically
+- You can throttle API Gateway to prevent attacks
+- You can log results to CloudWatch
+- If you are using JavaScript/AJAX that uses multiple domains with API Gateway, ensure that you have enabled CORS on API Gateway
+- CORS is enforced by the client
+
+### What can an API Gateway do?
+- Expose HTTPS endpoints to define a RESTful API
+- Serverless-ly connect to services like Lambda & DynamoDB
+- Send each API endpoint to a different target
+- Run efficently with low cost
+- Scale effortlessly
+- Track and control usage by API key
+- Throttle requests to prevent attacks
+- Connect to CloudWatch to log all requests for monitoring
+- Maintain multiple versions of your API
+
+### How do I configure an API Gateway?
+- Define an API (container)
+- Define Resources and nested Resources (URL paths)
+- For each Resource:
+  - Select supported HTTP methods (verbs)
+  - Set security
+  - Choose target (such as EC2, Lambda, DynamoDB, etc)
+  - Set request and response transformations
+
+### How do I deploy an API Gateway?
+- Deploy API to a stage
+  - Uses API Gateway domain by default
+  - Can use custom domain
+  - Now supports AWS Certificate Manager: free SSL/TLS certs
+
+### API Gateway Caching
+You can enable API Caching in Amazon API Gateway to cache your endpoints response. With caching, you can reduce the number of calls made to your endpoint and also improve the latency of the requests to your API. When you enable caching for a stage, API Gateway caches responses from your endpoint for a specified time to live (TTL) period in seconds. API Gateway then responds to the request by looking up the endpoint response from the cache instead of making a request to your endpoint.
+
+### Same Origin Policy
+In computing, the same origin policy is an important concept in the web application security model. Under the policy, a web browser permits scripts contained in a first web page to access data in a second web page, but only if both web pages have the same origin.
+
+This is done to prevent Cross Site Scripting (XSS) attacks.
+
+- Enforced by browsers but some tools like PostMan and curl ignore it
+
+### CORS
+CORS is one way the server at the other end (not the client clode in the browser) can relax the same origin policy.
+
+Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources (eg fonts) on a web page to be requested from another domain outside the domain from which the first resource was served.
+
 ## Network Content Delivery Review
 1. Which of the following Route 53 policies allow you to a) route data to a second resource if the first is unhealthy, and b) route data to resources that have better performance?
 - a. Failover and Simple Routing
