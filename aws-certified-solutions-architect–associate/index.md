@@ -24,5 +24,5 @@ Bold topics are core services and very important to know well
 - [ ] - [Application Integration](./application-integration.md)
 - [ ] - Machine Learning
 - [ ] - [Management & Governance](./management-governance.md)
-- [ ] - Analytics
+- [ ] - [Analytics](./analytics)
 - [ ] - [Media Services](./media-services.md)
