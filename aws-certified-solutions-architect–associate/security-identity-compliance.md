@@ -43,6 +43,40 @@ Can be used to create a billing alarm that can send emails or SNS topic when you
 - Roles can be assigned to an EC2 instance after it is created using both the console & command line
 - Roles are universal - You can use them in any region
 
+## Web Identity Federation
+Web Identity Federation lets you give your users access to AWS resources after they have sucessfully authenticated with a web based identity provider like Amazon, Facebook, or Google. FOllowing sucessful authentication, the user receives an authentication code from the Web ID provider, which they can trade for temporary AWS security credentials.
+
+## Cognito
+Amazon Cognito provides Web Identity Federation with the following features:
+- Sign up and sign in to your apps
+- Access for guest users
+- Acts as an Identity Broker between your application and Web ID providers, so you don't need to write any additional code
+- Synchronizes user data for multiple devices
+
+The recommended approach for Web Identity Federation using social media accounts like Facebook.
+
+### Cognito Use Cases
+Cognito brokers between the app and Facebook or Google to provide temporary credentials which map to an IAM role allowing access to the required resources.
+
+No need for the application to embed or store AWS crdentials locally on the device and it gives uers a seamless experience across all mobile devices.
+
+### Cognito User Pools
+Cognito User Pools are user directories used to manage sign up ad sign in functionality for mobile and web applications. Users can sign in directly to the User Pool, or using Facebook, Amazon, or Google. Cognito acts as an Identity Broker between the identity provider and AWS. Successful authentication generates a JSON Web Token (JWTs).
+
+- User Pool is user based. It handles things like user registration, authentication, and account recovery.
+
+### Cognito Identity Pools
+Identity Pools enable provide termporary AWS credentials to access AWS services like S3 or DynamoDB.
+
+- Identity Pools authorize access to your AWS resources
+
+### Cognito In Action
+![Cognito in Action](https://user-images.githubusercontent.com/16245634/71425562-26eef100-2664-11ea-9dd3-2515edd2e927.png)
+_image from [A Cloud Guru](https://acloud.guru/)_
+
+### Cognito Synchronisation
+Cognito tracks the association between user identity and the various different devices they sign in from. In order to provide a seamless user experience for your application, Cognito uses Push Synchronization to push updates and synchronize user data across multiple devices. Cognito uses SNS to send a notification to all the devices associated with a given user identity whenever data stored in the cloud changes.
+
 ## Security, Identity & Compliance Review
 1. What is an additional way to secure the AWS accounts of both the root account and new users alike?
 - a. Implement Mulit-Factor Authentication for all accounts
