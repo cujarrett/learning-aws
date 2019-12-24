@@ -20,9 +20,7 @@ Bold topics are core services and very important to know well
 - [x] - [**Storage**](./storage.md)
 - [x] - [**Databases**](./databases.md)
 - [x] - [**Network & Content Delivery**](./network-content-delivery.md)
-- [ ] - Migration & Transfer
 - [ ] - [Application Integration](./application-integration.md)
-- [ ] - Machine Learning
 - [ ] - [Management & Governance](./management-governance.md)
 - [ ] - [Analytics](./analytics.md)
 - [ ] - [Media Services](./media-services.md)
