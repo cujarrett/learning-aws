@@ -337,3 +337,14 @@ False, SNS is push based
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sns-vs-sqs)
 </p>
 </details>
+
+24. True or false, SNS offers a web based AWS Management Console for point and click interface.
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sns-benefits)
+</p>
+</details>
