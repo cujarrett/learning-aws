@@ -10,7 +10,7 @@ The queue acts as a buffer between the component producing and saving data, and 
 - SQS is pull based, not pushed based
 - Messages are 256 KB in size by default, you can go up to 2GB using S3 for more cost
 - Messages can be kept in queue for 1 minute to 14 days. The default retention is 4 days.
-- Visibility Time Out is the amount of time that the message is invisible in the SQS queue after a reader picks up that message. Provided the job is processed before the visibility time out expires, the message will be deleted from the queue. If the job is not processed within that time, the message will become visible again and another reader will process it.This could result in the same message being delivered twice.
+- Visibility Time Out is the amount of time that the message is invisible in the SQS queue after a reader picks up that message. Provided the job is processed before the visibility time out expires, the message will be deleted from the queue. If the job is not processed within that time, the message will become visible again and another reader will process it. This could result in the same message being delivered twice.
 - Visibility Time Out Maximim is 12 hours
 - SQS guarantees that your messages will be processed at least once
 - Amazon SQS long polling is a way to retrieve messages from your Amazon SQS queues. While the regular short polling returns immediately (even if the message queue being polled is empty), long polling doesn't return a response until a message arrives in the message queue, or the long poll times out.
@@ -71,3 +71,214 @@ To prevent messages from being lost, all messages published to Amazon SNS are st
 ### SNS vs SQS
 - Both messaging services in AWS
 - SNS is push based where as SQS is pull based
+
+## Application Integration Review
+
+1. What Amazon service can be used to decouple your infrastructure?
+
+<details>
+<summary>Show answer</summary>
+<p>
+SQS
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sqs-simple-queue-service)
+</p>
+</details>
+
+2. Is SQS pull based or Push based?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Pull based
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sqs-simple-queue-service)
+</p>
+</details>
+
+3. What is the default size for SQS messages?
+
+<details>
+<summary>Show answer</summary>
+<p>
+256 KB
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sqs-simple-queue-service)
+</p>
+</details>
+
+
+4. What is the time range that messges can be retained in SQS?
+
+<details>
+<summary>Show answer</summary>
+<p>
+1 minute to 14 days
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sqs-simple-queue-service)
+</p>
+</details>
+
+5. What are the kinds of SQS?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Standard SQS
+- FIFO SQS
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#types-of-queues-in-sqs)
+</p>
+</details>
+
+6. What is the differnces between Standard SQS and FIFO SQS?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Standard SQS - Order is not guaranteed and messages can be delivered more than once.
+- FIFO SQS - Order is strictly maintained and messages are delivered only once.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#types-of-queues-in-sqs)
+</p>
+</details>
+
+7. What is the SQS Visibility Timeout?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Visibility Time Out is the amount of time that the message is invisible in the SQS queue after a reader picks up that message. Provided the job is processed before the visibility time out expires, the message will be deleted from the queue. If the job is not processed within that time, the message will become visible again and another reader will process it. This could result in the same message being delivered twice.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sqs-simple-queue-service)
+</p>
+</details>
+
+8. What is the timeout maximum for SQS?
+
+<details>
+<summary>Show answer</summary>
+<p>
+12 hours
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sqs-simple-queue-service)
+</p>
+</details>
+
+9. Is it guaranteed that with SQS your messages will be processed at least once?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Yes
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sqs-simple-queue-service)
+</p>
+</details>
+
+10. What is SQS Long Polling?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Amazon SQS long polling is a way to retrieve messages from your Amazon SQS queues. While the regular short polling returns immediately (even if the message queue being polled is empty), long polling doesn't return a response until a message arrives in the message queue, or the long poll times out.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sqs-simple-queue-service)
+</p>
+</details>
+
+11. What is the maximum retention period for SQS and SWF?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- SQS maximum retention is 14 days
+- SWF maximum workflow execution is 1 year
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#swf-vs-sqs)
+</p>
+</details>
+
+12. How is the SWF API oriented?
+
+<details>
+<summary>Show answer</summary>
+<p>
+SWF is a task-oriented API
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#swf-vs-sqs)
+</p>
+</details>
+
+13. How is the SQS API oriented?
+
+<details>
+<summary>Show answer</summary>
+<p>
+SWF is a message-oriented API
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#swf-vs-sqs)
+</p>
+</details>
+
+14. True or false, SWF ensures that a task is assigned only once and is never duplicated.
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#swf-vs-sqs)
+</p>
+</details>
+
+15. True or false, with Standard SQS you need to handle duplicated messages and may also need to ensure that a message is processed only once.
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#swf-vs-sqs)
+</p>
+</details>
+
+16. True or false, SWF keeps track of all the tasks and events in an application.
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#swf-vs-sqs)
+</p>
+</details>
+
+
+17. True or false, SQS you need to implement your own application level tracking especially if your application uses multiple queues.
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#swf-vs-sqs)
+</p>
+</details>
+
+18. What are the different types of SWF Actors?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Workflow Starters - A application that can start a workflow. Could be your e-commerce wensite following the placement of an order, or a mobile app searching for bus lines.
+- Deciders - Control the flow of activity tasks in a workflo execution. If something has finished or failed in a workflow a Decider decides what to do next.
+- Activity Workers - Carry out the activity tasks
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#swf-actors)
+</p>
+</details>
