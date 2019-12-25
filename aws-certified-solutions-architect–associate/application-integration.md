@@ -348,3 +348,148 @@ True
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sns-benefits)
 </p>
 </details>
+
+25. What is the difference between SNS and SQS?
+- a. SNS sends messages to people on topics, whereas SNS manages tasks
+- b. SNS pulls (polls), whereas SQS is push based message service
+- c. SQS and SNS are basically the same service
+- d. SNS is a push notification service, whereas SQS is message system that requires worker nodes to poll a queue
+
+<details>
+<summary>Show answer</summary>
+<p>
+- d. SNS is a push notification service, whereas SQS is message system that requires worker nodes to poll a queue
+
+SNS is a notification service for sending text based communication of different types to different destinations. SQS is a queue system for asynchronously manages tasks (called messages).
+</p>
+</details>
+
+2. Amazon SWF is designed to help users ________.
+- a. Manage user identification and authorization
+- b. Coordinate synchronous and asynchronous tasks
+- c. Secure their VPCs
+- d. Sotre file based objects
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. Coordinate synchronous and asynchronous tasks
+
+Similar to SQS, SWF manages queues of work, however unlike SQS it can have out-of-band parallel and sequential task to be completed by humans and non AWS services.
+</p>
+</details>
+
+3. Amazon SWF restricts me to the use of specific programming languages.
+- a. True
+- b. False
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. False
+
+While there are a limited range of SDKs available for SWF, AWS provides an HTTP based API which allows you to interact using any language as long as you phrase the interactions in HTTP requests.
+</p>
+</details>
+
+4. Amazon SWF ensures that a task is assigned only once and is never duplicated.
+- a. True
+- b. False
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. True
+
+One time only completion is a key feature of SWF. At one time this was a key distinction from SQS, however with SQS FiFo queues, this is no longer a distinguishing feature.
+</p>
+</details>
+
+5. What application service allows you to decouple your infrastructure using messaged based queues?
+- a. SNS
+- b. SWF
+- c. SQS
+- d. SES
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. SQS
+
+In IT the term 'message' can be used in the common sense, or to describe a piece of data of Task in an asynchronous queueing system such as MQseries, RabbitMQ or SQS.
+</p>
+</details>
+
+6. What happens when you create a topic on Amazon SNS?
+- a. The topic will terminate your EC2 instances that aren't identified by tags
+- b. Nothing, as topics are specific to SQS
+- c. You cannot create a topic on SNS
+- d. An Amazon Resource Name is created
+
+<details>
+<summary>Show answer</summary>
+<p>
+- d. An Amazon Resource Name is created
+</p>
+</details>
+
+7. Amazon's SQS service guarantees a message will be delivered at least once.
+- a. True
+- b. False
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. True
+</p>
+</details>
+
+8. In SWF, what does a "domain" refer to?
+- a. A specialized security group configuration
+- b. A special type of worker instance
+- c. The DNS record for the AMazon SWF service
+- d. A collection of related workflows
+
+<details>
+<summary>Show answer</summary>
+<p>
+- d. A collection of related workflows
+</p>
+</details>
+
+9. What does Amazon SWF stand for?
+- a. Simple Wireless Forms
+- b. Simple Web Forum
+- c. Simple Work Flow
+- d. Simple Web Flow
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. Simple Work Flow
+</p>
+</details>
+
+10. By default, EC2 instances pull SQS messages from a standard SQS queue on a FIFO (first in first out) basis.
+- a. True
+- b. False
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. False
+</p>
+</details>
+
+11. What does Amazon SES stand for?
+- a. Software Enabled Server
+- b. Simple Email Service
+- c. Simple Elastic Server
+- d. Software Email Solution
+
+<details>
+<summary>Show answer</summary>
+<p>
+- b. Simple Email Service
+</p>
+</details>
