@@ -24,3 +24,12 @@ Bold topics are core services and very important to know well
 - [x] - [Management & Governance](./management-governance.md)
 - [x] - [Analytics](./analytics.md)
 - [x] - [Media Services](./media-services.md)
+
+## Things I like
+- Elastic nature of AWS
+- Resources spin up in seconds versus days/weeks/months to order new hardware
+- Becuase it's so easy to spin up and spin down resources, it enables more expirmentation to best meet customers and business needs vs putting a lot of eggs in one basket and hoping you designed it right
+
+## Things I don't like
+- Most solutions require setting up of many things like Roles, API Gateway, etc and you have spin each down seperattly. I understand why this is and can even excuse it for most things but the Elastic Beanstalk should orchistrate spinning down everything it automatically spins up. TL;DR if you can spin up X or Y with a single click, you should be able to spin down X or Y with the same single click.
+- It's probbaly just me but I wish I there more of a link between what you're being billed for and the AWS resources that are running. `EC2-Other` isn't very clear.
