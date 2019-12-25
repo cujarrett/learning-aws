@@ -1574,3 +1574,58 @@ There is only one answer that is specific to Spread Placement Groups, and that i
 - a. Yes
 </p>
 </details>
+
+104. What AWS offering is a gateway into your AWS resources?
+
+<details>
+<summary>Show answer</summary>
+<p>
+API Gateway
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#api-gateway)
+</p>
+</details>
+
+105. With API Gateway, what can you do to improve performance?
+
+<details>
+<summary>Show answer</summary>
+<p>
+API Gateway offers caching capabilities to increase performance.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#api-gateway-caching)
+</p>
+</details>
+
+106. With API Gateway, what can you do to prevent attacks?
+
+<details>
+<summary>Show answer</summary>
+<p>
+You can throttle API Gateway to prevent attacks.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#api-gateway)
+</p>
+</details>
+
+107. With API Gateway users with a JavaScript or AJAX tech stack that uses multiple domains what must you ensure you have done for it to work properly?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Enabled CORS on the API Gateway
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#api-gateway)
+</p>
+</details>
+
+108. What enforces CORS?
+
+<details>
+<summary>Show answer</summary>
+<p>
+The client
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/network-content-delivery.md#api-gateway)
+</p>
+</details>
