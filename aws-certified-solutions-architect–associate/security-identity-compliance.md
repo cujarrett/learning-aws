@@ -389,3 +389,47 @@ True
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#iam-identity-access-management)
 </p>
 </details>
+
+26. What allows users to authenticate with a Web Identity Provider such as Google, Facebook, or Amazon?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Federation
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#web-identity-federation)
+</p>
+</details>
+
+27. What AWS offering handles interaction between your applications and the Web ID provider?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Cognito
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#cognito)
+</p>
+</details>
+
+28. What does AWS User Pool handle?
+
+<details>
+<summary>Show answer</summary>
+<p>
+User Pool is user based, it handles things like user registration, authentication, and account recovery.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#cognito-user-pools)
+</p>
+</details>
+
+29. What does AWS Identity Pool handle?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Identity Pools authorize access to your AWS resources
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/security-identity-compliance.md#cognito-identity-pools)
+</p>
+</details>
