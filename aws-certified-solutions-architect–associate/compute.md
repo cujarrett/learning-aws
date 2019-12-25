@@ -108,7 +108,7 @@ Amazon Lambda is a compute service where you can upload your code and create a L
 1. Number of Requests - The first 1 million requests are free and $0.20 per 1 million requests thereafter.
 2. Duration - Duration is calculated from the time your code begins executing until it returns or otherwise terminates, rounded up to the nearest 100ms. The price depends on the amount of memory you allocate to your function. You are charged $0.00001667 for every GB-second used.
 
-## Lambda Benefits
+### Lambda Benefits
 - No servers
 - Continuous scaling
 - Super super super cheap
