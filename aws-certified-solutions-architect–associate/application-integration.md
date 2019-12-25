@@ -282,3 +282,58 @@ True
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#swf-actors)
 </p>
 </details>
+
+19. True or false, SWF is an instantaneous push based delivery (no polling).
+
+<details>
+<summary>Show answer</summary>
+<p>
+False, SQS is an instantaneous push based delivery (no polling)
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sns-benefits)
+</p>
+</details>
+
+20. True or false, SQS supports only HTTP protocol.
+
+<details>
+<summary>Show answer</summary>
+<p>
+False, SQS supports multiple transport protocols.
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sns-benefits)
+</p>
+</details>
+
+21. True or false, SQS is pay as you go with no upfront costs?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sns-benefits)
+</p>
+</details>
+
+22. True or false, both SNS and SQS are messaging services in AWS.
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sns-vs-sqs)
+</p>
+</details>
+
+23. True or false, SNS is pull based.
+
+<details>
+<summary>Show answer</summary>
+<p>
+False, SNS is push based
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/application-integration.md#sns-vs-sqs)
+</p>
+</details>
