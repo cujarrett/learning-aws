@@ -26,6 +26,8 @@ Amazon Kinesis is a platform on AWS to send your streaming data to. Kinesis make
     Amazon Kinesis Data Analytics is the easiest way to process data streams in real time with SQL or Java without having to learn new programming languages or processing frameworks.
     ![Kinesis Analytics info](https://user-images.githubusercontent.com/16245634/71393014-12611900-25d0-11ea-8cc1-b843e2cff429.png)
     _image from [A Cloud Guru](https://acloud.guru/)_
+    
+    - Can be used with Kinesis Streams and Kinesis Firehose
      
 ### What is Streaming Data?
 Streaming Data is data that is generated continuously by thousands of data sources, which typically send in the data records simultaneously, and in small sizes (order of Kilobytes).
@@ -37,3 +39,62 @@ Examples:
 - Social network data
 - Geospatial data (think uber.com)
 - iOT sensor data (think farm data streaming in from devices)
+
+## Analytics Review
+1. What are the different kinds of Amazon Kinesis?
+
+<details>
+<summary>Show answer</summary>
+<p>
+
+- Kinesis Streams
+- Kinesis Firehose
+- Kinesis Analytics
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/analytics.md#kinesis-types)
+</p>
+</details>
+
+2. Which Kinesis type offers data persistence of 24 hours by default but can be configured to be longer?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Kinesis Streams
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/analytics.md#kinesis-streams)
+</p>
+</details>
+
+3. Which Kinesis type requires you to analyze your data in real time and then find a place to store it?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Kinesis Firehose
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/analytics.md#kinesis-firehose)
+</p>
+</details>
+
+4. Which Kinesis type involves shards?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Kinesis Streams
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/analytics.md#kinesis-streams)
+</p>
+</details>
+
+5. True or false, Kinesis Analytics is used to analyze data streams for both Kinesis Streams and Kinesis Firehose.
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/analytics.md#kinesis-analytics)
+</p>
+</details>
