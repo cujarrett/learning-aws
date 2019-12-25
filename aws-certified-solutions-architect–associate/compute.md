@@ -71,6 +71,48 @@ Partitioned Placement Groups divides each group into logical segments called par
 ## Elastic Beanstalk
 Elastic Beanstalk allows you to quickly deploy and manage applications in the AWS Cloud without worrying about the infrastructure that runs those applications. You simply upload your application, and Elastic BeanStalk automatically handles the details of capacity provisioning, load balancing, scaling, and application health monitoring.
 
+## Traditional Architecture vs Serverless Architecture
+### Traditional Architecture
+- User sends request, hits Route 53, hits an Elastic Load Balancer (ELB), which is sent onto your Web Servers, and those may communicate to a backend database.
+
+### Serverless Architecture
+- Has API Gateway at the front
+- Lambda functions that scale out automatically
+- If you need a database you'd want to use a serverless database such as Aurora Serverless or DynamoDB
+
+## Lambda
+Amazon Lambda is a compute service where you can upload your code and create a Lambda function. AWS Lambda takes care of provisioning and managing the servers that you use to run the code. You don't have to worry about operating systems, patching, scaling, etc. Lambda is the ultimate abstraction layer.
+
+- Lambda scales out (not up) automatically
+- Lambda functions are independent, 1 event = 1 function
+- Lambda is serverless
+- Know what services are serverless. Ec2 is not serverless. RDS is not serverless for example as it runs on VMs, Aurura Serverless is the exception. Things like DynamoDB, S3, Lambda, API Gateway are all serverless.
+
+### Lambda Use Cases
+- As a event driven compute service where AWS Lambda runs your code in response to events. These events could be changes to data in an Amazon S3 bucket or an Amazon DynamoDB table.
+- As a compute service to run your code in response to HTTP requests using Amazon API Gateway or API calls made using AWS SDKs.
+- Lambda functions can trigger other Lambda functions, 1 event can = x functions if functions trigger other functions
+- Architecture can get extreamely complicated, AWS X-ray allows you to debug what is happening
+- Lambda can do thigs globally, you can use it to back up S3 buckets to other S3 buckets etc
+- Know Lambda Trigger types
+
+### Lambda Supported Languages
+- Node.js
+- Java
+- Python
+- C#
+- Go
+- PowerShell
+
+### Lambda pricing
+1. Number of Requests - The first 1 million requests are free and $0.20 per 1 million requests thereafter.
+2. Duration - Duration is calculated from the time your code begins executing until it returns or otherwise terminates, rounded up to the nearest 100ms. The price depends on the amount of memory you allocate to your function. You are charged $0.00001667 for every GB-second used.
+
+## Lambda Benefits
+- No servers
+- Continuous scaling
+- Super super super cheap
+
 ## Compute Review
 1. Can Spread Placement Groups be deployed across multiple Availability Zones?
 - a. Yes
