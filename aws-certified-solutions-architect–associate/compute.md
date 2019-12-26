@@ -414,7 +414,7 @@ You can control whether an EBS root volume is deleted when its associated instan
 
 22. I can use the AWS Console to add a role to an EC2 instance after that instance has been created and powered-up.
 - a. True
-- d. False
+- b. False
 
 <details>
 <summary>Show answer</summary>
@@ -425,7 +425,7 @@ You can control whether an EBS root volume is deleted when its associated instan
 
 23. Can you attach an EBS volume to more than one EC2 instance at the same time?
 - a. No
-- d. Yes
+- b. Yes
 - c. If that EC2 volume is part of an AMI
 - d. Depends on which region
 
@@ -480,5 +480,152 @@ True
 Elastic BeanStalk, you simply upload your application and Elastic Beanstalk automatically handles the details of capacity provisioning, load balancing, scaling, and application health monitoring. 
 
 [More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#elastic-beanstalk)
+</p>
+</details>
+
+28. Does Lambda scale up or scale out?
+
+<details>
+<summary>Show answer</summary>
+<p>
+Scales out
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#lambda)
+</p>
+</details>
+
+29. True or false, Lambda functions are independent, 1 event = 1 function
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#lambda)
+</p>
+</details>
+
+30. Which of these AWS offerings is not serverless?
+
+- DynamoDB
+- EC2
+- Lambda
+- API Gateway
+- Standard RDS
+
+<details>
+<summary>Show answer</summary>
+<p>
+EC2 and Standard RDS is not serverless (Aurora Serverless is serverless however)
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#lambda)
+</p>
+</details>
+
+31. True or false, Lambda functions can call additional Lambda functions.
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#lambda-use-cases)
+</p>
+</details>
+
+32. What AWS offering can be useful for debugging Lambda functions?
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#lambda-use-cases)
+</p>
+</details>
+
+33. True or false, Lambda can do things globally, you can use it to back up S3 buckets to other S3 buckets etc.
+
+<details>
+<summary>Show answer</summary>
+<p>
+True
+
+[More info](https://github.com/cujarrett/learning-aws/blob/master/aws-certified-solutions-architect%E2%80%93associate/compute.md#lambda-use-cases)
+</p>
+</details>
+
+34. You have created a simple serverless website using S3, Lambda, API Gateway and DynamoDB. Your website will process the contact details of your customers, predict an expected delivery date of their order and store their order in DynamoDB. You test the website before deploying it into production and you notice that although the page executes, and the lambda function is triggered, it is unable to write to DynamoDB. What could be the cause of this issue?
+- a. The Availability Zone that DynamoDB is hosted in is down. 
+- b. The availability zone that Lambda is hosted in is down
+- c. Your Lambda function does not have sufficient Identity Management (IAM) permissions to write to DynamoDB
+- d. You have written your function in Python which is not supported as a runtime environment for Lambda.
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. Your Lambda function does not have sufficient Identity Management (IAM) permissions to write to DynamoDB
+
+Like any services in AWS, Lambda needs to have a role associated with it that provide credentials with rights to other services. This is exactly the same as needing a role on an EC2 instance to access S3 or DDB.
+</p>
+</details>
+
+35. In which direction(s) does Lambda scale automatically?
+- a. Up
+- b. Up and Out
+- c. Out
+- d. None - Lambda does not scale automatically
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. Out
+
+Lambda scales out automatically - each time your function is triggered, a new, separate instance of that function is started. There are limits, but these can be adjusted on request.
+</p>
+</details>
+
+36. What AWS service can be used to help resolve an issue with a lambda function?
+- a. API Gateway
+- b. CloudTrail
+- c. AWS X-ray
+- d. DynamoDB
+
+<details>
+<summary>Show answer</summary>
+<p>
+- c. AWS X-ray
+
+AWS X-Ray helps developers analyze and debug production, distributed applications, such as those built using a microservices & serverless architectures.
+</p>
+</details>
+
+37. You have created a serverless application to add metadata to images that are uploaded to a specific S3 bucket. To do this, your lambda function is configured to trigger whenever a new image is created in the bucket. What will happen when multiple users upload multiple different images at the same time?
+- a. Multiple instances of the Lambda function will be triggered, one for each image
+- b. A single Lambda function will be triggered, which will process all images at the same time
+- c. Multiple Lambda functions will trigger one after the other until all images are processed
+- d. A single Lambda function will be triggered that will process all images that have finished uploading one at a time
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. Multiple instances of the Lambda function will be triggered, one for each image
+
+Each time a Lambda function is triggered, an isolated instance of that function is invoked. Multiple triggers result in multiple concurrent invocations, one for each time it is triggered.
+</p>
+</details>
+
+38. As a DevOps engineer you are told to prepare complete solution to run a piece of code that required multi-threaded processing. The code has been running on an old custom-built server based around a 4 core Intel Xeon processor. Which of these best describe the AWS compute services that could be used?
+- a. EC2, ECS, Lambda
+- b. ECS and EC2
+- c. None of the above
+- d. Only a EC2 "bare steel" server
+
+<details>
+<summary>Show answer</summary>
+<p>
+- a. EC2, ECS, Lambda
+
+The exact ratio of cores to memory has varied over time for Lambda instances, however Lambda like EC2 and ECS supports hyper-threading on one or more virtual CPUs (if your code supports hyper-threading).
 </p>
 </details>
