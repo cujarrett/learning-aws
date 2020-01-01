@@ -107,7 +107,7 @@ Amazon Aurora is a MySQL-compatible, relational database engine that combines th
 
 ### Aurora Scaling
 - Aurora is designed to transparently handle the loss of up to two copies of data without affecting database write availability and up to three copies without affecting read availability.
-- Aurora storage is self healing. Data blocks and disks are continuously scanned for errors adn repaired automatically.
+- Aurora storage is self healing. Data blocks and disks are continuously scanned for errors and repaired automatically.
 
 ### Aurora Read Replicas
 - Aurora Replicas (currently 15) - Automated failover is only available with Aurora Replicas
