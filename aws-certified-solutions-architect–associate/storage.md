@@ -234,7 +234,7 @@ An Amazon Machine Image (AMI) provides the information required to launch an ins
 - **For Instance Store Volumes**: The root device for an instance from the AMI is an instance store volume created from a template stored in Amazon S3
 - Instance Store Volumes are sometimes called Ephemeral Storage
 - Instance store volumes cannot be stopped. If the underlying host fails, you will lose your data.
-- EBS backed instances can be stopped. You will not lise the data on this instance if it is stopped.
+- EBS backed instances can be stopped. You will not lose the data on this instance if it is stopped.
 - You can reboot both, you will not lose your data
 - By default, both ROOT volumes will be deleted on termination. However, with EBS volumes, you can tell AWS to keep the root device volume.
 
