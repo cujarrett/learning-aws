@@ -19,7 +19,7 @@ S3 provides developers and IT teams with secure durable, highly scalable object 
 - The data is spread across multiple devices and facilities
 - Unlimited storage
 - Files are stored in Buckets (think of them like folders). S3 is a universal namespace. The Bucket names must be unique globally.
-- When you upload a file to S2 you receive a `HTTP 200 code` if the upload was successful
+- When you upload a file to S3 you receive a `HTTP 200 code` if the upload was successful
 - Because it's object based storage, it's not suitable to install an operating system or database on (for that you'd want block based storage)
 - [S3 FAQ](https://aws.amazon.com/s3/faqs/)
 
