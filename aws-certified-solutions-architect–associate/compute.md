@@ -47,7 +47,7 @@ EC2 is a web service that provides resizeable compute capacity in the cloud. Ama
 - The name you specify for a placement group must be unique within your AWS account
 - Only certian instances can be launched in a placement group
 - You can't merge placement groups
-- You can't mive an existing instance into a placement group. You can create an AMI from you existing instance, and then launch a new instance from the AMI into a placement group.
+- You can't move an existing instance into a placement group. You can create an AMI from you existing instance, and then launch a new instance from the AMI into a placement group.
 
 The 3 types of Placement Groups:
 1. **Cluster Placement Group**
