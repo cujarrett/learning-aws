@@ -79,7 +79,7 @@ Multi-AZ is available for the following RDS database types:
 (Aurora is completely fault tollerent by design)
 
 ### RDS Read Replica
-Read Replicas allow you to have a read-only copy of your production database. This is achieved by using Asynchronous replication from the primary RDS instance to the read replica. You use read replicas primarily for very read-havy database workloads.
+Read Replicas allow you to have a read-only copy of your production database. This is achieved by using Asynchronous replication from the primary RDS instance to the read replica. You use read replicas primarily for very read-heavy database workloads.
 
 - Used for scaling, not Disaster Recovery. Used to increase performance.
 - Must have automatic backups turned on in order to deploy a read replica
