@@ -33,3 +33,5 @@ Bold topics are core services and very important to know well
 ## Things I don't like
 - Most solutions require setting up of many things like Roles, API Gateway, etc and you have spin each down seperattly. I understand why this is and can even excuse it for most things but the Elastic Beanstalk should orchistrate spinning down everything it automatically spins up. TL;DR if you can spin up X or Y with a single click, you should be able to spin down X or Y with the same single click.
 - It's probbaly just me but I wish I there more of a link between what you're being billed for and the AWS resources that are running. `EC2-Other` isn't very clear.
+- Inconsitency from one AWS service to another. Small example would be to delete a resource you see all of these type the fill name of the bucket to delte it, type Confirm, type confirm, type Delete, etc
+- When new AWS services are launched the the search results are quickly outdated leading to time waste IMO
