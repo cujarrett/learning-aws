@@ -56,7 +56,7 @@ Amazon Route 53 effectively connects user requests to infrastructure running in 
 - You can buy domain names directly with AWS
 - It can take up to 3 days to register depending on the circumstances
 - ELBs do not have pre-defined IPv4 addresses; you resolve to them using a DNS name
-- Understand the difference between an ALias Record and a CName
+- Understand the difference between an Alias Record and a CName
 - Given the choice, always choose an Alias Record over a CName
 
 ### Route 53 Routing Policies
