@@ -65,7 +65,7 @@ You are charged for S3 in the following ways:
 ### S3 Access Control
 - Controlling access to S3 can be done using one of the following
   - **bucket ACL**
-  - **Bucker Policies**
+  - **Bucket Policies**
 - S3 buckets are PRIVATE by default. You can setup access control to your buckets using
   - Bucket Policies - Sets access at the bucket level
   - Access Control Lists - Sets access at the individual object level
