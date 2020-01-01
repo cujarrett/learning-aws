@@ -268,7 +268,7 @@ Holds the users IPv4 address, useful when a user goes through a load balancer be
 - ### Cross Zone
     With cross-zone load balancing, each load balancer node for your Classic Load Balancer distributes requests evenly across the registered instances in all enabled Availability Zones. If cross-zone load balancing is disabled, each load balancer node distributes requests evenly across the registered instances in its Availability Zone only.
 - ### Path Patterns
-    You can create a listenerwith rules to forward requests based on the URL path. This is known as path-based routing. If you are running microservices, you can route traffic to multiple back-end services using path-based routing. For example, you can route general requests to one target group and requests to render images to another target group.
+    You can create a listener with rules to forward requests based on the URL path. This is known as path-based routing. If you are running microservices, you can route traffic to multiple back-end services using path-based routing. For example, you can route general requests to one target group and requests to render images to another target group.
 
 ## HA Architecture
 ![HA Architecture example](https://user-images.githubusercontent.com/16245634/71314232-15121180-240a-11ea-8421-397e7bdc5961.png)
