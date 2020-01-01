@@ -148,7 +148,7 @@ AWS Snowmobile is an Exabyte-scale data transfer service used to move extreamly 
 ## Storage Gateway
 AWS Storage Gateway is a service that connects an on-premises software applicance with cloud-based storage to provide seamless and secure integration between an organization's on-premises IT environment and AWS storage infrastucture. The service enables you to securely store data to the AWS cloud for scalable and cost-effective storage.
 
-Storage Gateway's Software appliance is availablefor download as a virtual machine (VM) image that you install on a host in your datacenter. Storage Gateway supports either VMWare ESXi or Microsoft Hyper-V. Once you've installed your gateway and associated it with your AWS account through the activation process, you can use the AWS Managment Console to create the storage gateway option that is right for you.
+Storage Gateway's Software appliance is available for download as a virtual machine (VM) image that you install on a host in your datacenter. Storage Gateway supports either VMWare ESXi or Microsoft Hyper-V. Once you've installed your gateway and associated it with your AWS account through the activation process, you can use the AWS Managment Console to create the storage gateway option that is right for you.
 
 ![Storage Gateway Diagram](https://user-images.githubusercontent.com/16245634/69677758-4694f880-1069-11ea-8de6-3052e2f7cace.png)
 
