@@ -246,7 +246,7 @@ Health Checks check the instance health by talking to it.
     Application Load Balancerare best suited for load balancing of HTTP and HTTPS traffic. They opperate at Layer 7 and are application aware. They are intelligent, and you can create advanced request routing, sending specified requests to specific web servers.
 
 - #### Network Load Balancer
-    Network Load Balancer are best suited for load balancing of TCP traffic where extreme performance is required. Operating at the connection level (Layer 4), Network Load Balancer are capable of handling millions of requests per second, while maintaining ultra-low latencies. Use for extream performance.
+    Network Load Balancer are best suited for load balancing of TCP traffic where extreme performance is required. Operating at the connection level (Layer 4), Network Load Balancer are capable of handling millions of requests per second, while maintaining ultra-low latencies. Use for extreme performance.
 
 - #### Classic Load Balancer
     Classic Load Balancer are legacy Elastic Load Balancers. You can load balance HTTP/HTTPS applications and use Layer 7 specific features such as X-Forwarded and sticky sessions. You can also use strict Layer 4 load balancing for applications that rely purely on the TCP protocol.
