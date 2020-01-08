@@ -179,7 +179,7 @@ A VPC Endpoint enables you to privately connect your VPC to supported AWS servic
 Endpoints are virtual devices. They are horizontally scaled, redundant, and highly available VPC components that allow communication between instances in your VPC and services without imposing availability risks or bandwidth constraints on your network traffic.
 
 #### Two Types of VPC Endpoints
-- **Interface Endpoints** - an elastic network interface with a private IP address that serves as an entry point for traffic destined to a support service. The following services are supported:
+- **Interface Endpoints** - an elastic network interface with a private IP address that serves as an entry point for traffic destined to a support service.
 - **Gateway Endpoints** - Supported for Dynamo DB and S3 currently
 
 ## Network Access Control Lists
@@ -203,7 +203,7 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 ## NAT Gateways
 - Redundant inside the Availability Zone
 - Prefered for enterprise use
-- You can only have one NAT Gateway innside one Availability Zone, NAT Gateways can not span Availability Zones
+- You can only have one NAT Gateway inside one Availability Zone, NAT Gateways can not span Availability Zones
 - Starts at 5Gbs and scales currently to 45Gbs (You won't be tested on this)
 - No need to patch
 - Not associated with Security Groups
