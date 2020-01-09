@@ -3,11 +3,9 @@ I'd like to pass the [AWS Certified Solutions Arch](Associatehttps://aws.amazon.
 
 ## Tasks
 - [x] - [Ryan Kroonenburg's AWS Certified Solutions Arch Associate course](https://www.udemy.com/course/aws-certified-solutions-architect-associate/)
-- [ ] - [Review Longest Prefix Match Understanding Advanced Concepts in VPC Peering](https://tutorialsdojo.com/longest-prefix-match-understanding-advanced-concepts-in-vpc-peering/)
-- [ ] - [Jon Bonso's AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams/)
-- [ ] - [Skillcertpro's AWS Certified Solutions Architect 2019 Practice Questions](https://www.udemy.com/course/aws-certified-solutions-architect-2018-practice-questions/)
-- [ ] - Take AWS Certified Solutions Arch Associate exam
-- [ ] - [Celebratory Dance](https://media.giphy.com/media/6fScAIQR0P0xW/giphy.gif)
+- [x] - [Jon Bonso's AWS Certified Solutions Architect Associate Practice Exams](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams/)
+- [x] - Take AWS Certified Solutions Arch Associate exam
+- [x] - [Celebratory Dance](https://media.giphy.com/media/6fScAIQR0P0xW/giphy.gif)
 
 #### Notes Preface
 I am going to focus on probable elements in the exam to streamline note taking. For example I will detail difference between a Regions and an Availability Zone but I won't take notes on current number of each as it's not as important and in constant change.
